@@ -19,7 +19,7 @@ After searching more and more on this, watching movies, reading articles, listen
 
 I started to bring drastic changes like avoiding Google as much as I can, I shifted to DuckDuckGo as my primary search engine, it felt awkward for a couple of days but then it was just like I am using Google. DuckDuckGo produced great search results and it stored none of my information and my searches. I dived deeper into the privacy settings of my Google account and disabled many privacy-invading settings that were unknown to me previously.
 
-![DuckDuckGo]({{assets}}/2.jpg){: .center-image }
+![DuckDuckGo]({{assets}}/2.jpg)
 
 I left using Google Photos, backed up my sensitive data from Google Drive as well.
 
