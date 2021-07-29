@@ -31,7 +31,7 @@ twitter_username: njmulsqb
 github_username: njmulsqb
 
 # Build settings
-theme: jekyll-theme-hacker
+theme: minima
 plugins:
   - jekyll-feed
 # Exclude from processing.
