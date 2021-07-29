@@ -1,4 +1,11 @@
-![Social Media Apps](/assets/My-Transition-To-More-Privacy-Focused-Internet/1.jpg)
+---
+title: "My Transition To More Privacy-Focused Internet"
+categories: [digital privacy]
+tags: [privacy, surveillance, encryption, social media]
+assets: /assets/My-Transition-To-More-Privacy-Focused-Internet/
+---
+
+![Social Media Apps]({{page.assets}}1.jpg)
 
 Back in October 2020 I watched Social Dilemma (A Netflix Documentary) on the recommendation of a friend, it was a documentary made on side effects of social media and those side effects were mentioned by none other than the manufacturers of those tech giants, people holding executive positions, engineering positions in Facebook, Google, YouTube, Pinterest, etc explained how social media is becoming a social dilemma of this century. I won't go into detail about that documentary, but this documentary ignited a spark within me.
 
