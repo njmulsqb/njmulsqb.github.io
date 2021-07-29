@@ -5,7 +5,7 @@ tags: [privacy, surveillance, encryption, social media]
 assets: /assets/My-Transition-To-More-Privacy-Focused-Internet/
 ---
 
-![Social Media Apps]({{page.assets}}1.jpg){: .center-image }
+![Social Media Apps](/assets/My-Transition-To-More-Privacy-Focused-Internet/1.jpg){: .center-image }
 
 Back in October 2020 I watched Social Dilemma (A Netflix Documentary) on the recommendation of a friend, it was a documentary made on side effects of social media and those side effects were mentioned by none other than the manufacturers of those tech giants, people holding executive positions, engineering positions in Facebook, Google, YouTube, Pinterest, etc explained how social media is becoming a social dilemma of this century. I won't go into detail about that documentary, but this documentary ignited a spark within me.
 
@@ -19,7 +19,7 @@ After searching more and more on this, watching movies, reading articles, listen
 
 I started to bring drastic changes like avoiding Google as much as I can, I shifted to DuckDuckGo as my primary search engine, it felt awkward for a couple of days but then it was just like I am using Google. DuckDuckGo produced great search results and it stored none of my information and my searches. I dived deeper into the privacy settings of my Google account and disabled many privacy-invading settings that were unknown to me previously.
 
-![DuckDuckGo]({{assets}}/2.jpg)
+![DuckDuckGo](/assets/My-Transition-To-More-Privacy-Focused-Internet/2.jpg){: .center-image }
 
 I left using Google Photos, backed up my sensitive data from Google Drive as well.
 
