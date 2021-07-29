@@ -1,3 +1,5 @@
+![Social Media Apps](/assets/My-Transition-To-More-Privacy-Focused-Internet/1.jpg)
+
 Back in October 2020 I watched Social Dilemma (A Netflix Documentary) on the recommendation of a friend, it was a documentary made on side effects of social media and those side effects were mentioned by none other than the manufacturers of those tech giants, people holding executive positions, engineering positions in Facebook, Google, YouTube, Pinterest, etc explained how social media is becoming a social dilemma of this century. I won't go into detail about that documentary, but this documentary ignited a spark within me.
 
 I started questioning the role of social media in our lives, I won't say social media is all bad, but the way it has been designed, most of us get hooked to it without even us being knowing it. I started discussing it with my friends and one of them suggested me to watch the "Snowden" movie as it reveals much more about the evil faces of these tech giants and government surveillance.
