@@ -1,8 +1,8 @@
 ---
-title: Writeups
+title: Blog
 ---
 
-## root@najam-ul-saqib:/home/writeups$
+## root@najam-ul-saqib:/home/blog$
 
 <ul>
   {% for post in site.posts %}
