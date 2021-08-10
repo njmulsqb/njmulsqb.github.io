@@ -40,6 +40,6 @@ I joined Tkxel as a software engineer and worked in Javascript, here I worked on
 
 ### Reviewer/Editor of OWASP WSTG v4.2
 
-    Contributed as an editor to the latest released version of OWASP Web Security Testing Guide v4.2.
+Contributed as an editor to the latest released version of OWASP Web Security Testing Guide v4.2. You grab your copy [here](https://t.co/BSTLgoKpBV?amp=1)
 
 ![Snapshot of WSTG Handbook](/assets/images/owasp-credit.png)
