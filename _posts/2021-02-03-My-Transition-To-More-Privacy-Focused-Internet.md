@@ -3,6 +3,7 @@ title: "My Transition To More Privacy-Focused Internet"
 categories: [digital privacy]
 tags: [privacy, surveillance, encryption, social media]
 assets: /assets/My-Transition-To-More-Privacy-Focused-Internet/
+author: Najam Ul Saqib
 ---
 
 ![Social Media Apps](/assets/My-Transition-To-More-Privacy-Focused-Internet/1.jpg){: .center-image }
@@ -38,11 +39,3 @@ As a matter of fact, I have also put a tape on my laptop's camera 😂, you migh
 I am much more confident about my online presence now, I don't use Facebook or any of its products like Whatsapp, Instagram, etc. My online presence is much more secure and private now and hopefully, after all these steps, some of my data will be secure if not all.
 
 If you think, you need any sort of guidance related to this post, I am always available. This online privacy topic is huge and there are tons of articles available online which you can read if you're interested in it. I just highlighted the choices I made within these few months and loved every bit of it. Peace 💓
-
-<style type="text/css">
- .center-image
-{
-    margin: 0 auto;
-    display: block;
-}
-</style>
