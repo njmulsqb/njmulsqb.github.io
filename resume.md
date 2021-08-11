@@ -32,9 +32,12 @@ I have worked on various freelance projects on Upwork which included penetration
 
 ### Bug Hunting
 
-This is something which I am learning, I have been hacking on programs consistently from June,2021 and have learnt loads of stuff. I am yet to discover a valid bug
+This is something which I am learning, I have been hacking on programs consistently from June,2021 and have learnt loads of stuff. The programs that I have found vulnerabilities on [HackerOne](https://www.hackerone.com) & [BugCrowd](https://www.bugcrowd.com) are
 
-<br/>
+- Department of Defense
+- Upwork
+
+  <br/>
 
 ## Certifications
 

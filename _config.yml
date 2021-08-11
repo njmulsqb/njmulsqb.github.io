@@ -29,3 +29,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 markdown: kramdown
+
+google-analytics: G-ST5EF3N071
