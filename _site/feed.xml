@@ -1,4 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-11T09:22:54+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam-ul-saqib $</title><subtitle>Cyber Solder | Software Engineer</subtitle><entry><title type="html">My Transition To More Privacy-Focused Internet</title><link href="http://localhost:4000/digital%20privacy/2021/02/03/My-Transition-To-More-Privacy-Focused-Internet.html" rel="alternate" type="text/html" title="My Transition To More Privacy-Focused Internet" /><published>2021-02-03T00:00:00+05:00</published><updated>2021-02-03T00:00:00+05:00</updated><id>http://localhost:4000/digital%20privacy/2021/02/03/My-Transition-To-More-Privacy-Focused-Internet</id><content type="html" xml:base="http://localhost:4000/digital%20privacy/2021/02/03/My-Transition-To-More-Privacy-Focused-Internet.html">&lt;p&gt;&lt;img src=&quot;/assets/My-Transition-To-More-Privacy-Focused-Internet/1.jpg&quot; alt=&quot;Social Media Apps&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-27T18:02:39+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam-ul-saqib $</title><subtitle>Cyber Solder | Software Engineer</subtitle><entry><title type="html">Interesting behavior of innerHTML on simple script XSS payload</title><link href="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html" rel="alternate" type="text/html" title="Interesting behavior of innerHTML on simple script XSS payload" /><published>2021-08-24T00:00:00+05:00</published><updated>2021-08-24T00:00:00+05:00</updated><id>http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload</id><content type="html" xml:base="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html">&lt;p&gt;While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; tag. Let’s see how?&lt;/p&gt;
+
+&lt;p&gt;For example, consider this piece of code.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;BadXSS&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;submittedSearch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;submittedSearch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchTerm&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;containerStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;headingStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bad&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;labelStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;htmlFor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;Search&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/label&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Search&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttonStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;Go&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/form&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;submittedSearch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchResultsStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;searched&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;dangerouslySetInnerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+              &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/b&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here in this code you can see that the user input is directly being placed in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;span&lt;/code&gt; using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; which means that any user input will be parsed and reflected on the DOM, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/Simple-Input-Reflection.png&quot; alt=&quot;User Input Getting Reflected&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: dangerouslySetInnerHTML is actually a wrapper over innerHTML which is already available in DOM and can be accessed directly. React appended ‘dangerously’ with it to clearly discourage its use as it can make the app vulnerable to XSS through event handlers&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The user input of “Hello World” under Bad Example is being reflected on the page with “You searched for:” and in the DOM on dev tools on the right you can see that it is being loaded within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&lt;/code&gt; tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; is being used in the backend. Let’s test this out by giving some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags and see how that gets reflected and parsed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png&quot; alt=&quot;p Tag Getting Reflected&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, this shows that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; can be dangerous as it’s parsing anything that’s being given to it, so technically the app is vulnerable to XSS attacks as we can execute scripts through innerHTML.&lt;/p&gt;
+
+&lt;p&gt;When I tried executing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;&lt;/code&gt; payload on this application something interesting happened. The resulting DOM looked something like this&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/script-in-innerHTML.png&quot; alt=&quot;script Tag in InnerHTML&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;margin-bottom: 0px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  You searched for:
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is clear here that, our payload has made to the DOM without getting encoded by HTML entities and it should technically fire, but it didn’t. Yes. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag didn’t execute even if the syntax is perfectly alright, the alert pop up didn’t appear. This is really very confusing, why it didn’t? 🤯&lt;/p&gt;
+
+&lt;p&gt;Though W3C states that innerHTML doesn’t allows execution of scripts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;According to World Wide Web Consortium (W3C)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;script elements inserted using innerHTML do not execute when they are inserted.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But for me this is not enough, how can innerHTML stop the parser from executing the injected script tags when rest of the script tags are being executed without any issue? That’s the main problem.&lt;/p&gt;
+
+&lt;p&gt;Whenever innerHTML is used it re-renders the DOM tree&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It can also potentially be slow, since every time you change a node’s innerHTML property the browser must completely scrap and recreate its entire DOM tree. If you (for example) keep appending to innerHTML in a loop you’ll cause a lot of unnecessary re-renders.
+Source: https://learn.foundersandcoders.com/workshops/dom-rendering/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It means that whenever we call innerHTML, it first injects the value of innerHTML in to the DOM and then renders the entire DOM again, but somehow it recognizes the script that is being injected through innerHTML and doesn’t executes it and executes all the rest of the scripts, I’ve made a rough sketch of this process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/parser-execution.jpg&quot; alt=&quot;script Tag in InnerHTML&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML Code:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Some HTML Code here --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt; Some random text &lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;What's my fault?&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The script injected by the innerHTML gets ignored by the parser :( --&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Rest of the scripts got the attention from the parser and got executed --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We're special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We're special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We're special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So this behavior is pretty strange, when the DOM got rendered and HTML parser parsed the lines one by one from top to bottom, how it came to know which script tag to ignore and which ones to execute when the syntax is exact same for both. Interestingly, if you copies this whole HTML structure and paste it into a separate HTML file, all the scripts will execute by that same parser. Why this hypocrisy? 😏&lt;/p&gt;
+
+&lt;p&gt;It’s pretty clear that script tags will never ever get executed whenever the HTML is injected using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; property or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; in case of ReactJS. It’s the standard set by W3C that whenever &lt;em&gt;HTML Parser&lt;/em&gt; runs and parses the string within innerHTML, it parses every HTML tag and ignores if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag appears, how is this happening? How the parser comes to know about all this? Enough of the suspense! 🧐&lt;/p&gt;
+
+&lt;p&gt;Here things get’s complex, get ready for a deeper dive! 🌊&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, surface level documentations do not include details about this behavior rather just a note saying that scripts wont work with innerHTML to lessen the chances of XSS and even the answers on StackOverFlow were vague, so I read loads of documentation and came to following conclusion&lt;/p&gt;
+
+&lt;p&gt;First, let’s clear some concepts, whenever a &lt;em&gt;Document&lt;/em&gt; is created, a html parser gets associated for it and each &lt;em&gt;Document&lt;/em&gt; object has some environment variables that define the working and behavior of that parser.&lt;/p&gt;
+
+&lt;p&gt;In those environment variables, a &lt;strong&gt;scripting flag&lt;/strong&gt; exist, which is a boolean variable, whenever it is set to &lt;strong&gt;false&lt;/strong&gt; the HTML parser will ignore the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tags and they won’t execute, opposite is the case when flag is set to &lt;strong&gt;true&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Whenever &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; is called, a separate &lt;em&gt;Document&lt;/em&gt; is created which has its own html parser associated with it that has nothing to do with the main Document’s parser and obviously the temporary document created by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; has its own set of environment variables.&lt;/p&gt;
+
+&lt;p&gt;Upon creation of a separate document, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; by default sets the &lt;strong&gt;scripting flag&lt;/strong&gt; as &lt;strong&gt;false&lt;/strong&gt; means that the HTML parser will ignore the scripts included as value in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It means the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;’s document will be parsed separately and because its &lt;strong&gt;scripting flag&lt;/strong&gt; is &lt;strong&gt;false&lt;/strong&gt; it will not execute the scripts and the main document’s will be parsed separately and scripts will be executed because its &lt;strong&gt;scripting flag&lt;/strong&gt; is set to &lt;strong&gt;true&lt;/strong&gt;. I tried to visualize this process in the following diagram&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/creation-of-document.jpg&quot; alt=&quot;Behavior of InnerHTML&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s the reason why, if you copies this whole HTML (with injected script) and place it to some other file then the ignored script will also execute because then that will be parsed by the single HTML parser with scripting flag set to true. 😌&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;On every call to innerHTML, a new Document node is temporarily created which has its own separate HTML parser and its own set of enivronment variables, whereas our original document has a separate parser and variables, because the orignal document’s scripting flag is set to true therefore all the scripts within the original document are executed on the other hand because the new temporary document’s scripting flag is set to false therefore even it contains valid script tags, the parser wont put those tags into the JS execution context and thus the scripts in the new temporary document won’t be executed, because to us this whole process is abstracted under the layer of innerHTML so it seems confusing that how the HTML parser ignores the script tags whereas in reality that parser never really parses the scripts injected through innerHTML, they’re parsed using a separate parser.&lt;/p&gt;
+
+&lt;p&gt;If you still have any questions about this behavior or you think that I went wrong somewhere than I am open for discussion and I will appreciate your contribution to this research.&lt;/p&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML&quot;&gt;Element.innerHTML - MDN Web Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/13390588/script-tag-create-with-innerhtml-of-a-div-doesnt-work&quot;&gt;script tag create with innerHTML of a div doesn’t work - StackOverFlow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments&quot;&gt;Parsing HTML Fragments&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag&quot;&gt;Parsing State Flags&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;credits&quot;&gt;Credits&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/thawkin3/xss-demo&quot;&gt;Vulnerable to XSS, React Code&lt;/a&gt; by @thawkin3&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Najam Ul Saqib</name></author><category term="secure coding" /><category term="XSS" /><category term="reactJS" /><category term="secure coding" /><summary type="html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the dangerouslySetInnerHTML tag. Let’s see how?</summary></entry><entry><title type="html">My Transition To More Privacy-Focused Internet</title><link href="http://localhost:4000/digital%20privacy/2021/02/03/My-Transition-To-More-Privacy-Focused-Internet.html" rel="alternate" type="text/html" title="My Transition To More Privacy-Focused Internet" /><published>2021-02-03T00:00:00+05:00</published><updated>2021-02-03T00:00:00+05:00</updated><id>http://localhost:4000/digital%20privacy/2021/02/03/My-Transition-To-More-Privacy-Focused-Internet</id><content type="html" xml:base="http://localhost:4000/digital%20privacy/2021/02/03/My-Transition-To-More-Privacy-Focused-Internet.html">&lt;p&gt;&lt;img src=&quot;/assets/My-Transition-To-More-Privacy-Focused-Internet/1.jpg&quot; alt=&quot;Social Media Apps&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Back in October 2020 I watched Social Dilemma (A Netflix Documentary) on the recommendation of a friend, it was a documentary made on side effects of social media and those side effects were mentioned by none other than the manufacturers of those tech giants, people holding executive positions, engineering positions in Facebook, Google, YouTube, Pinterest, etc explained how social media is becoming a social dilemma of this century. I won’t go into detail about that documentary, but this documentary ignited a spark within me.&lt;/p&gt;
 
