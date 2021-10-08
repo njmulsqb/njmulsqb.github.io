@@ -30,21 +30,18 @@ The technologies I worked on here are:
 2. Typescript
 3. TypeORM
 4. ReactJS
-5. AWS
-6. NodeJS
+5. NodeJS
+6. Amazon Web Services
 
 ### Freelance Work
 
-**Penetration Tester, App Security Researcher - Upwork**
+**Penetration Tester, App Security Researcher - [Upwork](https://www.upwork.com/freelancers/~0191785ee40bb1eec0)**
 
 I have worked on various freelance projects on Upwork which included penetration tests and other information security related jobs
 
 ### Bug Hunting
 
-This is something which I am learning, I have been hacking on programs consistently from June,2021 and have learnt loads of stuff. The programs that I have found vulnerabilities on [HackerOne](https://www.hackerone.com) & [BugCrowd](https://www.bugcrowd.com) are
-
-- Department of Defense
-- Upwork
+This is something which I am learning, I have been hacking on programs consistently from June,2021 and have learnt loads of stuff. I have found some bugs in [Department of Defense](https://hackerone.com/deptofdefense) so far.
 
   <br/>
 
@@ -54,7 +51,11 @@ This is something which I am learning, I have been hacking on programs consisten
 
 ### Certified Network Security Specialist - ICSI, UK
 
-This course provides a holistic view of modern network security including operating system hardening, firewalls, intrusion-detection systems, VPNs and Encryption. Physical Security, Standards, System Security and Security Policies are also included.
+This course provides a holistic view of modern network security including operating system hardening, firewalls, intrusion-detection systems, VPNs and Encryption. Physical Security, Standards, System Security and Security Policies are also included. Certificate can be seen [here](https://www.credential.net/4163ad18-e209-41f2-b738-65ba5552609f#gs.9u7w6d)
+
+### Secure Coding Course - We Hack Purple Academy
+
+This language-agnostic course taught me the basics of secure coding for the web, as well as gave an overview of common vulnerabilities found in web applications, common application security activities and what I as a software developer need to do in order to be PCI compliant while handling credit card and other payment information from customers. Certificate can be seen [here](https://www.credential.net/62522e28-3c25-4ab4-a36b-dd3189b28bcf)
 
 ### Unix Badge - Pentester Lab
 
@@ -62,7 +63,7 @@ Obtaining this badge demonstrates the understanding and completion of challenges
 
 ### Python for Pentesters
 
-This course taught how Python language can be used by pen testers for different purposes like Port Scanning, Packet Analysis using Scapy, MAC Spoofing, Cracking Hashes, Subdomain Enumeration, etc
+This course taught how Python language can be used by pen testers for different purposes like Port Scanning, Packet Analysis using Scapy, MAC Spoofing, Cracking Hashes, Subdomain Enumeration, etc. Certificate can be seen [here](http://ude.my/UC-1ae100b8-bfdb-4dda-8bc8-dea6fbf562a4)
 
 <br/><br/>
 
