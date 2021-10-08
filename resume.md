@@ -21,9 +21,17 @@ You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a22
 
 ### Day Job
 
-**Software Engineer - Tkxel (May 2021 - Present)**
+**Software Engineer - [Tkxel](www.tkxel.com) (May 2021 - Present)**
 
-I joined Tkxel as a software engineer and worked in Javascript, here I worked on various projects that included both front and backend developement. Here I practiced secure coding practices besides developement to make the life tougher for black hats.
+I worked on developing applications with Javascript here. My core purpose here was to write secure code and build secure applications
+The technologies I worked on here are:
+
+1. Javascript
+2. Typescript
+3. TypeORM
+4. ReactJS
+5. AWS
+6. NodeJS
 
 ### Freelance Work
 
