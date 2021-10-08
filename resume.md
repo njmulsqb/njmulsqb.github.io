@@ -2,7 +2,7 @@
 
 <br>
 
-I have always been very passionate about information security. I am completely self-learnt as far as information security is concerned. I love to tweak and break stuff.
+I have always been very passionate about software engineering and information security and I am openly looking for roles that includes but are not limited to: software engineer, application security engineer, software developer, penetration tester.
 
 ## Education
 
