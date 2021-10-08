@@ -26,7 +26,7 @@ You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a22
 - Languages: JavaScript, TypeScript, Python, C#
 - Frameworks: ReactJS, ExpressJS
 - Linux
-- Burp Suite | OWASP ZAP
+- Burp Suite/OWASP ZAP
 - Web Security
 - Secure Coding
 - Git
@@ -39,7 +39,7 @@ You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a22
 
 ### Day Job
 
-**Software Engineer - [Tkxel](www.tkxel.com) (May 2021 - Present)**
+**Software Engineer - [Tkxel](https://www.tkxel.com) (May 2021 - Present)**
 
 I worked on developing applications with Javascript here. My core purpose here was to write secure code and build secure applications
 The technologies I worked on here are:
