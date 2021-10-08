@@ -2,6 +2,10 @@
 
 <br>
 
+## Introduction
+
+---
+
 I have always been very passionate about software engineering and information security and I am openly looking for roles that includes but are not limited to: software engineer, application security engineer, software developer, penetration tester.
 
 ## Education
@@ -15,6 +19,20 @@ I have always been very passionate about software engineering and information se
 You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a2211iFl8syn3J-XKe6tSjs15uLqcDMYPTLI-M)
 <br>
 
+## Skills
+
+---
+
+- Languages: JavaScript, TypeScript, Python, C#
+- Frameworks: ReactJS, ExpressJS
+- Linux
+- Burp Suite | OWASP ZAP
+- Web Security
+- Secure Coding
+- Git
+- OWASP Top 10
+  <br>
+
 ## Experience
 
 ---
@@ -26,12 +44,11 @@ You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a22
 I worked on developing applications with Javascript here. My core purpose here was to write secure code and build secure applications
 The technologies I worked on here are:
 
-1. Javascript
-2. Typescript
-3. TypeORM
-4. ReactJS
-5. NodeJS
-6. Amazon Web Services
+1. JavaScript/TypeScript
+2. TypeORM
+3. ReactJS
+4. NodeJS
+5. Amazon Web Services
 
 ### Freelance Work
 
@@ -57,13 +74,13 @@ This is something which I am learning, I have been hacking on programs consisten
 
 [Python for Pentesters](http://ude.my/UC-1ae100b8-bfdb-4dda-8bc8-dea6fbf562a4)
 
-<br/><br/>
+<br/>
 
 ## Open Source Contributions
 
 ---
 
-I am an active contributor to open source projectsy, I have contributed to different repositories of [OWASP ZAP](https://github.com/zaproxy)
+I am an active contributor to open source projects, I have contributed to different repositories of [OWASP ZAP](https://github.com/zaproxy) I like to develop open-source software, for me its a noble cause
 
 ### Reviewer/Editor of OWASP WSTG v4.2
 
@@ -72,16 +89,3 @@ Contributed as an editor to the latest released version of OWASP Web Security Te
 ![Snapshot of WSTG Handbook](/assets/images/owasp-credit.png){: .center-image }
 
 <br/>
-
-## Skills
-
----
-
-- Python Scripting
-- Linux
-- Burp Suite/ OWASP ZAP
-- Web Security
-- Secure Coding
-- Git
-- OWASP Top 10
-- JavaScript
