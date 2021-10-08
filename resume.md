@@ -12,6 +12,7 @@ I have always been very passionate about information security. I am completely s
 
     Final Year Project: GraphQL In Scope: An In-depth Approach On How GraphQL Can Be Exploited
 
+You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a2211iFl8syn3J-XKe6tSjs15uLqcDMYPTLI-M)
 <br>
 
 ## Experience
