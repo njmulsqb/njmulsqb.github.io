@@ -8,3 +8,4 @@ This is the list of Open Source software that I use as my daily driver! Kudos to
 - App Store: F-Droid
 - Laptop OS: Linux
 - Office: LibreOffice
+- FTP Client: FileZilla
