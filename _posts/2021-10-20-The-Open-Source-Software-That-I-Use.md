@@ -9,3 +9,4 @@ This is the list of Open Source software that I use as my daily driver! Kudos to
 - Laptop OS: Linux
 - Office: LibreOffice
 - FTP Client: FileZilla
+- YouTube Client: FreeTube(Desktop), NewPipe(Android)
