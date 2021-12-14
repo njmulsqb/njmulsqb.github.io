@@ -1,7 +1,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script
   async
-  src="https://www.googletagmanager.com/gtag/js?id=G-NNW86KLKCS"
+  src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
 ></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,5 +10,5 @@
   }
   gtag("js", new Date());
 
-  gtag("config", "G-NNW86KLKCS");
+  gtag("config", "{{ site.google_analytics }}");
 </script>
