@@ -1,20 +1,79 @@
 ---
 layout: post
 title: Important points I learned from Mr Robot CTF
-date: '2020-07-08T14:22:00.001+05:00'
+date: "2020-07-08T14:22:00.001+05:00"
 author: Najam Ul Saqib
 tags:
-- gobuster
-- wordpress
-- mrrobot
-- ctf
-- dirbuster
-- tryhackme
-- cybersecurity
-modified_time: '2020-07-14T12:01:34.809+05:00'
+  - gobuster
+  - wordpress
+  - mrrobot
+  - ctf
+  - dirbuster
+  - tryhackme
+  - cybersecurity
+modified_time: "2020-07-14T12:01:34.809+05:00"
 thumbnail: https://1.bp.blogspot.com/-610bjY-WN-E/XwV6M3vajpI/AAAAAAAAdX4/akZPT2hZwpEu5JM6HPzyFO0BBKE47NjcQCK4BGAsYHg/s72-c/FSOCIETY.png
 blogger_id: tag:blogger.com,1999:blog-1950785263016881513.post-7185800013525643739
 blogger_orig_url: https://najum98.blogspot.com/2020/07/important-points-i-learned-from-mr.html
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on"><img src="https://1.bp.blogspot.com/-610bjY-WN-E/XwV6M3vajpI/AAAAAAAAdX4/akZPT2hZwpEu5JM6HPzyFO0BBKE47NjcQCK4BGAsYHg/s320/FSOCIETY.png" style="display: none;" />I did the Mr. Robot CTF today from www.tryhackme.com, I thought it would be better to share the lessons I learned from Mr. Robot's CTF rather than writing a walkthrough (as there are tons of walkthroughs available online on Mr. Robot)<br /><div><br /></div><div><b>GoBuster is better than DirBuster:</b></div><div>I ran gobuster on the machine for quite some time but it didn't capture some pages which also included robots.txt, robots.txt is an important page and it carried some useful information, GoBuster detected robots.txt so in this case GoBuster performed better</div><div><br /></div><div><b>If its "Wordpress", go nowhere but "WPScan":</b></div><div>If the target is wordpress-based then WPScan is your go-to tool for enumeration and bruteforcing, I tried different tools for bruteforcing credentials on the machine like Burp Intruder, Hydra, MetaSploit etc but they all took a lot of time whereas bruteforcing performed by WPScan (using XML-RPC which I'll explain next) was fast and very efficient.</div><div><br /></div><div><b>XML-RPC in Wordpress:</b></div><div>WPScan detected XML-RPC on the Mr. Robot's machine, XML-RPC is basically an API for communication on Wordpress, its vulnerable to bruteforcing meaning there is no rate limiting on XML-RPC, there is a specific syntax for it, WPScan used exploited this vulnerability to bruteforce the machine rather than using the wp-login.php page</div><div><br /></div><div><b>Always sort out and uniq the wordlist:</b></div><div>Well, this is a hard learnt lesson, the wordlist provided by machine contained over 8 lac records and obviously bruteforcing so many words took forever. Sorting the wordlist and using uniq on it reduced the wordlist from over 8 lac words to just 11k words, that's a massive difference.</div><div>Use the command: <b>sort file.txt | uniq &gt; output.txt</b>&nbsp;to perform this operation</div><div><br /></div><div><b>Use tun0's IP as LHOST on THM:</b></div><div>I got stuck here for long time, this is specific for TryHackMe users, I was setting my wlan0/eth0's IP as LHOST while trying to get shell whereas tun0's IP is the way to go. I have explained this in more detail in other blog post, to read the explanation&nbsp;<a href="https://najum98.blogspot.com/2020/07/not-getting-shell-on-mrrobot-ctf-on.html">click here</a></div><div><br /></div><div><br /></div></div>
+<div dir="ltr" style="text-align: left" trbidi="on">
+  <img
+    src="https://1.bp.blogspot.com/-610bjY-WN-E/XwV6M3vajpI/AAAAAAAAdX4/akZPT2hZwpEu5JM6HPzyFO0BBKE47NjcQCK4BGAsYHg/s320/FSOCIETY.png"
+    style="display: none"
+  />I did the Mr. Robot CTF today from www.tryhackme.com, I thought it would be
+  better to share the lessons I learned from Mr. Robot's CTF rather than writing
+  a walkthrough (as there are tons of walkthroughs available online on Mr.
+  Robot)<br />
+  <div><br /></div>
+  <div><b>GoBuster is better than DirBuster:</b></div>
+  <div>
+    I ran gobuster on the machine for quite some time but it didn't capture some
+    pages which also included robots.txt, robots.txt is an important page and it
+    carried some useful information, GoBuster detected robots.txt so in this
+    case GoBuster performed better
+  </div>
+  <div><br /></div>
+  <div><b>If its "Wordpress", go nowhere but "WPScan":</b></div>
+  <div>
+    If the target is wordpress-based then WPScan is your go-to tool for
+    enumeration and bruteforcing, I tried different tools for bruteforcing
+    credentials on the machine like Burp Intruder, Hydra, MetaSploit etc but
+    they all took a lot of time whereas bruteforcing performed by WPScan (using
+    XML-RPC which I'll explain next) was fast and very efficient.
+  </div>
+  <div><br /></div>
+  <div><b>XML-RPC in Wordpress:</b></div>
+  <div>
+    WPScan detected XML-RPC on the Mr. Robot's machine, XML-RPC is basically an
+    API for communication on Wordpress, its vulnerable to bruteforcing meaning
+    there is no rate limiting on XML-RPC, there is a specific syntax for it,
+    WPScan used exploited this vulnerability to bruteforce the machine rather
+    than using the wp-login.php page
+  </div>
+  <div><br /></div>
+  <div><b>Always sort out and uniq the wordlist:</b></div>
+  <div>
+    Well, this is a hard learnt lesson, the wordlist provided by machine
+    contained over 8 lac records and obviously bruteforcing so many words took
+    forever. Sorting the wordlist and using uniq on it reduced the wordlist from
+    over 8 lac words to just 11k words, that's a massive difference.
+  </div>
+  <div>
+    Use the command: <b>sort file.txt | uniq &gt; output.txt</b>&nbsp;to perform
+    this operation
+  </div>
+  <div><br /></div>
+  <div><b>Use tun0's IP as LHOST on THM:</b></div>
+  <div>
+    I got stuck here for long time, this is specific for TryHackMe users, I was
+    setting my wlan0/eth0's IP as LHOST while trying to get shell whereas tun0's
+    IP is the way to go. I have explained this in more detail in other blog
+    post, to read the explanation&nbsp;<a
+      href="https://najum98.blogspot.com/2020/07/not-getting-shell-on-mrrobot-ctf-on.html"
+      >click here</a
+    >
+  </div>
+  <div><br /></div>
+  <div><br /></div>
+</div>

@@ -1,16 +1,300 @@
 ---
 layout: post
-title: 'Hacker 101 CTF Walkthrough: Petshop Pro'
-date: '2020-07-14T09:39:00.002+05:00'
+title: "Hacker 101 CTF Walkthrough: Petshop Pro"
+date: "2020-07-14T09:39:00.002+05:00"
 author: Najam Ul Saqib
 tags:
-- ctf
-- hackerone
-- walkthrough
-modified_time: '2021-05-12T15:05:13.794+05:00'
+  - ctf
+  - hackerone
+  - walkthrough
+modified_time: "2021-05-12T15:05:13.794+05:00"
 thumbnail: https://1.bp.blogspot.com/-nZ4AOF9ZrCk/XrZJXIKvEWI/AAAAAAAAbVU/4RcbapdK5Jc8ZVbUJZN8QtJjY5Z2exY2ACK4BGAsYHg/s72-w640-c-h366/2.PNG
 blogger_id: tag:blogger.com,1999:blog-1950785263016881513.post-1579102970437655430
 blogger_orig_url: https://najum98.blogspot.com/2020/07/hacker-101-ctf-walkthrough-petshop-pro.html
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on">I am back with another walkthrough to one of the&nbsp;<a href="https://www.blogger.com/www.ctf.hacker101.com" target="_blank">HackerOne</a>'s CTF <b>Petshop Pro</b>. Let's look at the interface of this web page.<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-nZ4AOF9ZrCk/XrZJXIKvEWI/AAAAAAAAbVU/4RcbapdK5Jc8ZVbUJZN8QtJjY5Z2exY2ACK4BGAsYHg/2.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="358" data-original-width="626" height="366" src="https://1.bp.blogspot.com/-nZ4AOF9ZrCk/XrZJXIKvEWI/AAAAAAAAbVU/4RcbapdK5Jc8ZVbUJZN8QtJjY5Z2exY2ACK4BGAsYHg/w640-h366/2.PNG" width="640" /></a></div><div class="separator" style="clear: both; text-align: left;"><b><span><a name='more'></a></span>&nbsp;</b></div><div class="separator" style="clear: both; text-align: left;"><b>Flag 0:</b></div><div class="separator" style="clear: both; text-align: left;">This seems like a simple shopping website and remember whenever you see a shopping website like this, your first area of testing should be checkout. Whether the web app allows you to shop some free stuff or not? Sounds Cool. Let's start it this way and try to get some free stuff. Add some stuff into the cart and move to the checkout page, which will look something like this.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-6scLiltpUmA/XrZKY9YjHYI/AAAAAAAAbVs/tIoc7Cf51Sgqwtn-1e02VrlaqCUuQE1fQCK4BGAsYHg/3.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="340" data-original-width="387" height="351" src="https://1.bp.blogspot.com/-6scLiltpUmA/XrZKY9YjHYI/AAAAAAAAbVs/tIoc7Cf51Sgqwtn-1e02VrlaqCUuQE1fQCK4BGAsYHg/w400-h351/3.PNG" width="400" /></a></div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">Now I wanted some amount of Kitten photographs. Here you'll be needing the help of&nbsp;<a href="https://portswigger.net/burp/communitydownload">Burp Suite</a>&nbsp;which is a web proxy to intercept (catch) the requests made by the browser. Set up the Burp proxy, press the "Check Out" button, and intercept that request.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-9TKp7l2DPYI/XrZMY8WdJtI/AAAAAAAAbWM/OLqMxBYaixY06BH8vBon0TFm-PmX9a7OQCK4BGAsYHg/4.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="719" data-original-width="1262" src="https://1.bp.blogspot.com/-9TKp7l2DPYI/XrZMY8WdJtI/AAAAAAAAbWM/OLqMxBYaixY06BH8vBon0TFm-PmX9a7OQCK4BGAsYHg/d/4.PNG" /></a></div><div class="separator" style="clear: both; text-align: left;"><br /></div><div>Under the cart tag, you can see a URL decoded text which is carrying the products you're trying to check out. As you can see, I have found for 8.95 which is the price of each Kitten's photograph so that I can alter this, similarly whatever you have added in the cart find its price in the cart tag and replace it with 0, which means we're turning its price to zero. Like this.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-6fhjU0aZGZA/XrZNMQxXxLI/AAAAAAAAbWg/z4cqsjSbWQQAQbdXQ-hi7RvAJmRk4xp6gCK4BGAsYHg/5.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="129" data-original-width="1228" src="https://1.bp.blogspot.com/-6fhjU0aZGZA/XrZNMQxXxLI/AAAAAAAAbWg/z4cqsjSbWQQAQbdXQ-hi7RvAJmRk4xp6gCK4BGAsYHg/d/5.PNG" /></a></div><div>Now you can see I have replaced all the price information with zero. Now lets forward this request by hitting the "Forward" button in Burp and here is your flag 0.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-bhH1VsFFJbA/XrZNuuSJGJI/AAAAAAAAbW4/P2KrQ5J4ejcvHZjPyDKqrlsTfiiMGp9KwCK4BGAsYHg/6.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="322" data-original-width="652" height="316" src="https://1.bp.blogspot.com/-bhH1VsFFJbA/XrZNuuSJGJI/AAAAAAAAbW4/P2KrQ5J4ejcvHZjPyDKqrlsTfiiMGp9KwCK4BGAsYHg/w640-h316/6.PNG" width="640" /></a></div><div>We got the total to 0$. Interesting! Isn't it?</div><div><br /><b>Flag 1: </b>Now HackerOne gave the hint "There must be a way to administer the app" on this flag, indicating that there must be some sort of admin panel on the website, or maybe some other directories. To know what directories are available on a web server, gobuster tool is the best option.<br />I used the following command on gobuster.<br /><br />gobuster dir --url http://34.74.105.127/0244bb7b9a/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt<br /><br />Let me tell you one thing here, <a href="https://github.com/danielmiessler/SecLists" target="_blank">SecLists</a> helped me a lot in this CTF, you should also use SecLists as your go-to wordlist choice. Let's come back to the point. Gobuster gave me some interesting results straightaway.<br /><a href="https://1.bp.blogspot.com/-Yj7QDVtudRI/Xw0t80xqECI/AAAAAAAAdf0/ykkWsBDV_rc2078AjEUx-DT_-KJR1FscQCLcBGAsYHQ/s1600/gobuster.png" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="433" data-original-width="813" height="339" src="https://1.bp.blogspot.com/-Yj7QDVtudRI/Xw0t80xqECI/AAAAAAAAdf0/ykkWsBDV_rc2078AjEUx-DT_-KJR1FscQCLcBGAsYHQ/s640/gobuster.png" width="640" /></a><br />A directory named "/login" has been detected by the tool and this should be the entry point to administer the app. The interesting thing about this login page is that it tells you whether you have entered wrong username or wrong password means that you can be sure of one choice if it's correct or incorrect. This is a bad practice now, one can easily enumerate your username after several tries. For example, if I hit Najam in the username, it straightaway tells me that I have entered an invalid username and that username is something else.<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-dTM0X9rStpo/Xw0vbkxru_I/AAAAAAAAdgA/lZG9ze7Kep8XvOknb06vmgb0Nw5fA78lACLcBGAsYHQ/s1600/abc.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="675" data-original-width="671" height="400" src="https://1.bp.blogspot.com/-dTM0X9rStpo/Xw0vbkxru_I/AAAAAAAAdgA/lZG9ze7Kep8XvOknb06vmgb0Nw5fA78lACLcBGAsYHQ/s400/abc.png" width="397" /></a></div><div class="separator" style="clear: both; text-align: left;">The simple solution to such a scenario is brute forcing, brute-forcing credentials, as this website is telling us whether the username entered is right or wrong, so first, we'll try to detect the correct username and then will look for its password.&nbsp;</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">Hints available on Hackerone helped me a lot to solve this CTF, I am not claiming that the way I approached this CTF is the optimal way, but I am sharing my experience so that one can learn from my experience and mistakes and I can learn too that where I could have made a better move. Writing a straightaway, flawless walkthrough post is an easier task but that makes no sense because there are already such walkthroughs available in tons.&nbsp;</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">Anyways, for brute-forcing, you can try multiple tools, Burp, Hydra, etc but on community version of burp, there is a drawback that on larger wordlist, the speed of brute-force attack tends to become slower so I believe Hydra would be a go-to choice in this scenario.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">Again I used usernames wordlist (Seclists/Usernames/names/names.txt) from Seclists, this obviously wasn't my first try, I tried many different wordlists and default credentials on the login panel and failed, this flag1 took me a lot of time to discover it. After I found the username, It was time to check the password against that username.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">Once you enter the correct username, the login form now shows the error of "Invalid Password", its time to hunt for a password. I got a huge wordlist of 1000000 passwords, it will take you months to brute force such a huge wordlist through Burp if not years. I wanted an efficient solution, even I wasn't satisfied with Hydra here as well, Luckily, I came up with something unique, <a href="https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack" target="_blank">Turbo Intruder - A Burp Extension</a>, I just loved this extension (you can view its tutorial by clicking on its name (hyperlink) I mentioned now),&nbsp;<a href="http://www.twitter.com/albinowax" target="_blank">@alibinowax</a>&nbsp;did a wonderful job, he created an amazing extension that was 6000x faster than usual burp intruder, so obviously that was my way to go... I started brute-forcing for the password using that gigantic wordlist using Turbo Intruder and I got the results in o time. I got the password. As I have got both username and password. I entered and bingo. Got the flag!&nbsp;</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-Fdm9Ft8VHBA/Xw0zpTbcjaI/AAAAAAAAdgM/jG4GoZaC1tguNmOflq70fWA60sz6EAEXwCLcBGAsYHQ/s1600/flag.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="452" data-original-width="847" height="339" src="https://1.bp.blogspot.com/-Fdm9Ft8VHBA/Xw0zpTbcjaI/AAAAAAAAdgM/jG4GoZaC1tguNmOflq70fWA60sz6EAEXwCLcBGAsYHQ/s640/flag.png" width="640" /></a></div><div class="separator" style="clear: both; text-align: left;"><br /></div><b>Flag 2:</b>&nbsp;Flag 1 really took me some time, I was hopeless about it but once you get the flag, the feeling is indescribable. Coming to our 3rd and final flag. As you can see in the screenshot above that we have got an "edit" button now on each photo. Why not try simple XSS? The hint was also pointing towards XSS (Bugs don't always appear in a place where the data is entered). Let's do it!<br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-0SWzegBmqLs/Xw00pIT7nLI/AAAAAAAAdgY/fJW3WLsPjoUihUnhngDFc3tmIO6FsCRqwCLcBGAsYHQ/s1600/edit.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="591" data-original-width="959" height="393" src="https://1.bp.blogspot.com/-0SWzegBmqLs/Xw00pIT7nLI/AAAAAAAAdgY/fJW3WLsPjoUihUnhngDFc3tmIO6FsCRqwCLcBGAsYHQ/s640/edit.png" width="640" /></a></div>&nbsp;<b>&nbsp;</b><br />I wrote a smile XSS payload &lt;script&gt; alert('Hello World') &lt;/script&gt; into both Name and Description section, as Price section was expecting some numeric data so writing this script there resulted in bad request error. I hit save, went to the homepage, and popup of XSS appeared means the website is vulnerable to Stored XSS.<br /><div class="separator" style="clear: both; text-align: left;"><a href="https://1.bp.blogspot.com/-B9mvkGCl-u0/Xw01Zqklu_I/AAAAAAAAdgg/KnqccClhaJ8NV_7LTS8bDO8SlIk_cUGiQCLcBGAsYHQ/s1600/xss.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="245" data-original-width="939" height="166" src="https://1.bp.blogspot.com/-B9mvkGCl-u0/Xw01Zqklu_I/AAAAAAAAdgg/KnqccClhaJ8NV_7LTS8bDO8SlIk_cUGiQCLcBGAsYHQ/s640/xss.png" width="640" /></a></div><div class="separator" style="clear: both; text-align: left;">But looking at the hint again, I went to the "/cart" page, popups do appear here too, as the product information was being generated from the database here too, but the name section turned to flag here. Giving out our last and final flag which we got by exploiting stored XSS vulnerability in the website.</div><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-lTMHuSJbewc/Xw02PPNmrYI/AAAAAAAAdgo/U_ZA-Yuha2U-U9sfHBwZs8SFUQwai7hbQCLcBGAsYHQ/s1600/final.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="223" data-original-width="1270" height="112" src="https://1.bp.blogspot.com/-lTMHuSJbewc/Xw02PPNmrYI/AAAAAAAAdgo/U_ZA-Yuha2U-U9sfHBwZs8SFUQwai7hbQCLcBGAsYHQ/s640/final.png" width="640" /></a></div><div class="separator" style="clear: both; text-align: left;">This was our final flag, Petshop pro was interesting and patience-testing CTF I would say, I think marking it as an "Easy CTF" would be a bit unfair because flag1 was not that much easy and piece of cake here. Anyways, Have an octotastic day!</div></div></div>
+<div dir="ltr" style="text-align: left" trbidi="on">
+  I am back with another walkthrough to one of the&nbsp;<a
+    href="https://www.blogger.com/www.ctf.hacker101.com"
+    target="_blank"
+    >HackerOne</a
+  >'s CTF <b>Petshop Pro</b>. Let's look at the interface of this web page.<br />
+  <div class="separator" style="clear: both; text-align: center">
+    <a
+      href="https://1.bp.blogspot.com/-nZ4AOF9ZrCk/XrZJXIKvEWI/AAAAAAAAbVU/4RcbapdK5Jc8ZVbUJZN8QtJjY5Z2exY2ACK4BGAsYHg/2.PNG"
+      style="margin-left: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="358"
+        data-original-width="626"
+        height="366"
+        src="https://1.bp.blogspot.com/-nZ4AOF9ZrCk/XrZJXIKvEWI/AAAAAAAAbVU/4RcbapdK5Jc8ZVbUJZN8QtJjY5Z2exY2ACK4BGAsYHg/w640-h366/2.PNG"
+        width="640"
+    /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: left">
+    <b
+      ><span><a name="more"></a></span>&nbsp;</b
+    >
+  </div>
+  <div class="separator" style="clear: both; text-align: left">
+    <b>Flag 0:</b>
+  </div>
+  <div class="separator" style="clear: both; text-align: left">
+    This seems like a simple shopping website and remember whenever you see a
+    shopping website like this, your first area of testing should be checkout.
+    Whether the web app allows you to shop some free stuff or not? Sounds Cool.
+    Let's start it this way and try to get some free stuff. Add some stuff into
+    the cart and move to the checkout page, which will look something like this.
+  </div>
+  <div class="separator" style="clear: both; text-align: center">
+    <a
+      href="https://1.bp.blogspot.com/-6scLiltpUmA/XrZKY9YjHYI/AAAAAAAAbVs/tIoc7Cf51Sgqwtn-1e02VrlaqCUuQE1fQCK4BGAsYHg/3.PNG"
+      style="margin-left: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="340"
+        data-original-width="387"
+        height="351"
+        src="https://1.bp.blogspot.com/-6scLiltpUmA/XrZKY9YjHYI/AAAAAAAAbVs/tIoc7Cf51Sgqwtn-1e02VrlaqCUuQE1fQCK4BGAsYHg/w400-h351/3.PNG"
+        width="400"
+    /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: left"><br /></div>
+  <div class="separator" style="clear: both; text-align: left">
+    Now I wanted some amount of Kitten photographs. Here you'll be needing the
+    help of&nbsp;<a href="https://portswigger.net/burp/communitydownload"
+      >Burp Suite</a
+    >&nbsp;which is a web proxy to intercept (catch) the requests made by the
+    browser. Set up the Burp proxy, press the "Check Out" button, and intercept
+    that request.
+  </div>
+  <div class="separator" style="clear: both; text-align: center">
+    <a
+      href="https://1.bp.blogspot.com/-9TKp7l2DPYI/XrZMY8WdJtI/AAAAAAAAbWM/OLqMxBYaixY06BH8vBon0TFm-PmX9a7OQCK4BGAsYHg/4.PNG"
+      style="margin-left: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="719"
+        data-original-width="1262"
+        src="https://1.bp.blogspot.com/-9TKp7l2DPYI/XrZMY8WdJtI/AAAAAAAAbWM/OLqMxBYaixY06BH8vBon0TFm-PmX9a7OQCK4BGAsYHg/d/4.PNG"
+    /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: left"><br /></div>
+  <div>
+    Under the cart tag, you can see a URL decoded text which is carrying the
+    products you're trying to check out. As you can see, I have found for 8.95
+    which is the price of each Kitten's photograph so that I can alter this,
+    similarly whatever you have added in the cart find its price in the cart tag
+    and replace it with 0, which means we're turning its price to zero. Like
+    this.
+  </div>
+  <div class="separator" style="clear: both; text-align: center">
+    <a
+      href="https://1.bp.blogspot.com/-6fhjU0aZGZA/XrZNMQxXxLI/AAAAAAAAbWg/z4cqsjSbWQQAQbdXQ-hi7RvAJmRk4xp6gCK4BGAsYHg/5.PNG"
+      style="margin-left: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="129"
+        data-original-width="1228"
+        src="https://1.bp.blogspot.com/-6fhjU0aZGZA/XrZNMQxXxLI/AAAAAAAAbWg/z4cqsjSbWQQAQbdXQ-hi7RvAJmRk4xp6gCK4BGAsYHg/d/5.PNG"
+    /></a>
+  </div>
+  <div>
+    Now you can see I have replaced all the price information with zero. Now
+    lets forward this request by hitting the "Forward" button in Burp and here
+    is your flag 0.
+  </div>
+  <div class="separator" style="clear: both; text-align: center">
+    <a
+      href="https://1.bp.blogspot.com/-bhH1VsFFJbA/XrZNuuSJGJI/AAAAAAAAbW4/P2KrQ5J4ejcvHZjPyDKqrlsTfiiMGp9KwCK4BGAsYHg/6.PNG"
+      style="margin-left: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="322"
+        data-original-width="652"
+        height="316"
+        src="https://1.bp.blogspot.com/-bhH1VsFFJbA/XrZNuuSJGJI/AAAAAAAAbW4/P2KrQ5J4ejcvHZjPyDKqrlsTfiiMGp9KwCK4BGAsYHg/w640-h316/6.PNG"
+        width="640"
+    /></a>
+  </div>
+  <div>We got the total to 0$. Interesting! Isn't it?</div>
+  <div>
+    <br /><b>Flag 1: </b>Now HackerOne gave the hint "There must be a way to
+    administer the app" on this flag, indicating that there must be some sort of
+    admin panel on the website, or maybe some other directories. To know what
+    directories are available on a web server, gobuster tool is the best
+    option.<br />I used the following command on gobuster.<br /><br />gobuster
+    dir --url http://34.74.105.127/0244bb7b9a/ -w
+    /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt<br /><br />Let
+    me tell you one thing here,
+    <a href="https://github.com/danielmiessler/SecLists" target="_blank"
+      >SecLists</a
+    >
+    helped me a lot in this CTF, you should also use SecLists as your go-to
+    wordlist choice. Let's come back to the point. Gobuster gave me some
+    interesting results straightaway.<br /><a
+      href="https://1.bp.blogspot.com/-Yj7QDVtudRI/Xw0t80xqECI/AAAAAAAAdf0/ykkWsBDV_rc2078AjEUx-DT_-KJR1FscQCLcBGAsYHQ/s1600/gobuster.png"
+      style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="433"
+        data-original-width="813"
+        height="339"
+        src="https://1.bp.blogspot.com/-Yj7QDVtudRI/Xw0t80xqECI/AAAAAAAAdf0/ykkWsBDV_rc2078AjEUx-DT_-KJR1FscQCLcBGAsYHQ/s640/gobuster.png"
+        width="640" /></a
+    ><br />A directory named "/login" has been detected by the tool and this
+    should be the entry point to administer the app. The interesting thing about
+    this login page is that it tells you whether you have entered wrong username
+    or wrong password means that you can be sure of one choice if it's correct
+    or incorrect. This is a bad practice now, one can easily enumerate your
+    username after several tries. For example, if I hit Najam in the username,
+    it straightaway tells me that I have entered an invalid username and that
+    username is something else.<br />
+    <div class="separator" style="clear: both; text-align: center">
+      <a
+        href="https://1.bp.blogspot.com/-dTM0X9rStpo/Xw0vbkxru_I/AAAAAAAAdgA/lZG9ze7Kep8XvOknb06vmgb0Nw5fA78lACLcBGAsYHQ/s1600/abc.png"
+        style="margin-left: 1em; margin-right: 1em"
+        ><img
+          border="0"
+          data-original-height="675"
+          data-original-width="671"
+          height="400"
+          src="https://1.bp.blogspot.com/-dTM0X9rStpo/Xw0vbkxru_I/AAAAAAAAdgA/lZG9ze7Kep8XvOknb06vmgb0Nw5fA78lACLcBGAsYHQ/s400/abc.png"
+          width="397"
+      /></a>
+    </div>
+    <div class="separator" style="clear: both; text-align: left">
+      The simple solution to such a scenario is brute forcing, brute-forcing
+      credentials, as this website is telling us whether the username entered is
+      right or wrong, so first, we'll try to detect the correct username and
+      then will look for its password.&nbsp;
+    </div>
+    <div class="separator" style="clear: both; text-align: left"><br /></div>
+    <div class="separator" style="clear: both; text-align: left">
+      Hints available on Hackerone helped me a lot to solve this CTF, I am not
+      claiming that the way I approached this CTF is the optimal way, but I am
+      sharing my experience so that one can learn from my experience and
+      mistakes and I can learn too that where I could have made a better move.
+      Writing a straightaway, flawless walkthrough post is an easier task but
+      that makes no sense because there are already such walkthroughs available
+      in tons.&nbsp;
+    </div>
+    <div class="separator" style="clear: both; text-align: left"><br /></div>
+    <div class="separator" style="clear: both; text-align: left">
+      Anyways, for brute-forcing, you can try multiple tools, Burp, Hydra, etc
+      but on community version of burp, there is a drawback that on larger
+      wordlist, the speed of brute-force attack tends to become slower so I
+      believe Hydra would be a go-to choice in this scenario.
+    </div>
+    <div class="separator" style="clear: both; text-align: left"><br /></div>
+    <div class="separator" style="clear: both; text-align: left">
+      Again I used usernames wordlist (Seclists/Usernames/names/names.txt) from
+      Seclists, this obviously wasn't my first try, I tried many different
+      wordlists and default credentials on the login panel and failed, this
+      flag1 took me a lot of time to discover it. After I found the username, It
+      was time to check the password against that username.
+    </div>
+    <div class="separator" style="clear: both; text-align: left"><br /></div>
+    <div class="separator" style="clear: both; text-align: left">
+      Once you enter the correct username, the login form now shows the error of
+      "Invalid Password", its time to hunt for a password. I got a huge wordlist
+      of 1000000 passwords, it will take you months to brute force such a huge
+      wordlist through Burp if not years. I wanted an efficient solution, even I
+      wasn't satisfied with Hydra here as well, Luckily, I came up with
+      something unique,
+      <a
+        href="https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
+        target="_blank"
+        >Turbo Intruder - A Burp Extension</a
+      >, I just loved this extension (you can view its tutorial by clicking on
+      its name (hyperlink) I mentioned now),&nbsp;<a
+        href="http://www.twitter.com/albinowax"
+        target="_blank"
+        >@alibinowax</a
+      >&nbsp;did a wonderful job, he created an amazing extension that was 6000x
+      faster than usual burp intruder, so obviously that was my way to go... I
+      started brute-forcing for the password using that gigantic wordlist using
+      Turbo Intruder and I got the results in o time. I got the password. As I
+      have got both username and password. I entered and bingo. Got the
+      flag!&nbsp;
+    </div>
+    <div class="separator" style="clear: both; text-align: center">
+      <a
+        href="https://1.bp.blogspot.com/-Fdm9Ft8VHBA/Xw0zpTbcjaI/AAAAAAAAdgM/jG4GoZaC1tguNmOflq70fWA60sz6EAEXwCLcBGAsYHQ/s1600/flag.png"
+        style="margin-left: 1em; margin-right: 1em"
+        ><img
+          border="0"
+          data-original-height="452"
+          data-original-width="847"
+          height="339"
+          src="https://1.bp.blogspot.com/-Fdm9Ft8VHBA/Xw0zpTbcjaI/AAAAAAAAdgM/jG4GoZaC1tguNmOflq70fWA60sz6EAEXwCLcBGAsYHQ/s640/flag.png"
+          width="640"
+      /></a>
+    </div>
+    <div class="separator" style="clear: both; text-align: left"><br /></div>
+    <b>Flag 2:</b>&nbsp;Flag 1 really took me some time, I was hopeless about it
+    but once you get the flag, the feeling is indescribable. Coming to our 3rd
+    and final flag. As you can see in the screenshot above that we have got an
+    "edit" button now on each photo. Why not try simple XSS? The hint was also
+    pointing towards XSS (Bugs don't always appear in a place where the data is
+    entered). Let's do it!<br />
+    <div class="separator" style="clear: both; text-align: center">
+      <a
+        href="https://1.bp.blogspot.com/-0SWzegBmqLs/Xw00pIT7nLI/AAAAAAAAdgY/fJW3WLsPjoUihUnhngDFc3tmIO6FsCRqwCLcBGAsYHQ/s1600/edit.png"
+        style="margin-left: 1em; margin-right: 1em"
+        ><img
+          border="0"
+          data-original-height="591"
+          data-original-width="959"
+          height="393"
+          src="https://1.bp.blogspot.com/-0SWzegBmqLs/Xw00pIT7nLI/AAAAAAAAdgY/fJW3WLsPjoUihUnhngDFc3tmIO6FsCRqwCLcBGAsYHQ/s640/edit.png"
+          width="640"
+      /></a>
+    </div>
+    &nbsp;<b>&nbsp;</b><br />I wrote a smile XSS payload &lt;script&gt;
+    alert('Hello World') &lt;/script&gt; into both Name and Description section,
+    as Price section was expecting some numeric data so writing this script
+    there resulted in bad request error. I hit save, went to the homepage, and
+    popup of XSS appeared means the website is vulnerable to Stored XSS.<br />
+    <div class="separator" style="clear: both; text-align: left">
+      <a
+        href="https://1.bp.blogspot.com/-B9mvkGCl-u0/Xw01Zqklu_I/AAAAAAAAdgg/KnqccClhaJ8NV_7LTS8bDO8SlIk_cUGiQCLcBGAsYHQ/s1600/xss.png"
+        style="margin-left: 1em; margin-right: 1em"
+        ><img
+          border="0"
+          data-original-height="245"
+          data-original-width="939"
+          height="166"
+          src="https://1.bp.blogspot.com/-B9mvkGCl-u0/Xw01Zqklu_I/AAAAAAAAdgg/KnqccClhaJ8NV_7LTS8bDO8SlIk_cUGiQCLcBGAsYHQ/s640/xss.png"
+          width="640"
+      /></a>
+    </div>
+    <div class="separator" style="clear: both; text-align: left">
+      But looking at the hint again, I went to the "/cart" page, popups do
+      appear here too, as the product information was being generated from the
+      database here too, but the name section turned to flag here. Giving out
+      our last and final flag which we got by exploiting stored XSS
+      vulnerability in the website.
+    </div>
+    <div class="separator" style="clear: both; text-align: center">
+      <a
+        href="https://1.bp.blogspot.com/-lTMHuSJbewc/Xw02PPNmrYI/AAAAAAAAdgo/U_ZA-Yuha2U-U9sfHBwZs8SFUQwai7hbQCLcBGAsYHQ/s1600/final.png"
+        style="margin-left: 1em; margin-right: 1em"
+        ><img
+          border="0"
+          data-original-height="223"
+          data-original-width="1270"
+          height="112"
+          src="https://1.bp.blogspot.com/-lTMHuSJbewc/Xw02PPNmrYI/AAAAAAAAdgo/U_ZA-Yuha2U-U9sfHBwZs8SFUQwai7hbQCLcBGAsYHQ/s640/final.png"
+          width="640"
+      /></a>
+    </div>
+    <div class="separator" style="clear: both; text-align: left">
+      This was our final flag, Petshop pro was interesting and patience-testing
+      CTF I would say, I think marking it as an "Easy CTF" would be a bit unfair
+      because flag1 was not that much easy and piece of cake here. Anyways, Have
+      an octotastic day!
+    </div>
+  </div>
+</div>

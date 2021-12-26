@@ -1,18 +1,68 @@
 ---
 layout: post
 title: Not getting Shell on Mr.Robot CTF on TryHackMe?
-date: '2020-07-08T13:57:00.001+05:00'
+date: "2020-07-08T13:57:00.001+05:00"
 author: Najam Ul Saqib
 tags:
-- mrrobot
-- ctf
-- reverseshell
-- tryhackme
-- cybersecurity
-modified_time: '2020-07-14T12:02:11.971+05:00'
+  - mrrobot
+  - ctf
+  - reverseshell
+  - tryhackme
+  - cybersecurity
+modified_time: "2020-07-14T12:02:11.971+05:00"
 thumbnail: https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s72-c/THMlogo.png
 blogger_id: tag:blogger.com,1999:blog-1950785263016881513.post-3817830395470380016
 blogger_orig_url: https://najum98.blogspot.com/2020/07/not-getting-shell-on-mrrobot-ctf-on.html
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on"><img src="https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s824/THMlogo.png" style="display: none;" /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s824/THMlogo.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="461" data-original-width="824" src="https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s320/THMlogo.png" width="320" /></a></div><div><br /></div><div><br /></div>Well, this was my first machine on THM and I pulled my hairs on not getting the shell when I was doing all the stuff just right.<br /><div><br /></div><div>It was Mr.Robot's CTF, I tried literally everything to get the shell, I tried PHP reverse shell, meterpreter session, metasploit's wp_admin module, malicious Wordpress plugins but of no avail.</div><div><br /></div><div>I turned to TryHackMe's discord server to check what am I doing wrong, what came out was very funny and frustrating at the same time 😅</div><div><br /></div><div>Lets take an example of PHP Reverse Shell, when you submit the PHP shell code in 404.php page, you have to configure two things, one is your IP(LHOST) and other is your Port. I was putting my eth0/wlan0's IP address into the LHOST and I was never getting anything back on netcat. As TryHackMe uses OpenVPN proxy to connect to their server so your eth0/wlan0's IP is not your LHOST, after connecting to OpenVPN, run <b>IP address</b>&nbsp;command and use the <b>tun0</b>&nbsp;IP address, this is your listening host aka LHOST. Alternatively you can go on TryHackMe's&nbsp;<a href="https://tryhackme.com/access" target="_blank">Access Page</a>, the IP mentioned there under "Internal Virtual IP Address" can also be used. This was a minor mistake but it wasted some hours of mine. Now you'll be able to listen on netcat and get a shell through PHP shell code. ❤</div></div>
+<div dir="ltr" style="text-align: left" trbidi="on">
+  <img
+    src="https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s824/THMlogo.png"
+    style="display: none"
+  /><br />
+  <div class="separator" style="clear: both; text-align: center">
+    <a
+      href="https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s824/THMlogo.png"
+      imageanchor="1"
+      style="margin-left: 1em; margin-right: 1em"
+      ><img
+        border="0"
+        data-original-height="461"
+        data-original-width="824"
+        src="https://1.bp.blogspot.com/-CiAdt1jQHv8/XwWAWGYKGmI/AAAAAAAAdYU/ekLLKUQqBIYuQJd-miRNT4z_ilu12E7iQCK4BGAsYHg/s320/THMlogo.png"
+        width="320"
+    /></a>
+  </div>
+  <div><br /></div>
+  <div><br /></div>
+  Well, this was my first machine on THM and I pulled my hairs on not getting
+  the shell when I was doing all the stuff just right.<br />
+  <div><br /></div>
+  <div>
+    It was Mr.Robot's CTF, I tried literally everything to get the shell, I
+    tried PHP reverse shell, meterpreter session, metasploit's wp_admin module,
+    malicious Wordpress plugins but of no avail.
+  </div>
+  <div><br /></div>
+  <div>
+    I turned to TryHackMe's discord server to check what am I doing wrong, what
+    came out was very funny and frustrating at the same time 😅
+  </div>
+  <div><br /></div>
+  <div>
+    Lets take an example of PHP Reverse Shell, when you submit the PHP shell
+    code in 404.php page, you have to configure two things, one is your
+    IP(LHOST) and other is your Port. I was putting my eth0/wlan0's IP address
+    into the LHOST and I was never getting anything back on netcat. As TryHackMe
+    uses OpenVPN proxy to connect to their server so your eth0/wlan0's IP is not
+    your LHOST, after connecting to OpenVPN, run <b>IP address</b>&nbsp;command
+    and use the <b>tun0</b>&nbsp;IP address, this is your listening host aka
+    LHOST. Alternatively you can go on TryHackMe's&nbsp;<a
+      href="https://tryhackme.com/access"
+      target="_blank"
+      >Access Page</a
+    >, the IP mentioned there under "Internal Virtual IP Address" can also be
+    used. This was a minor mistake but it wasted some hours of mine. Now you'll
+    be able to listen on netcat and get a shell through PHP shell code. ❤
+  </div>
+</div>
