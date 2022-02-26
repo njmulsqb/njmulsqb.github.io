@@ -39,7 +39,14 @@ You can find a copy of my research [here](https://mega.nz/file/KGwl0Q5B#I2Mn4a22
 
 ### Day Job
 
-**Software Engineer - [Tkxel](https://www.tkxel.com) (May 2021 - Present)**
+**Security Engineer - [Systems Ltd](https://www.systemsltd.com) (7th December 2021 - Present)**
+I am currently working at Systems Ltd as application security engineer. My daily life responsibilities include:
+1. SAST
+2. DAST
+3. Cloud Security
+4. MAPT
+
+**Software Engineer - [Tkxel](https://www.tkxel.com) (3rd May 2021 - 3rd December 2021)**
 
 I worked on developing applications with Javascript here. My core purpose here was to write secure code and build secure applications
 The technologies I worked on here are:
@@ -50,11 +57,6 @@ The technologies I worked on here are:
 4. NodeJS
 5. Amazon Web Services
 
-### Freelance Work
-
-**Penetration Tester, App Security Researcher - [Upwork](https://www.upwork.com/freelancers/~0191785ee40bb1eec0)**
-
-I have worked on various freelance projects on Upwork which included penetration tests and other information security related jobs
 
 ### Bug Hunting
 
