@@ -33,3 +33,7 @@ markdown: kramdown
 google_analytics: G-NNW86KLKCS
 
 #theme: jekyll-theme-architect
+
+collections:
+  writeups:
+    output: true
