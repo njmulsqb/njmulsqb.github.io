@@ -34,6 +34,11 @@ google_analytics: G-NNW86KLKCS
 
 #theme: jekyll-theme-architect
 
+# Adding collections other than main posts page
 collections:
   writeups:
     output: true
+
+# Adding Pagination
+#paginate: 5
+#paginate_path: "/posts/page:num"
