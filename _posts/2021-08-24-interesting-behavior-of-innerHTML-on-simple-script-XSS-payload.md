@@ -4,6 +4,7 @@ categories: [secure coding]
 tags: [XSS, reactJS, secure coding]
 assets: /assets/My-Transition-To-More-Privacy-Focused-Internet/
 author: Najam Ul Saqib
+comments: true
 ---
 
 While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the `dangerouslySetInnerHTML` tag. Let's see how?

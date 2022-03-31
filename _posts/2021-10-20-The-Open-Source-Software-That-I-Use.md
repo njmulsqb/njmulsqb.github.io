@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!
 
 - Browser: Mozilla Firefox, Brave

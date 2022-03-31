@@ -29,7 +29,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 markdown: kramdown
-
 google_analytics: G-NNW86KLKCS
 
 #theme: jekyll-theme-architect
