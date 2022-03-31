@@ -1,5 +1,6 @@
 ---
 comments: true
+tags: [opensource]
 ---
 
 This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!
@@ -10,7 +11,7 @@ This is the list of Open Source software that I use as my daily driver! Kudos to
 - Email Client: Thunderbird, FairEmail
 - Email Providers: Protonmail, Tutanota
 - App Store: F-Droid
-- Laptop OS: Linux
+- Laptop OS: Ubuntu, Kali Linux
 - Office: LibreOffice
 - FTP Client: FileZilla
 - Notepad: Joplin
