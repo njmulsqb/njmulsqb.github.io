@@ -6,7 +6,7 @@ This is the list of Open Source software that I use as my daily driver! Kudos to
 
 - Browser: Mozilla Firefox, Brave
 - Keyboard: AnySoftKeyboard
-- Messaging: Signal, Telegram
+- Messaging: Signal
 - Email Client: Thunderbird, FairEmail
 - Email Providers: Protonmail, Tutanota
 - App Store: F-Droid
