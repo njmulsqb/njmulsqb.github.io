@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-06T22:02:04+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">My #100DaysOfHacking Challenge</title><link href="http://localhost:4000/2022/04/06/100Days.html" rel="alternate" type="text/html" title="My #100DaysOfHacking Challenge" /><published>2022-04-06T22:02:04+05:00</published><updated>2022-04-06T22:02:04+05:00</updated><id>http://localhost:4000/2022/04/06/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/06/100Days.html">&lt;h2 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-06T22:27:24+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">My #100DaysOfHacking Challenge</title><link href="http://localhost:4000/2022/04/06/100Days.html" rel="alternate" type="text/html" title="My #100DaysOfHacking Challenge" /><published>2022-04-06T22:27:24+05:00</published><updated>2022-04-06T22:27:24+05:00</updated><id>http://localhost:4000/2022/04/06/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/06/100Days.html">&lt;h2 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h2&gt;
 
 &lt;p&gt;I have known bug hunting since 2-3 years now but I had never been able to start hunting with consistency, I used to pick up a target after spending hours deciding which one will be good for me, spending time on recon i.e collecting all the subdomains, hunting on it for an hour or two for a couple of days, realizing that I need to learn hacking concepts first using tutorials and the cycle goes on. I was stuck in a loop of learning, though learning is not too bad but if you get stuck in learning only and dont apply what you’ve learn’t practically you have done nothing but wasted your time.&lt;/p&gt;
 
@@ -93,6 +93,7 @@ Being away from home, I also needed to travel some days and had to schedule my c
 &lt;p&gt;I was testing for IDORs for some days on this program’s API, trying different stuff, making my own methodology and on &lt;em&gt;Day 31&lt;/em&gt; i.e within the first month of this challenge I found another bug and this time it was IDOR. I submitted it to the program after writing a detailed report and started waiting for the response. If you have ever submitted a report you would know this feeling of binge checking of email to see if the traiger has responded or not and to test my patience triagers did not gave the verdict on my report for next 2 weeks 😬&lt;/p&gt;
 
 &lt;p&gt;One beautiful morning of Day 46, at 3AM I was checking email when I saw some activity on the report. When I opened the report I saw this&lt;/p&gt;
+
 &lt;p align=&quot;center&quot;&gt;
 &lt;img src=&quot;/assets/100DaysOfHackingChallenge/redacted-triaged.png&quot; /&gt;
 &lt;/p&gt;
@@ -100,7 +101,27 @@ Being away from home, I also needed to travel some days and had to schedule my c
 
 &lt;p&gt;I asked the program for permission to disclose this bug so that I can release a detailed writeup on it but ofcourse being a private program they had reservations on disclosure as the severity was high so they were required to publish a press release to their customers regarding this finding and stating that the bug is fixed which they were not in a position to do so. Anyways, in a single line I can explain the bug: &lt;strong&gt;Ability to download the account exports (that can contain full account information) of any user on the platform.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This bounty gave me a confidence booster, all the self-doubts faded away. I started this challenge to make a habit of staying consistent and as a by product I got my first bounty.&lt;/p&gt;
+&lt;p&gt;This bounty gave me a confidence booster, all the self-doubts faded away. I started this challenge to develop a habit of staying consistent and as a by product I got my first bounty.&lt;/p&gt;
+
+&lt;h3 id=&quot;role-of-recon-in-my-success&quot;&gt;Role of Recon in My Success&lt;/h3&gt;
+
+&lt;p&gt;You might be expecting me to say that recon has helped me a lot during this challenge but you would be shocked to know that I did almost no recon this time, I hunted to root domains and the amount of stuff there was available I never felt the need to get more subdomains. At the same time, I am not saying that recon is useless. Recon is very important and can get you some awesome findings but I already wasted so much time on subdomain enumeration and stuff that this time I just wanted to hack and not get stuck into the recon loop.&lt;/p&gt;
+
+&lt;h3 id=&quot;people-who-helped-me-along-this-journey&quot;&gt;People who helped me along this journey&lt;/h3&gt;
+
+&lt;p&gt;There were times when I was hopeless, feeling that I took the wrong decision of getting into bug bounties, while on other days I needed guidance. These were the special ones who responded to my tweets and never made me feel that I am talking to wall. Always up there for moral support and guidance. I owe these guys a lot for their help:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/zseano&quot;&gt;Zseano&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/_Base_64&quot;&gt;Rohan - _Base_64&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/R29k_&quot;&gt;Demon - R29k_&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;the-trend-of-100daysofhacking-challenge&quot;&gt;The Trend of #100DaysOfHacking Challenge&lt;/h3&gt;
+
+&lt;h3 id=&quot;unexpected-followers&quot;&gt;Unexpected Followers&lt;/h3&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;!-- Potential headlines:
 9 Lessons I learned from #100DaysOfHacking Challenge

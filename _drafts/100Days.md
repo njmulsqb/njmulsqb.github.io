@@ -68,6 +68,7 @@ Yes I for the first time experienced burn out, my health was deteriorating. This
 I was testing for IDORs for some days on this program's API, trying different stuff, making my own methodology and on _Day 31_ i.e within the first month of this challenge I found another bug and this time it was IDOR. I submitted it to the program after writing a detailed report and started waiting for the response. If you have ever submitted a report you would know this feeling of binge checking of email to see if the traiger has responded or not and to test my patience triagers did not gave the verdict on my report for next 2 weeks 😬
 
 One beautiful morning of Day 46, at 3AM I was checking email when I saw some activity on the report. When I opened the report I saw this
+
 <p align="center">
 <img src="/assets/100DaysOfHackingChallenge/redacted-triaged.png" >
 </p>
@@ -75,9 +76,25 @@ The feelings, the happiness, the dopamine rush I experienced cannot be explained
 
 I asked the program for permission to disclose this bug so that I can release a detailed writeup on it but ofcourse being a private program they had reservations on disclosure as the severity was high so they were required to publish a press release to their customers regarding this finding and stating that the bug is fixed which they were not in a position to do so. Anyways, in a single line I can explain the bug: **Ability to download the account exports (that can contain full account information) of any user on the platform.**
 
-This bounty gave me a confidence booster, all the self-doubts faded away. I started this challenge to make a habit of staying consistent and as a by product I got my first bounty.
+This bounty gave me a confidence booster, all the self-doubts faded away. I started this challenge to develop a habit of staying consistent and as a by product I got my first bounty.
 
+### Role of Recon in My Success
 
+You might be expecting me to say that recon has helped me a lot during this challenge but you would be shocked to know that I did almost no recon this time, I hunted to root domains and the amount of stuff there was available I never felt the need to get more subdomains. At the same time, I am not saying that recon is useless. Recon is very important and can get you some awesome findings but I already wasted so much time on subdomain enumeration and stuff that this time I just wanted to hack and not get stuck into the recon loop.
+
+### People who helped me along this journey
+
+There were times when I was hopeless, feeling that I took the wrong decision of getting into bug bounties, while on other days I needed guidance. These were the special ones who responded to my tweets and never made me feel that I am talking to wall. Always up there for moral support and guidance. I owe these guys a lot for their help:
+
+1. [Zseano](https://twitter.com/zseano)
+2. [Rohan - \_Base_64](https://twitter.com/_Base_64)
+3. [Demon - R29k\_](https://twitter.com/R29k_)
+
+### The Trend of #100DaysOfHacking Challenge
+
+### Unexpected Followers
+
+### Conclusion
 
 <!-- Potential headlines:
 9 Lessons I learned from #100DaysOfHacking Challenge
