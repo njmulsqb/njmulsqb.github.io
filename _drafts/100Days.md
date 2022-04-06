@@ -67,11 +67,16 @@ Yes I for the first time experienced burn out, my health was deteriorating. This
 
 I was testing for IDORs for some days on this program's API, trying different stuff, making my own methodology and on _Day 31_ i.e within the first month of this challenge I found another bug and this time it was IDOR. I submitted it to the program after writing a detailed report and started waiting for the response. If you have ever submitted a report you would know this feeling of binge checking of email to see if the traiger has responded or not and to test my patience triagers did not gave the verdict on my report for next 2 weeks 😬
 
-One beautiful morning, at 3AM I was checking email when I saw some activity on the report. When I opened the report I saw this
+One beautiful morning of Day 46, at 3AM I was checking email when I saw some activity on the report. When I opened the report I saw this
 <p align="center">
 <img src="/assets/100DaysOfHackingChallenge/redacted-triaged.png" >
 </p>
 The feelings, the happiness, the dopamine rush I experienced cannot be explained in words. It was just out of this world. I was just so so happy. My first bounty was huge which I never expected, there was a time when I craved for a low 50$ bug but now I had a 4-digit bounty and high severity bug. Hardwork, persistence, consistency really paid off!
+
+I asked the program for permission to disclose this bug so that I can release a detailed writeup on it but ofcourse being a private program they had reservations on disclosure as the severity was high so they were required to publish a press release to their customers regarding this finding and stating that the bug is fixed which they were not in a position to do so. Anyways, in a single line I can explain the bug: **Ability to download the account exports (that can contain full account information) of any user on the platform.**
+
+This bounty gave me a confidence booster, all the self-doubts faded away. I started this challenge to make a habit of staying consistent and as a by product I got my first bounty.
+
 
 
 <!-- Potential headlines:
