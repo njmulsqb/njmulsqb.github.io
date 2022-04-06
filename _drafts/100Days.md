@@ -105,4 +105,5 @@ The Power of #100DaysOfHacking: How it helped me?
 Why #100DaysOfHacking is Worth Your Attention?
 The #100DaysOfHacking Challenge Which Made Me a Better Hacker
 
-Talk about: why you started, who supported you, burn out, triager congrats, crticism, appreaciation, include your repo of tweets, discuss about how your experience is fragmented and you cant give a figure of how long have you been hacking(if suitable), discuss how you have made a trend and people started following you, add your blog in multiple languages, add only main posts under posts page, rest goes to archive, talk about its not only about 1 hour, but many hours, absolutely no recon,discuss about getting complacent after finding one bug -->
+Talk about: why you started, who supported you, burn out, triager congrats, crticism, appreaciation, include your repo of tweets, discuss about how your experience is fragmented and you cant give a figure of how long have you been hacking(if suitable), discuss how you have made a trend and people started following you, add your blog in multiple languages, add only main posts under posts page, rest goes to archive, talk about its not only about 1 hour, but many hours, absolutely no recon,discuss about getting complacent after finding one bug
+you can talk about this https://www.youtube.com/watch?v=Ekcseve-mOg -->
