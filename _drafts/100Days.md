@@ -92,6 +92,8 @@ There were times when I was hopeless, feeling that I took the wrong decision of 
 
 ### The Trend of #100DaysOfHacking Challenge
 
+When I was starting this challenge, there were only a handful of people that took the #100DaysOfHacking challenge and I found a single person named [Chris Inzinga](https://twitter.com/cinzinga_) who successfully completed this challenge and was quite successful too. He guided me in the beginning and motivated me to take this challenge too. Now, I am happy to state that I was able to set a trend and motivated some people to take this challenge. Now while scrolling through social media platforms, I can notice lots of posts with hashtag #100DaysOfHacking these days. I am happy to bring this positive change, to motivate people to learn cybersecurity.
+
 ### Unexpected Followers
 
 ### Conclusion
