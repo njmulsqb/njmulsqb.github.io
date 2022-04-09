@@ -8,7 +8,7 @@ tags:
 author: "Najam Ul Saqib"
 ---
 
-## How it all started?
+### How it all started?
 
 I have known bug hunting since 2-3 years now but I had never been able to start hunting with consistency, I used to pick up a target after spending hours deciding which one will be good for me, spending time on recon i.e collecting all the subdomains, hunting on it for an hour or two for a couple of days, realizing that I need to learn hacking concepts first using tutorials and the cycle goes on. I was stuck in a loop of learning, though learning is not too bad but if you get stuck in learning only and dont apply what you've learn't practically you have done nothing but wasted your time.
 
@@ -34,7 +34,7 @@ I got 2 valid security bugs and I don't know it was procrastination or what, but
 
 I always heard of how important it is to have a mentor, I knew I was doing something wrong and I wanted that someone could guide me, what am I doing wrong and what should be the right direction. I approached many people asking loads of questions and obviously not silly ones e.g "Can you mentor me?", "Can you teach me how to hack?", etc rather I wrote all the scenario and asked for their feedback but unfortunately almost no one responded positively. Most of them were unresponsive as well. I do not blame them, everyone has their own routine and not everyone is ready to help you. I just am saying that I had no mentor back then, I even asked people if we can hack together, on CTFs, or programs, etc but no one was interesting as I had nothing under my belt quite obviously. Why would one waste time with a noob? Therefore, I stopped wasting time asking people for help as it only protrayed me as a stupid begging for help.
 
-## Taking the Initiative
+### Taking the Initiative
 
 Being a developer, I have already seen people taking on challenge of #100DaysOfCode which is very popular among developers, in this challenge people coded in some language for 100 days straight. I decided to go with #100DaysOfHacking, upon searching online only a couple of articles was available on #100DaysOfHacking challenge, one was successful and the other one failed at day 31-32. As I was definitely struggling with consistency and being stuck in learning loop I thought it was not a bad idea to give it a try and so I made the announcement of commencement of this challenge.
 
@@ -99,13 +99,16 @@ When I was starting this challenge, there were only a handful of people that too
 As I proceeded to this challenge, many people joined me in this caravan. The critics faded away with the passage of time and 100+ people followed me along this journey which I am thankful of. I wasn't really expecting this and I am thankful to each one of them because they were my motivation to hunt on my off days. To my surprise, the triagers of the program were also silent followers of my challenge and I came to know this when one of them congratuled me on this challenge and I am grateful for support from all of you.
 --- put the triager screenshot here ---
 
-### Conclusion
-
-When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stucked to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my will power. I thoroughly enjoyed this challenge Was it worth it? Hell Ya!
 
 ### GitHub Repo on My Tweets
 
 I maintained a github repo during this challenge that contains references to all of the tweets I made during this challenge, so that if you want to see my journey you can go back to any day's progress with ease. Here's the repo: <a href="https://www.github.com/njmulsqb/100DaysOfHackingTweets">#100DaysOfHacking Github Repo</a>
+
+### Conclusion
+
+When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stucked to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my will power. I thoroughly enjoyed this challenge. Was it worth it? Hell Ya!
+
+
 
 <!-- Potential headlines:
 9 Lessons I learned from #100DaysOfHacking Challenge
