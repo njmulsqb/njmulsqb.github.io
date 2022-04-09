@@ -101,6 +101,8 @@ As I proceeded to this challenge, many people joined me in this caravan. The cri
 
 ### Conclusion
 
+When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stucked to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my will power. Was it worth it? Hell Ya!
+
 <!-- Potential headlines:
 9 Lessons I learned from #100DaysOfHacking Challenge
 #100DaysOfHacking Challenge: A game changer for me
