@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-09T19:20:06+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">My #100DaysOfHacking Challenge</title><link href="http://localhost:4000/2022/04/09/100Days.html" rel="alternate" type="text/html" title="My #100DaysOfHacking Challenge" /><published>2022-04-09T19:20:06+05:00</published><updated>2022-04-09T19:20:06+05:00</updated><id>http://localhost:4000/2022/04/09/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/09/100Days.html">&lt;h3 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-09T19:24:46+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">The #100DaysOfHacking Challenge : A Game Changer for Me</title><link href="http://localhost:4000/2022/04/09/100Days.html" rel="alternate" type="text/html" title="The #100DaysOfHacking Challenge : A Game Changer for Me" /><published>2022-04-09T19:24:46+05:00</published><updated>2022-04-09T19:24:46+05:00</updated><id>http://localhost:4000/2022/04/09/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/09/100Days.html">&lt;h1 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h1&gt;
 
 &lt;p&gt;I have known bug hunting for 2-3 years now but I had never been able to start hunting with consistency, I used to pick up a target after spending hours deciding which one will be good for me, spending time on recon i.e collecting all the subdomains, hunting on it for an hour or two for a couple of days, realizing that I need to learn hacking concepts first using tutorials and the cycle goes on. I was stuck in a loop of learning, though learning is not too bad but if you get stuck in learning only and don’t apply what you’ve learned practically you have done nothing but wasted your time.&lt;/p&gt;
 
@@ -51,11 +51,11 @@
   &lt;p&gt;“Failure is the key to success; each mistake teaches us something.” – Morihei Ueshiba&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;trying-to-get-a-mentor&quot;&gt;Trying To Get A Mentor&lt;/h3&gt;
+&lt;h2 id=&quot;trying-to-get-a-mentor&quot;&gt;Trying To Get A Mentor&lt;/h2&gt;
 
 &lt;p&gt;I always heard of how important it is to have a mentor, I knew I was doing something wrong and I wanted that someone could guide me, on what am I doing wrong and what should be the right direction. I approached many people asking loads of questions and obviously not silly ones e.g “Can you mentor me?”, “Can you teach me how to hack?”, etc rather I wrote the complete scenario and asked for their feedback but unfortunately almost no one responded positively. Most of them were unresponsive as well. I do not blame them, everyone has their own routine and not everyone is ready to help you. I just am saying that I had no mentor back then, I even asked people if we can hack together, on CTFs, or programs, etc but no one was interesting as I had nothing under my belt quite obviously. Why would one waste time with a noob? Therefore, I stopped wasting time asking people for help as it only portrayed me as a stupid begging for help.&lt;/p&gt;
 
-&lt;h3 id=&quot;taking-the-initiative&quot;&gt;Taking the Initiative&lt;/h3&gt;
+&lt;h1 id=&quot;taking-the-initiative&quot;&gt;Taking the Initiative&lt;/h1&gt;
 
 &lt;p&gt;Being a developer, I have already seen people taking on the challenge of #100DaysOfCode which is very popular among developers, in this challenge people coded in some language for 100 days straight. I decided to go with #100DaysOfHacking, upon searching online only a couple of articles were available on the #100DaysOfHacking challenge, one was successful and the other one failed on day 31-32. As I was struggling with consistency and being stuck in a learning loop I thought it was not a bad idea to give it a try and so I announced the commencement of this challenge. Here’s a tweet that was part of the announcement thread&lt;/p&gt;
 
@@ -64,7 +64,7 @@
 
 &lt;p&gt;Therefore, I started this challenge on the 1st of January 2022. At the beginning of the days, I was skimming through the website trying to understand its functionality. I submitted my first bug of the year to this program on the 3rd day of this challenge which was &lt;em&gt;Improper rate limitation on OTP when OTP was not expiring&lt;/em&gt; and it turned out to be a duplicate. My first duplicate bug that didn’t involve Nuclei so yeah you need something to stay optimist 😅&lt;/p&gt;
 
-&lt;h3 id=&quot;criticism&quot;&gt;Criticism&lt;/h3&gt;
+&lt;h1 id=&quot;criticism&quot;&gt;Criticism&lt;/h1&gt;
 
 &lt;p&gt;At the beginning of this challenge, though there were some people encouraging my step, unfortunately, there were more people on the other side that were criticizing me that I am doing this challenge just to get fame and followers, or I am just showing off, etc but their criticism instead of bringing me down, pushed me to work even harder &amp;amp; prove them wrong. No matter what you do, there are always gonna be some people criticizing you, which as a human being definitely feels bad but one should not take the negative criticism too seriously.&lt;/p&gt;
 
@@ -72,16 +72,16 @@
   &lt;p&gt;“To avoid criticism, say nothing, do nothing, be nothing - Elbert Hubbard”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;is-it-just-about-1-hour-daily&quot;&gt;Is it just about 1 hour daily?&lt;/h3&gt;
+&lt;h1 id=&quot;is-it-just-about-1-hour-daily&quot;&gt;Is it just about 1 hour daily?&lt;/h1&gt;
 
 &lt;p&gt;Theoretically, if I hacked 1 hour a day and tweeted the progress I was good with the challenge but I want to make clear that most of the days I hacked for 2-3 hours because 1 hour never seemed to be sufficient for me, 1 hour just used to pass by and I wouldn’t have done anything concrete.&lt;/p&gt;
 
-&lt;h3 id=&quot;what-was-my-routine&quot;&gt;What was my routine?&lt;/h3&gt;
+&lt;h2 id=&quot;what-was-my-routine&quot;&gt;What was my routine?&lt;/h2&gt;
 
 &lt;p&gt;Being a full-time security engineer, I had very little spare time so I used to hack early in the morning (before office) or at night (after office), usually morning time was more productive as I wasn’t tired out.
 Being away from home, I also needed to travel some days and had to schedule my challenge accordingly. Routine used to get really tough, I used to be tired as hell but never skipped a single day of this challenge and made sure that every day I learn something new. There were days, when I was sick and some days was in hospital too and my close ones suggested I just put some fake tweets including false claims, obviously no one can verify whether you actually did what you state or not, look at yourself, you’re sick, and what not but no matter how you justify this act it remains cheating and I would tweet lie once but as a result, I won’t be hurting anyone but myself. I would kill the core purpose of this challenge and whenever I won’t be feeling well I would be tweeting lies so I never went on that path. Whatever I tweeted each day was 100% true and portrayed exactly what I did that day.&lt;/p&gt;
 
-&lt;h3 id=&quot;burn-out&quot;&gt;Burn Out?&lt;/h3&gt;
+&lt;h2 id=&quot;burn-out&quot;&gt;Burn Out?&lt;/h2&gt;
 
 &lt;p&gt;Yes, I for the first time experienced burnout, my health was deteriorating. This challenge with a full-time job was no joke and one should think 10 times before getting into it. There were days when I just didn’t want to see the laptop screen still I managed to do something meaningful. You may term it as being cruel to yourself but I knew that I had a bad habit of staying in my comfort zone and I needed to get rid of this habit, the only way I found was #100DaysOfHackingChallenge and my decision proved to be absolutely spot on!&lt;/p&gt;
 
@@ -89,7 +89,7 @@ Being away from home, I also needed to travel some days and had to schedule my c
   &lt;p&gt;“Before anything great is really achieved, your comfort zone must be disturbed.” – Ray Lewis&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;my-first-bounty&quot;&gt;My First Bounty&lt;/h3&gt;
+&lt;h1 id=&quot;my-first-bounty&quot;&gt;My First Bounty&lt;/h1&gt;
 
 &lt;p&gt;I was testing for IDORs for some days on this program’s API, trying different stuff, making my own methodology and on &lt;em&gt;Day 31&lt;/em&gt; i.e within the first month of this challenge I found another bug, and this time it was IDOR. I submitted it to the program after writing a detailed report and started waiting for the response. If you have ever submitted a report you would know this feeling of binge checking email to see if the triager has responded or not and to test my patience triager did not give the verdict on my report for the next 2 weeks 😬&lt;/p&gt;
 
@@ -104,11 +104,11 @@ Being away from home, I also needed to travel some days and had to schedule my c
 
 &lt;p&gt;This bounty gave me a confidence booster, all the self-doubts faded away. I started this challenge to develop a habit of staying consistent and as a by-product I got my first bounty.&lt;/p&gt;
 
-&lt;h3 id=&quot;role-of-recon-in-my-success&quot;&gt;Role of Recon in My Success&lt;/h3&gt;
+&lt;h1 id=&quot;role-of-recon-in-my-success&quot;&gt;Role of Recon in My Success&lt;/h1&gt;
 
 &lt;p&gt;You might be expecting me to say that recon has helped me a lot during this challenge but you would be shocked to know that I did almost no recon this time, I hunted only on root domains, and with the amount of stuff that was available, I never felt the need to get more subdomains. At the same time, I am not saying that recon is useless. Recon is very important and can get you some awesome findings but I already wasted so much time on subdomain enumeration and stuff that this time I just wanted to hack and not get stuck into the recon loop.&lt;/p&gt;
 
-&lt;h3 id=&quot;people-who-helped-me-along-this-journey&quot;&gt;People who helped me along this journey&lt;/h3&gt;
+&lt;h1 id=&quot;people-who-helped-me-along-this-journey&quot;&gt;People who helped me along this journey&lt;/h1&gt;
 
 &lt;p&gt;There were times when I was hopeless, feeling that I took the wrong decision of getting into bug bounties, while on other days I needed guidance. These were the special ones who responded to my tweets and never made me feel alone on this journey. Always up there for moral support and guidance. I owe these guys a lot for their help:&lt;/p&gt;
 
@@ -118,11 +118,11 @@ Being away from home, I also needed to travel some days and had to schedule my c
   &lt;li&gt;&lt;a href=&quot;https://twitter.com/R29k_&quot;&gt;Demon - R29k_&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;the-trend-of-100daysofhacking-challenge&quot;&gt;The Trend of #100DaysOfHacking Challenge&lt;/h3&gt;
+&lt;h1 id=&quot;the-trend-of-100daysofhacking-challenge&quot;&gt;The Trend of #100DaysOfHacking Challenge&lt;/h1&gt;
 
 &lt;p&gt;When I was starting this challenge, there were only a handful of people that took the #100DaysOfHacking challenge and I found a single person named &lt;a href=&quot;https://twitter.com/cinzinga_&quot;&gt;Chris Inzinga&lt;/a&gt; who successfully completed this challenge and was quite successful too. He guided me in the beginning and motivated me to take on this challenge too. Now, I am happy to state that I was able to set a trend and motivated some people to take on this challenge. Now while scrolling through social media platforms, I can notice lots of posts with the hashtag #100DaysOfHacking these days. I am happy to bring this positive change, to motivate people to learn cybersecurity.&lt;/p&gt;
 
-&lt;h3 id=&quot;unexpected-followers&quot;&gt;Unexpected Followers&lt;/h3&gt;
+&lt;h1 id=&quot;unexpected-followers&quot;&gt;Unexpected Followers&lt;/h1&gt;
 
 &lt;p&gt;As I proceeded to this challenge, many people joined me in this caravan. The critics faded away with the passage of time and 100+ people followed me along this journey which I am thankful of. I wasn’t really expecting this and I am thankful to each one of them because they were my motivation to hunt on my off days. To my surprise, the triagers of the program were also silent followers of my challenge and I came to know this when one of them congratuled me on this challenge and I am grateful for support from all of you. ❤️&lt;/p&gt;
 
@@ -134,7 +134,7 @@ Being away from home, I also needed to travel some days and had to schedule my c
 
 &lt;p&gt;I maintained a GitHub repo during this challenge that contains references to all of the tweets I made during this challenge so that if you want to see my journey you can go back to any day’s progress with ease. Here’s the repo: &lt;a href=&quot;https://www.github.com/njmulsqb/100DaysOfHackingTweets&quot;&gt;#100DaysOfHacking Github Repo&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that’s it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Hell Ya!&lt;/p&gt;
 
