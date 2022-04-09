@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-07T03:15:14+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">My #100DaysOfHacking Challenge</title><link href="http://localhost:4000/2022/04/07/100Days.html" rel="alternate" type="text/html" title="My #100DaysOfHacking Challenge" /><published>2022-04-07T03:15:13+05:00</published><updated>2022-04-07T03:15:13+05:00</updated><id>http://localhost:4000/2022/04/07/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/07/100Days.html">&lt;h2 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-09T15:49:03+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">My #100DaysOfHacking Challenge</title><link href="http://localhost:4000/2022/04/09/100Days.html" rel="alternate" type="text/html" title="My #100DaysOfHacking Challenge" /><published>2022-04-09T15:49:03+05:00</published><updated>2022-04-09T15:49:03+05:00</updated><id>http://localhost:4000/2022/04/09/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/09/100Days.html">&lt;h2 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h2&gt;
 
 &lt;p&gt;I have known bug hunting since 2-3 years now but I had never been able to start hunting with consistency, I used to pick up a target after spending hours deciding which one will be good for me, spending time on recon i.e collecting all the subdomains, hunting on it for an hour or two for a couple of days, realizing that I need to learn hacking concepts first using tutorials and the cycle goes on. I was stuck in a loop of learning, though learning is not too bad but if you get stuck in learning only and dont apply what you’ve learn’t practically you have done nothing but wasted your time.&lt;/p&gt;
 
@@ -119,9 +119,20 @@ Being away from home, I also needed to travel some days and had to schedule my c
 
 &lt;h3 id=&quot;the-trend-of-100daysofhacking-challenge&quot;&gt;The Trend of #100DaysOfHacking Challenge&lt;/h3&gt;
 
+&lt;p&gt;When I was starting this challenge, there were only a handful of people that took the #100DaysOfHacking challenge and I found a single person named &lt;a href=&quot;https://twitter.com/cinzinga_&quot;&gt;Chris Inzinga&lt;/a&gt; who successfully completed this challenge and was quite successful too. He guided me in the beginning and motivated me to take this challenge too. Now, I am happy to state that I was able to set a trend and motivated some people to take this challenge. Now while scrolling through social media platforms, I can notice lots of posts with hashtag #100DaysOfHacking these days. I am happy to bring this positive change, to motivate people to learn cybersecurity.&lt;/p&gt;
+
 &lt;h3 id=&quot;unexpected-followers&quot;&gt;Unexpected Followers&lt;/h3&gt;
 
+&lt;p&gt;As I proceeded to this challenge, many people joined me in this caravan. The critics faded away with the passage of time and 100+ people followed me along this journey which I am thankful of. I wasn’t really expecting this and I am thankful to each one of them because they were my motivation to hunt on my off days. To my surprise, the triagers of the program were also silent followers of my challenge and I came to know this when one of them congratuled me on this challenge and I am grateful for support from all of you.
+— put the triager screenshot here —&lt;/p&gt;
+
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that’s it. I stucked to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my will power. I thoroughly enjoyed this challenge Was it worth it? Hell Ya!&lt;/p&gt;
+
+&lt;h3 id=&quot;github-repo-on-my-tweets&quot;&gt;GitHub Repo on My Tweets&lt;/h3&gt;
+
+&lt;p&gt;I maintained a github repo during this challenge that contains references to all of the tweets I made during this challenge, so that if you want to see my journey you can go back to any day’s progress with ease. Here’s the repo: &lt;a href=&quot;https://www.github.com/njmulsqb/100DaysOfHackingTweets&quot;&gt;#100DaysOfHacking Github Repo&lt;/a&gt;&lt;/p&gt;
 
 &lt;!-- Potential headlines:
 9 Lessons I learned from #100DaysOfHacking Challenge
@@ -133,196 +144,187 @@ Why #100DaysOfHacking is Worth Your Attention?
 The #100DaysOfHacking Challenge Which Made Me a Better Hacker
 
 Talk about: why you started, who supported you, burn out, triager congrats, crticism, appreaciation, include your repo of tweets, discuss about how your experience is fragmented and you cant give a figure of how long have you been hacking(if suitable), discuss how you have made a trend and people started following you, add your blog in multiple languages, add only main posts under posts page, rest goes to archive, talk about its not only about 1 hour, but many hours, absolutely no recon,discuss about getting complacent after finding one bug
-you can talk about this https://www.youtube.com/watch?v=Ekcseve-mOg --&gt;</content><author><name>Najam Ul Saqib</name></author><category term="Challenge" /><category term="Hacking" /><category term="Bug Hunting" /><summary type="html">How it all started?</summary></entry><entry><title type="html">Importanceofopensource</title><link href="http://localhost:4000/2022/04/07/importanceOfOpensource.html" rel="alternate" type="text/html" title="Importanceofopensource" /><published>2022-04-07T03:13:20+05:00</published><updated>2022-04-07T03:13:20+05:00</updated><id>http://localhost:4000/2022/04/07/importanceOfOpensource</id><content type="html" xml:base="http://localhost:4000/2022/04/07/importanceOfOpensource.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">The Open Source Software That I Use</title><link href="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html" rel="alternate" type="text/html" title="The Open Source Software That I Use" /><published>2021-10-20T00:00:00+05:00</published><updated>2021-10-20T00:00:00+05:00</updated><id>http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use</id><content type="html" xml:base="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html">&lt;p&gt;This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!&lt;/p&gt;
+you can talk about this https://www.youtube.com/watch?v=Ekcseve-mOg --&gt;</content><author><name>Najam Ul Saqib</name></author><category term="Challenge" /><category term="Hacking" /><category term="Bug Hunting" /><summary type="html">How it all started?</summary></entry><entry><title type="html">Importanceofopensource</title><link href="http://localhost:4000/2022/04/07/importanceOfOpensource.html" rel="alternate" type="text/html" title="Importanceofopensource" /><published>2022-04-07T03:13:20+05:00</published><updated>2022-04-07T03:13:20+05:00</updated><id>http://localhost:4000/2022/04/07/importanceOfOpensource</id><content type="html" xml:base="http://localhost:4000/2022/04/07/importanceOfOpensource.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">The Open Source Software That I Use</title><link href="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html" rel="alternate" type="text/html" title="The Open Source Software That I Use" /><published>2021-10-20T00:00:00+05:00</published><updated>2021-10-20T00:00:00+05:00</updated><id>http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use</id><content type="html" xml:base="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html">This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!
 
-&lt;ul&gt;
-  &lt;li&gt;Browser: Mozilla Firefox, Brave&lt;/li&gt;
-  &lt;li&gt;Keyboard: AnySoftKeyboard&lt;/li&gt;
-  &lt;li&gt;Messaging: Signal&lt;/li&gt;
-  &lt;li&gt;Email Client: Thunderbird, FairEmail&lt;/li&gt;
-  &lt;li&gt;Email Providers: Protonmail, Tutanota&lt;/li&gt;
-  &lt;li&gt;App Store: F-Droid&lt;/li&gt;
-  &lt;li&gt;Laptop OS: Ubuntu, Kali Linux&lt;/li&gt;
-  &lt;li&gt;Office: LibreOffice&lt;/li&gt;
-  &lt;li&gt;FTP Client: FileZilla&lt;/li&gt;
-  &lt;li&gt;Notepad: Joplin&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="opensource" /><summary type="html">This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!</summary></entry><entry><title type="html">Interesting behavior of innerHTML on simple script XSS payload</title><link href="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html" rel="alternate" type="text/html" title="Interesting behavior of innerHTML on simple script XSS payload" /><published>2021-08-24T00:00:00+05:00</published><updated>2021-08-24T00:00:00+05:00</updated><id>http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload</id><content type="html" xml:base="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html">&lt;p&gt;While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; tag. Let’s see how?&lt;/p&gt;
+- Browser: Mozilla Firefox, Brave
+- Keyboard: AnySoftKeyboard
+- Messaging: Signal
+- Email Client: Thunderbird, FairEmail
+- Email Providers: Protonmail, Tutanota
+- App Store: F-Droid
+- Laptop OS: Ubuntu, Kali Linux
+- Office: LibreOffice
+- FTP Client: FileZilla
+- Notepad: Joplin</content><author><name></name></author><category term="opensource" /><summary type="html">This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!</summary></entry><entry><title type="html">Interesting behavior of innerHTML on simple script XSS payload</title><link href="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html" rel="alternate" type="text/html" title="Interesting behavior of innerHTML on simple script XSS payload" /><published>2021-08-24T00:00:00+05:00</published><updated>2021-08-24T00:00:00+05:00</updated><id>http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload</id><content type="html" xml:base="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the `dangerouslySetInnerHTML` tag. Let&apos;s see how?
 
-&lt;p&gt;For example, consider this piece of code.&lt;/p&gt;
+For example, consider this piece of code.
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;BadXSS&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;submittedSearch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+```javascript
+export class BadXSS extends React.Component {
+  state = {
+    searchTerm: &quot;&quot;,
+    submittedSearch: &quot;&quot;,
+  };
 
-  &lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  handleChange = (e) =&gt; {
+    this.setState({ searchTerm: e.target.value });
+  };
 
-  &lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  handleSubmit = (e) =&gt; {
+    e.preventDefault();
 
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;submittedSearch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchTerm&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    this.setState({ submittedSearch: this.state.searchTerm });
+  };
 
-  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;containerStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;headingStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bad&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;labelStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;htmlFor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;Search&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/label&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Search&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttonStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;Go&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/form&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;submittedSearch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchResultsStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;searched&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt;
-                &lt;span class=&quot;nx&quot;&gt;dangerouslySetInnerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-              &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/b&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  render() {
+    return (
+      &lt;div style={containerStyle}&gt;
+        &lt;h2 style={headingStyle}&gt;Bad Example&lt;/h2&gt;
+        &lt;form onSubmit={this.handleSubmit}&gt;
+          &lt;label style={labelStyle} htmlFor=&quot;searchInput&quot;&gt;
+            Search
+          &lt;/label&gt;
+          &lt;input
+            name=&quot;searchInput&quot;
+            id=&quot;searchInput&quot;
+            placeholder=&quot;Search&quot;
+            value={this.state.searchTerm}
+            onChange={this.handleChange}
+            style={inputStyle}
+          /&gt;
+          &lt;button type=&quot;submit&quot; style={buttonStyle}&gt;
+            Go
+          &lt;/button&gt;
+        &lt;/form&gt;
+        {this.state.submittedSearch &amp;&amp; (
+          &lt;p style={searchResultsStyle}&gt;
+            You searched for:{&quot; &quot;}
+            &lt;b&gt;
+              &lt;span
+                dangerouslySetInnerHTML={{ __html: this.state.submittedSearch }}
+              /&gt;
+            &lt;/b&gt;
+          &lt;/p&gt;
+        )}
+      &lt;/div&gt;
+    );
+  }
+}
+```
 
-&lt;p&gt;Here in this code you can see that the user input is directly being placed in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;span&lt;/code&gt; using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; which means that any user input will be parsed and reflected on the DOM, like this:&lt;/p&gt;
+Here in this code you can see that the user input is directly being placed in the `span` using `dangerouslySetInnerHTML` which means that any user input will be parsed and reflected on the DOM, like this:
 
-&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/Simple-Input-Reflection.png&quot; alt=&quot;User Input Getting Reflected&quot; /&gt;&lt;/p&gt;
+![User Input Getting Reflected](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/Simple-Input-Reflection.png)
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: dangerouslySetInnerHTML is actually a wrapper over innerHTML which is already available in DOM and can be accessed directly. React appended ‘dangerously’ with it to clearly discourage its use as it can make the app vulnerable to XSS through event handlers&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; _Note_: dangerouslySetInnerHTML is actually a wrapper over innerHTML which is already available in DOM and can be accessed directly. React appended &apos;dangerously&apos; with it to clearly discourage its use as it can make the app vulnerable to XSS through event handlers
 
-&lt;p&gt;The user input of “Hello World” under Bad Example is being reflected on the page with “You searched for:” and in the DOM on dev tools on the right you can see that it is being loaded within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&lt;/code&gt; tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; is being used in the backend. Let’s test this out by giving some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags and see how that gets reflected and parsed.&lt;/p&gt;
+The user input of &quot;Hello World&quot; under Bad Example is being reflected on the page with &quot;You searched for:&quot; and in the DOM on dev tools on the right you can see that it is being loaded within `&lt;span&gt;` tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous `innerHTML` is being used in the backend. Let&apos;s test this out by giving some `&lt;p&gt;` tags and see how that gets reflected and parsed.
 
-&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png&quot; alt=&quot;p Tag Getting Reflected&quot; /&gt;&lt;/p&gt;
+![p Tag Getting Reflected](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png)
 
-&lt;p&gt;So, this shows that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; can be dangerous as it’s parsing anything that’s being given to it, so technically the app is vulnerable to XSS attacks as we can execute scripts through innerHTML.&lt;/p&gt;
+So, this shows that `innerHTML` can be dangerous as it&apos;s parsing anything that&apos;s being given to it, so technically the app is vulnerable to XSS attacks as we can execute scripts through innerHTML.
 
-&lt;p&gt;When I tried executing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;&lt;/code&gt; payload on this application something interesting happened. The resulting DOM looked something like this&lt;/p&gt;
+When I tried executing `&lt;script&gt;alert(1)&lt;/script&gt;` payload on this application something interesting happened. The resulting DOM looked something like this
 
-&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/script-in-innerHTML.png&quot; alt=&quot;script Tag in InnerHTML&quot; /&gt;&lt;/p&gt;
+![script Tag in InnerHTML](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/script-in-innerHTML.png)
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;margin-bottom: 0px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+```html
+&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;
   You searched for:
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;b&gt;
+    &lt;span&gt;
+      &lt;script&gt;
+        alert(1);
+      &lt;/script&gt;
+    &lt;/span&gt;
+  &lt;/b&gt;
+&lt;/p&gt;
+```
 
-&lt;p&gt;It is clear here that, our payload has made to the DOM without getting encoded by HTML entities and it should technically fire, but it didn’t. Yes. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag didn’t execute even if the syntax is perfectly alright, the alert pop up didn’t appear. This is really very confusing, why it didn’t? 🤯&lt;/p&gt;
+It is clear here that, our payload has made to the DOM without getting encoded by HTML entities and it should technically fire, but it didn&apos;t. Yes. The `&lt;script&gt;` tag didn&apos;t execute even if the syntax is perfectly alright, the alert pop up didn&apos;t appear. This is really very confusing, why it didn&apos;t? 🤯
 
-&lt;p&gt;Though W3C states that innerHTML doesn’t allows execution of scripts.&lt;/p&gt;
+Though W3C states that innerHTML doesn&apos;t allows execution of scripts.
 
-&lt;p&gt;&lt;strong&gt;According to World Wide Web Consortium (W3C)&lt;/strong&gt;&lt;/p&gt;
+**According to World Wide Web Consortium (W3C)**
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;script elements inserted using innerHTML do not execute when they are inserted.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; **_script elements inserted using innerHTML do not execute when they are inserted._**
 
-&lt;p&gt;But for me this is not enough, how can innerHTML stop the parser from executing the injected script tags when rest of the script tags are being executed without any issue? That’s the main problem.&lt;/p&gt;
+But for me this is not enough, how can innerHTML stop the parser from executing the injected script tags when rest of the script tags are being executed without any issue? That&apos;s the main problem.
 
-&lt;p&gt;Whenever innerHTML is used it re-renders the DOM tree&lt;/p&gt;
+Whenever innerHTML is used it re-renders the DOM tree
 
-&lt;blockquote&gt;
-  &lt;p&gt;It can also potentially be slow, since every time you change a node’s innerHTML property the browser must completely scrap and recreate its entire DOM tree. If you (for example) keep appending to innerHTML in a loop you’ll cause a lot of unnecessary re-renders.
-Source: https://learn.foundersandcoders.com/workshops/dom-rendering/&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; It can also potentially be slow, since every time you change a node’s innerHTML property the browser must completely scrap and recreate its entire DOM tree. If you (for example) keep appending to innerHTML in a loop you’ll cause a lot of unnecessary re-renders.
+&gt; Source: https://learn.foundersandcoders.com/workshops/dom-rendering/
 
-&lt;p&gt;It means that whenever we call innerHTML, it first injects the value of innerHTML in to the DOM and then renders the entire DOM again, but somehow it recognizes the script that is being injected through innerHTML and doesn’t executes it and executes all the rest of the scripts, I’ve made a rough sketch of this process.&lt;/p&gt;
+It means that whenever we call innerHTML, it first injects the value of innerHTML in to the DOM and then renders the entire DOM again, but somehow it recognizes the script that is being injected through innerHTML and doesn&apos;t executes it and executes all the rest of the scripts, I&apos;ve made a rough sketch of this process.
 
-&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/parser-execution.jpg&quot; alt=&quot;script Tag in InnerHTML&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+![script Tag in InnerHTML](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/parser-execution.jpg){: .center-image }
 
-&lt;p&gt;HTML Code:&lt;/p&gt;
+HTML Code:
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Some HTML Code here --&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt; Some random text &lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;What&apos;s my fault?&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The script injected by the innerHTML gets ignored by the parser :( --&amp;gt;&lt;/span&gt;
+```html
+&lt;html&gt;
+  &lt;!-- Some HTML Code here --&gt;
+  &lt;p&gt;Hello World&lt;/p&gt;
+  &lt;div&gt;
+    &lt;b&gt; Some random text &lt;/b&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    alert(&quot;What&apos;s my fault?&quot;);
+  &lt;/script&gt;
+  &lt;!-- The script injected by the innerHTML gets ignored by the parser :( --&gt;
 
-  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Rest of the scripts got the attention from the parser and got executed --&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We&apos;re special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We&apos;re special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We&apos;re special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;!-- Rest of the scripts got the attention from the parser and got executed --&gt;
+  &lt;script&gt;
+    alert(&quot;We&apos;re special&quot;);
+  &lt;/script&gt;
+  &lt;script&gt;
+    alert(&quot;We&apos;re special&quot;);
+  &lt;/script&gt;
+  &lt;script&gt;
+    alert(&quot;We&apos;re special&quot;);
+  &lt;/script&gt;
+&lt;/html&gt;
+```
 
-&lt;p&gt;So this behavior is pretty strange, when the DOM got rendered and HTML parser parsed the lines one by one from top to bottom, how it came to know which script tag to ignore and which ones to execute when the syntax is exact same for both. Interestingly, if you copies this whole HTML structure and paste it into a separate HTML file, all the scripts will execute by that same parser. Why this hypocrisy? 😏&lt;/p&gt;
+So this behavior is pretty strange, when the DOM got rendered and HTML parser parsed the lines one by one from top to bottom, how it came to know which script tag to ignore and which ones to execute when the syntax is exact same for both. Interestingly, if you copies this whole HTML structure and paste it into a separate HTML file, all the scripts will execute by that same parser. Why this hypocrisy? 😏
 
-&lt;p&gt;It’s pretty clear that script tags will never ever get executed whenever the HTML is injected using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; property or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; in case of ReactJS. It’s the standard set by W3C that whenever &lt;em&gt;HTML Parser&lt;/em&gt; runs and parses the string within innerHTML, it parses every HTML tag and ignores if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag appears, how is this happening? How the parser comes to know about all this? Enough of the suspense! 🧐&lt;/p&gt;
+It&apos;s pretty clear that script tags will never ever get executed whenever the HTML is injected using the `innerHTML` property or `dangerouslySetInnerHTML` in case of ReactJS. It&apos;s the standard set by W3C that whenever _HTML Parser_ runs and parses the string within innerHTML, it parses every HTML tag and ignores if `&lt;script&gt;` tag appears, how is this happening? How the parser comes to know about all this? Enough of the suspense! 🧐
 
-&lt;p&gt;Here things get’s complex, get ready for a deeper dive! 🌊&lt;/p&gt;
+Here things get&apos;s complex, get ready for a deeper dive! 🌊
 
-&lt;p&gt;Unfortunately, surface level documentations do not include details about this behavior rather just a note saying that scripts wont work with innerHTML to lessen the chances of XSS and even the answers on StackOverFlow were vague, so I read loads of documentation and came to following conclusion&lt;/p&gt;
+Unfortunately, surface level documentations do not include details about this behavior rather just a note saying that scripts wont work with innerHTML to lessen the chances of XSS and even the answers on StackOverFlow were vague, so I read loads of documentation and came to following conclusion
 
-&lt;p&gt;First, let’s clear some concepts, whenever a &lt;em&gt;Document&lt;/em&gt; is created, a html parser gets associated for it and each &lt;em&gt;Document&lt;/em&gt; object has some environment variables that define the working and behavior of that parser.&lt;/p&gt;
+First, let&apos;s clear some concepts, whenever a _Document_ is created, a html parser gets associated for it and each _Document_ object has some environment variables that define the working and behavior of that parser.
 
-&lt;p&gt;In those environment variables, a &lt;strong&gt;scripting flag&lt;/strong&gt; exist, which is a boolean variable, whenever it is set to &lt;strong&gt;false&lt;/strong&gt; the HTML parser will ignore the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tags and they won’t execute, opposite is the case when flag is set to &lt;strong&gt;true&lt;/strong&gt;&lt;/p&gt;
+In those environment variables, a **scripting flag** exist, which is a boolean variable, whenever it is set to **false** the HTML parser will ignore the `&lt;script&gt;` tags and they won&apos;t execute, opposite is the case when flag is set to **true**
 
-&lt;p&gt;Whenever &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; is called, a separate &lt;em&gt;Document&lt;/em&gt; is created which has its own html parser associated with it that has nothing to do with the main Document’s parser and obviously the temporary document created by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; has its own set of environment variables.&lt;/p&gt;
+Whenever `innerHTML` is called, a separate _Document_ is created which has its own html parser associated with it that has nothing to do with the main Document&apos;s parser and obviously the temporary document created by `innerHTML` has its own set of environment variables.
 
-&lt;p&gt;Upon creation of a separate document, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; by default sets the &lt;strong&gt;scripting flag&lt;/strong&gt; as &lt;strong&gt;false&lt;/strong&gt; means that the HTML parser will ignore the scripts included as value in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
+Upon creation of a separate document, `innerHTML` by default sets the **scripting flag** as **false** means that the HTML parser will ignore the scripts included as value in `innerHTML`
 
-&lt;p&gt;It means the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;’s document will be parsed separately and because its &lt;strong&gt;scripting flag&lt;/strong&gt; is &lt;strong&gt;false&lt;/strong&gt; it will not execute the scripts and the main document’s will be parsed separately and scripts will be executed because its &lt;strong&gt;scripting flag&lt;/strong&gt; is set to &lt;strong&gt;true&lt;/strong&gt;. I tried to visualize this process in the following diagram&lt;/p&gt;
+It means the `innerHTML`&apos;s document will be parsed separately and because its **scripting flag** is **false** it will not execute the scripts and the main document&apos;s will be parsed separately and scripts will be executed because its **scripting flag** is set to **true**. I tried to visualize this process in the following diagram
 
-&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/creation-of-document.jpg&quot; alt=&quot;Behavior of InnerHTML&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+![Behavior of InnerHTML](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/creation-of-document.jpg){: .center-image }
 
-&lt;p&gt;That’s the reason why, if you copies this whole HTML (with injected script) and place it to some other file then the ignored script will also execute because then that will be parsed by the single HTML parser with scripting flag set to true. 😌&lt;/p&gt;
+That&apos;s the reason why, if you copies this whole HTML (with injected script) and place it to some other file then the ignored script will also execute because then that will be parsed by the single HTML parser with scripting flag set to true. 😌
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+## Conclusion
 
-&lt;p&gt;On every call to innerHTML, a new Document node is temporarily created which has its own separate HTML parser and its own set of enivronment variables, whereas our original document has a separate parser and variables, because the orignal document’s scripting flag is set to true therefore all the scripts within the original document are executed on the other hand because the new temporary document’s scripting flag is set to false therefore even it contains valid script tags, the parser wont put those tags into the JS execution context and thus the scripts in the new temporary document won’t be executed, because to us this whole process is abstracted under the layer of innerHTML so it seems confusing that how the HTML parser ignores the script tags whereas in reality that parser never really parses the scripts injected through innerHTML, they’re parsed using a separate parser.&lt;/p&gt;
+On every call to innerHTML, a new Document node is temporarily created which has its own separate HTML parser and its own set of enivronment variables, whereas our original document has a separate parser and variables, because the orignal document&apos;s scripting flag is set to true therefore all the scripts within the original document are executed on the other hand because the new temporary document&apos;s scripting flag is set to false therefore even it contains valid script tags, the parser wont put those tags into the JS execution context and thus the scripts in the new temporary document won&apos;t be executed, because to us this whole process is abstracted under the layer of innerHTML so it seems confusing that how the HTML parser ignores the script tags whereas in reality that parser never really parses the scripts injected through innerHTML, they&apos;re parsed using a separate parser.
 
-&lt;p&gt;If you still have any questions about this behavior or you think that I went wrong somewhere than I am open for discussion and I will appreciate your contribution to this research.&lt;/p&gt;
+If you still have any questions about this behavior or you think that I went wrong somewhere than I am open for discussion and I will appreciate your contribution to this research.
 
-&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+### Resources
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML&quot;&gt;Element.innerHTML - MDN Web Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/13390588/script-tag-create-with-innerhtml-of-a-div-doesnt-work&quot;&gt;script tag create with innerHTML of a div doesn’t work - StackOverFlow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments&quot;&gt;Parsing HTML Fragments&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag&quot;&gt;Parsing State Flags&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+- [Element.innerHTML - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+- [script tag create with innerHTML of a div doesn&apos;t work - StackOverFlow](https://stackoverflow.com/questions/13390588/script-tag-create-with-innerhtml-of-a-div-doesnt-work)
+- [Parsing HTML Fragments](https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments)
+- [Parsing State Flags](https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag)
 
-&lt;h3 id=&quot;credits&quot;&gt;Credits&lt;/h3&gt;
+### Credits
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/thawkin3/xss-demo&quot;&gt;Vulnerable to XSS, React Code&lt;/a&gt; by @thawkin3&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Najam Ul Saqib</name></author><category term="secure coding" /><category term="XSS" /><category term="reactJS" /><category term="secure coding" /><summary type="html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the dangerouslySetInnerHTML tag. Let’s see how?</summary></entry><entry><title type="html">Hacker 101 CTF Walkthrough: BugDB v3</title><link href="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html" rel="alternate" type="text/html" title="Hacker 101 CTF Walkthrough: BugDB v3" /><published>2021-04-12T19:26:00+05:00</published><updated>2021-04-12T19:26:00+05:00</updated><id>http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3</id><content type="html" xml:base="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html">&lt;p&gt;
+- [Vulnerable to XSS, React Code](https://github.com/thawkin3/xss-demo) by @thawkin3</content><author><name>Najam Ul Saqib</name></author><category term="secure coding" /><category term="XSS" /><category term="reactJS" /><category term="secure coding" /><summary type="html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the dangerouslySetInnerHTML tag. Let’s see how?</summary></entry><entry><title type="html">Hacker 101 CTF Walkthrough: BugDB v3</title><link href="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html" rel="alternate" type="text/html" title="Hacker 101 CTF Walkthrough: BugDB v3" /><published>2021-04-12T19:26:00+05:00</published><updated>2021-04-12T19:26:00+05:00</updated><id>http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3</id><content type="html" xml:base="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html">&lt;p&gt;
   &amp;nbsp;This CTF like the previous one too has some mutations in it so likely we
   have to play with mutations. It&apos;s always a good idea to give introspection
   query a try with GraphQL voyager which retrieved following result:
