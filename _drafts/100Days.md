@@ -96,8 +96,11 @@ When I was starting this challenge, there were only a handful of people that too
 
 ### Unexpected Followers
 
-As I proceeded to this challenge, many people joined me in this caravan. The critics faded away with the passage of time and 100+ people followed me along this journey which I am thankful of. I wasn't really expecting this and I am thankful to each one of them because they were my motivation to hunt on my off days. To my surprise, the triagers of the program were also silent followers of my challenge and I came to know this when one of them congratuled me on this challenge and I am grateful for support from all of you.
---- put the triager screenshot here ---
+As I proceeded to this challenge, many people joined me in this caravan. The critics faded away with the passage of time and 100+ people followed me along this journey which I am thankful of. I wasn't really expecting this and I am thankful to each one of them because they were my motivation to hunt on my off days. To my surprise, the triagers of the program were also silent followers of my challenge and I came to know this when one of them congratuled me on this challenge and I am grateful for support from all of you. I asked disclosure on my report but as I mentioned earlier they came up with a thorough explanation and then something special happened 😉
+
+<p align="center">
+<img src="/assets/100DaysOfHackingChallenge/triager-appreciates.png" >
+</p>
 
 ### GitHub Repo on My Tweets
 
