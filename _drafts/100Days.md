@@ -36,9 +36,9 @@ I always heard of how important it is to have a mentor, I knew I was doing somet
 
 ### Taking the Initiative
 
-Being a developer, I have already seen people taking on challenge of #100DaysOfCode which is very popular among developers, in this challenge people coded in some language for 100 days straight. I decided to go with #100DaysOfHacking, upon searching online only a couple of articles was available on #100DaysOfHacking challenge, one was successful and the other one failed at day 31-32. As I was definitely struggling with consistency and being stuck in learning loop I thought it was not a bad idea to give it a try and so I made the announcement of commencement of this challenge.
+Being a developer, I have already seen people taking on challenge of #100DaysOfCode which is very popular among developers, in this challenge people coded in some language for 100 days straight. I decided to go with #100DaysOfHacking, upon searching online only a couple of articles was available on #100DaysOfHacking challenge, one was successful and the other one failed at day 31-32. As I was definitely struggling with consistency and being stuck in learning loop I thought it was not a bad idea to give it a try and so I made the announcement of commencement of this challenge. Here's a tweet which was part of the announcement thread
 
---- Embed the announcement tweet here ---
+<blockquote class="twitter-tweet tw-align-center" data-theme="dark"><p lang="en" dir="ltr">Therefore, I have planned to be accountable on Twitter and take the <a href="https://twitter.com/hashtag/100DaysOfHacking?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfHacking</a> challenge from 1st Jan 2022, in which I will be focusing on:<br><br>- Building my Bug Hunting Methodology<br>- Sticking to a program for longer duration<br>- Learning manual exploitation of bugs</p>&mdash; Najam Ul Saqib (@NjmUlSqb) <a href="https://twitter.com/NjmUlSqb/status/1476271875626090501?ref_src=twsrc%5Etfw">December 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Therefore, I started this challenge from 1st of January 2022. In the beginning of the days I was skimming through the website trying to understand its functionality. I submitted my first bug of the year to this program on the 3rd day of this challenge which was _Improper rate limitation on OTP when OTP was not expiring_ and it turned out to be a duplicate. My first duplicate bug that didn't involve Nuclei so yeah you need something to stay optimist 😅
 
@@ -99,7 +99,6 @@ When I was starting this challenge, there were only a handful of people that too
 As I proceeded to this challenge, many people joined me in this caravan. The critics faded away with the passage of time and 100+ people followed me along this journey which I am thankful of. I wasn't really expecting this and I am thankful to each one of them because they were my motivation to hunt on my off days. To my surprise, the triagers of the program were also silent followers of my challenge and I came to know this when one of them congratuled me on this challenge and I am grateful for support from all of you.
 --- put the triager screenshot here ---
 
-
 ### GitHub Repo on My Tweets
 
 I maintained a github repo during this challenge that contains references to all of the tweets I made during this challenge, so that if you want to see my journey you can go back to any day's progress with ease. Here's the repo: <a href="https://www.github.com/njmulsqb/100DaysOfHackingTweets">#100DaysOfHacking Github Repo</a>
@@ -107,8 +106,6 @@ I maintained a github repo during this challenge that contains references to all
 ### Conclusion
 
 When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stucked to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my will power. I thoroughly enjoyed this challenge. Was it worth it? Hell Ya!
-
-
 
 <!-- Potential headlines:
 9 Lessons I learned from #100DaysOfHacking Challenge
