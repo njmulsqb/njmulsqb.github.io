@@ -6,6 +6,7 @@ tags:
   - Hacking
   - Bug Hunting
 author: "Najam Ul Saqib"
+comments: true
 ---
 
 # How it all started?
@@ -108,16 +109,11 @@ I maintained a GitHub repo during this challenge that contains references to all
 
 # Conclusion
 
-When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Hell Ya!
+When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! Here are some of the benefits I gained from this challenge
 
-<!-- Potential headlines:
-9 Lessons I learned from #100DaysOfHacking Challenge
-#100DaysOfHacking Challenge: A game changer for me
-The Power of #100DaysOfHacking: How it proved to be a game changer for me?
-The Power of #100DaysOfHacking: How it helped me?
-#100DaysOfHacking Challenge: Is it worth the effort?
-Why #100DaysOfHacking is Worth Your Attention?
-The #100DaysOfHacking Challenge Which Made Me a Better Hacker
+1. I learned a lot of new stuff which I would never have in normal circumstances
+2. I came out of my comfort zone and learnt the art of challenging yourself
+3. I made a network around me consisting of many of new friends
+4. I am more confident and disciplined on the successful completion of this marathon
 
-Talk about: why you started, who supported you, burn out, triager congrats, crticism, appreaciation, include your repo of tweets, discuss about how your experience is fragmented and you cant give a figure of how long have you been hacking(if suitable), discuss how you have made a trend and people started following you, add your blog in multiple languages, add only main posts under posts page, rest goes to archive, talk about its not only about 1 hour, but many hours, absolutely no recon,discuss about getting complacent after finding one bug
-you can talk about this https://www.youtube.com/watch?v=Ekcseve-mOg -->
+It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Beyond any shadow of a doubt!

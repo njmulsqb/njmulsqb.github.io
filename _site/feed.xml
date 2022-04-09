@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-09T19:24:46+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">The #100DaysOfHacking Challenge : A Game Changer for Me</title><link href="http://localhost:4000/2022/04/09/100Days.html" rel="alternate" type="text/html" title="The #100DaysOfHacking Challenge : A Game Changer for Me" /><published>2022-04-09T19:24:46+05:00</published><updated>2022-04-09T19:24:46+05:00</updated><id>http://localhost:4000/2022/04/09/100Days</id><content type="html" xml:base="http://localhost:4000/2022/04/09/100Days.html">&lt;h1 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-10T03:06:53+05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">root@najam~#</title><subtitle>Cyber Soldier | Software Engineer</subtitle><entry><title type="html">The #100DaysOfHacking Challenge : A Game Changer for Me</title><link href="http://localhost:4000/2022/04/10/the-100daysofhacking-challenge.html" rel="alternate" type="text/html" title="The #100DaysOfHacking Challenge : A Game Changer for Me" /><published>2022-04-10T00:00:00+05:00</published><updated>2022-04-10T00:00:00+05:00</updated><id>http://localhost:4000/2022/04/10/the-100daysofhacking-challenge</id><content type="html" xml:base="http://localhost:4000/2022/04/10/the-100daysofhacking-challenge.html">&lt;h1 id=&quot;how-it-all-started&quot;&gt;How it all started?&lt;/h1&gt;
 
 &lt;p&gt;I have known bug hunting for 2-3 years now but I had never been able to start hunting with consistency, I used to pick up a target after spending hours deciding which one will be good for me, spending time on recon i.e collecting all the subdomains, hunting on it for an hour or two for a couple of days, realizing that I need to learn hacking concepts first using tutorials and the cycle goes on. I was stuck in a loop of learning, though learning is not too bad but if you get stuck in learning only and don’t apply what you’ve learned practically you have done nothing but wasted your time.&lt;/p&gt;
 
@@ -136,199 +136,205 @@ Being away from home, I also needed to travel some days and had to schedule my c
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
-&lt;p&gt;When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that’s it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Hell Ya!&lt;/p&gt;
+&lt;p&gt;When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that’s it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! Here are some of the benefits I gained from this challenge&lt;/p&gt;
 
-&lt;!-- Potential headlines:
-9 Lessons I learned from #100DaysOfHacking Challenge
-#100DaysOfHacking Challenge: A game changer for me
-The Power of #100DaysOfHacking: How it proved to be a game changer for me?
-The Power of #100DaysOfHacking: How it helped me?
-#100DaysOfHacking Challenge: Is it worth the effort?
-Why #100DaysOfHacking is Worth Your Attention?
-The #100DaysOfHacking Challenge Which Made Me a Better Hacker
+&lt;ol&gt;
+  &lt;li&gt;I learned a lot of new stuff which I would never have in normal circumstances&lt;/li&gt;
+  &lt;li&gt;I came out of my comfort zone and learnt the art of challenging yourself&lt;/li&gt;
+  &lt;li&gt;I made a network around me consisting of many of new friends&lt;/li&gt;
+  &lt;li&gt;I am more confident and disciplined on the successful completion of this marathon&lt;/li&gt;
+&lt;/ol&gt;
 
-Talk about: why you started, who supported you, burn out, triager congrats, crticism, appreaciation, include your repo of tweets, discuss about how your experience is fragmented and you cant give a figure of how long have you been hacking(if suitable), discuss how you have made a trend and people started following you, add your blog in multiple languages, add only main posts under posts page, rest goes to archive, talk about its not only about 1 hour, but many hours, absolutely no recon,discuss about getting complacent after finding one bug
-you can talk about this https://www.youtube.com/watch?v=Ekcseve-mOg --&gt;</content><author><name>Najam Ul Saqib</name></author><category term="Challenge" /><category term="Hacking" /><category term="Bug Hunting" /><summary type="html">How it all started?</summary></entry><entry><title type="html">Importanceofopensource</title><link href="http://localhost:4000/2022/04/07/importanceOfOpensource.html" rel="alternate" type="text/html" title="Importanceofopensource" /><published>2022-04-07T03:13:20+05:00</published><updated>2022-04-07T03:13:20+05:00</updated><id>http://localhost:4000/2022/04/07/importanceOfOpensource</id><content type="html" xml:base="http://localhost:4000/2022/04/07/importanceOfOpensource.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">The Open Source Software That I Use</title><link href="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html" rel="alternate" type="text/html" title="The Open Source Software That I Use" /><published>2021-10-20T00:00:00+05:00</published><updated>2021-10-20T00:00:00+05:00</updated><id>http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use</id><content type="html" xml:base="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html">This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!
+&lt;p&gt;It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Beyond any shadow of a doubt!&lt;/p&gt;</content><author><name>Najam Ul Saqib</name></author><category term="Challenge" /><category term="Hacking" /><category term="Bug Hunting" /><summary type="html">How it all started?</summary></entry><entry><title type="html">The Open Source Software That I Use</title><link href="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html" rel="alternate" type="text/html" title="The Open Source Software That I Use" /><published>2021-10-20T00:00:00+05:00</published><updated>2021-10-20T00:00:00+05:00</updated><id>http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use</id><content type="html" xml:base="http://localhost:4000/2021/10/20/The-Open-Source-Software-That-I-Use.html">&lt;p&gt;This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!&lt;/p&gt;
 
-- Browser: Mozilla Firefox, Brave
-- Keyboard: AnySoftKeyboard
-- Messaging: Signal
-- Email Client: Thunderbird, FairEmail
-- Email Providers: Protonmail, Tutanota
-- App Store: F-Droid
-- Laptop OS: Ubuntu, Kali Linux
-- Office: LibreOffice
-- FTP Client: FileZilla
-- Notepad: Joplin</content><author><name></name></author><category term="opensource" /><summary type="html">This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!</summary></entry><entry><title type="html">Interesting behavior of innerHTML on simple script XSS payload</title><link href="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html" rel="alternate" type="text/html" title="Interesting behavior of innerHTML on simple script XSS payload" /><published>2021-08-24T00:00:00+05:00</published><updated>2021-08-24T00:00:00+05:00</updated><id>http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload</id><content type="html" xml:base="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the `dangerouslySetInnerHTML` tag. Let&apos;s see how?
+&lt;ul&gt;
+  &lt;li&gt;Browser: Mozilla Firefox, Brave&lt;/li&gt;
+  &lt;li&gt;Keyboard: AnySoftKeyboard&lt;/li&gt;
+  &lt;li&gt;Messaging: Signal&lt;/li&gt;
+  &lt;li&gt;Email Client: Thunderbird, FairEmail&lt;/li&gt;
+  &lt;li&gt;Email Providers: Protonmail, Tutanota&lt;/li&gt;
+  &lt;li&gt;App Store: F-Droid&lt;/li&gt;
+  &lt;li&gt;Laptop OS: Ubuntu, Kali Linux&lt;/li&gt;
+  &lt;li&gt;Office: LibreOffice&lt;/li&gt;
+  &lt;li&gt;FTP Client: FileZilla&lt;/li&gt;
+  &lt;li&gt;Notepad: Joplin&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="opensource" /><summary type="html">This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!</summary></entry><entry><title type="html">Interesting behavior of innerHTML on simple script XSS payload</title><link href="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html" rel="alternate" type="text/html" title="Interesting behavior of innerHTML on simple script XSS payload" /><published>2021-08-24T00:00:00+05:00</published><updated>2021-08-24T00:00:00+05:00</updated><id>http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload</id><content type="html" xml:base="http://localhost:4000/secure%20coding/2021/08/24/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload.html">&lt;p&gt;While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; tag. Let’s see how?&lt;/p&gt;
 
-For example, consider this piece of code.
+&lt;p&gt;For example, consider this piece of code.&lt;/p&gt;
 
-```javascript
-export class BadXSS extends React.Component {
-  state = {
-    searchTerm: &quot;&quot;,
-    submittedSearch: &quot;&quot;,
-  };
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;BadXSS&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;submittedSearch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 
-  handleChange = (e) =&gt; {
-    this.setState({ searchTerm: e.target.value });
-  };
+  &lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 
-  handleSubmit = (e) =&gt; {
-    e.preventDefault();
+  &lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 
-    this.setState({ submittedSearch: this.state.searchTerm });
-  };
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;submittedSearch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchTerm&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 
-  render() {
-    return (
-      &lt;div style={containerStyle}&gt;
-        &lt;h2 style={headingStyle}&gt;Bad Example&lt;/h2&gt;
-        &lt;form onSubmit={this.handleSubmit}&gt;
-          &lt;label style={labelStyle} htmlFor=&quot;searchInput&quot;&gt;
-            Search
-          &lt;/label&gt;
-          &lt;input
-            name=&quot;searchInput&quot;
-            id=&quot;searchInput&quot;
-            placeholder=&quot;Search&quot;
-            value={this.state.searchTerm}
-            onChange={this.handleChange}
-            style={inputStyle}
-          /&gt;
-          &lt;button type=&quot;submit&quot; style={buttonStyle}&gt;
-            Go
-          &lt;/button&gt;
-        &lt;/form&gt;
-        {this.state.submittedSearch &amp;&amp; (
-          &lt;p style={searchResultsStyle}&gt;
-            You searched for:{&quot; &quot;}
-            &lt;b&gt;
-              &lt;span
-                dangerouslySetInnerHTML={{ __html: this.state.submittedSearch }}
-              /&gt;
-            &lt;/b&gt;
-          &lt;/p&gt;
-        )}
-      &lt;/div&gt;
-    );
-  }
-}
-```
+  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;containerStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;headingStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bad&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;labelStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;htmlFor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;Search&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/label&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;searchInput&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Search&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchTerm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buttonStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;Go&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/form&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;submittedSearch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchResultsStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;searched&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;dangerouslySetInnerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+              &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/b&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Here in this code you can see that the user input is directly being placed in the `span` using `dangerouslySetInnerHTML` which means that any user input will be parsed and reflected on the DOM, like this:
+&lt;p&gt;Here in this code you can see that the user input is directly being placed in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;span&lt;/code&gt; using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; which means that any user input will be parsed and reflected on the DOM, like this:&lt;/p&gt;
 
-![User Input Getting Reflected](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/Simple-Input-Reflection.png)
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/Simple-Input-Reflection.png&quot; alt=&quot;User Input Getting Reflected&quot; /&gt;&lt;/p&gt;
 
-&gt; _Note_: dangerouslySetInnerHTML is actually a wrapper over innerHTML which is already available in DOM and can be accessed directly. React appended &apos;dangerously&apos; with it to clearly discourage its use as it can make the app vulnerable to XSS through event handlers
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: dangerouslySetInnerHTML is actually a wrapper over innerHTML which is already available in DOM and can be accessed directly. React appended ‘dangerously’ with it to clearly discourage its use as it can make the app vulnerable to XSS through event handlers&lt;/p&gt;
+&lt;/blockquote&gt;
 
-The user input of &quot;Hello World&quot; under Bad Example is being reflected on the page with &quot;You searched for:&quot; and in the DOM on dev tools on the right you can see that it is being loaded within `&lt;span&gt;` tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous `innerHTML` is being used in the backend. Let&apos;s test this out by giving some `&lt;p&gt;` tags and see how that gets reflected and parsed.
+&lt;p&gt;The user input of “Hello World” under Bad Example is being reflected on the page with “You searched for:” and in the DOM on dev tools on the right you can see that it is being loaded within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&lt;/code&gt; tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; is being used in the backend. Let’s test this out by giving some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags and see how that gets reflected and parsed.&lt;/p&gt;
 
-![p Tag Getting Reflected](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png)
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png&quot; alt=&quot;p Tag Getting Reflected&quot; /&gt;&lt;/p&gt;
 
-So, this shows that `innerHTML` can be dangerous as it&apos;s parsing anything that&apos;s being given to it, so technically the app is vulnerable to XSS attacks as we can execute scripts through innerHTML.
+&lt;p&gt;So, this shows that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; can be dangerous as it’s parsing anything that’s being given to it, so technically the app is vulnerable to XSS attacks as we can execute scripts through innerHTML.&lt;/p&gt;
 
-When I tried executing `&lt;script&gt;alert(1)&lt;/script&gt;` payload on this application something interesting happened. The resulting DOM looked something like this
+&lt;p&gt;When I tried executing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;alert(1)&amp;lt;/script&amp;gt;&lt;/code&gt; payload on this application something interesting happened. The resulting DOM looked something like this&lt;/p&gt;
 
-![script Tag in InnerHTML](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/script-in-innerHTML.png)
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/script-in-innerHTML.png&quot; alt=&quot;script Tag in InnerHTML&quot; /&gt;&lt;/p&gt;
 
-```html
-&lt;p style=&quot;margin-bottom: 0px;&quot;&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;margin-bottom: 0px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   You searched for:
-  &lt;b&gt;
-    &lt;span&gt;
-      &lt;script&gt;
-        alert(1);
-      &lt;/script&gt;
-    &lt;/span&gt;
-  &lt;/b&gt;
-&lt;/p&gt;
-```
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-It is clear here that, our payload has made to the DOM without getting encoded by HTML entities and it should technically fire, but it didn&apos;t. Yes. The `&lt;script&gt;` tag didn&apos;t execute even if the syntax is perfectly alright, the alert pop up didn&apos;t appear. This is really very confusing, why it didn&apos;t? 🤯
+&lt;p&gt;It is clear here that, our payload has made to the DOM without getting encoded by HTML entities and it should technically fire, but it didn’t. Yes. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag didn’t execute even if the syntax is perfectly alright, the alert pop up didn’t appear. This is really very confusing, why it didn’t? 🤯&lt;/p&gt;
 
-Though W3C states that innerHTML doesn&apos;t allows execution of scripts.
+&lt;p&gt;Though W3C states that innerHTML doesn’t allows execution of scripts.&lt;/p&gt;
 
-**According to World Wide Web Consortium (W3C)**
+&lt;p&gt;&lt;strong&gt;According to World Wide Web Consortium (W3C)&lt;/strong&gt;&lt;/p&gt;
 
-&gt; **_script elements inserted using innerHTML do not execute when they are inserted._**
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;script elements inserted using innerHTML do not execute when they are inserted.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-But for me this is not enough, how can innerHTML stop the parser from executing the injected script tags when rest of the script tags are being executed without any issue? That&apos;s the main problem.
+&lt;p&gt;But for me this is not enough, how can innerHTML stop the parser from executing the injected script tags when rest of the script tags are being executed without any issue? That’s the main problem.&lt;/p&gt;
 
-Whenever innerHTML is used it re-renders the DOM tree
+&lt;p&gt;Whenever innerHTML is used it re-renders the DOM tree&lt;/p&gt;
 
-&gt; It can also potentially be slow, since every time you change a node’s innerHTML property the browser must completely scrap and recreate its entire DOM tree. If you (for example) keep appending to innerHTML in a loop you’ll cause a lot of unnecessary re-renders.
-&gt; Source: https://learn.foundersandcoders.com/workshops/dom-rendering/
+&lt;blockquote&gt;
+  &lt;p&gt;It can also potentially be slow, since every time you change a node’s innerHTML property the browser must completely scrap and recreate its entire DOM tree. If you (for example) keep appending to innerHTML in a loop you’ll cause a lot of unnecessary re-renders.
+Source: https://learn.foundersandcoders.com/workshops/dom-rendering/&lt;/p&gt;
+&lt;/blockquote&gt;
 
-It means that whenever we call innerHTML, it first injects the value of innerHTML in to the DOM and then renders the entire DOM again, but somehow it recognizes the script that is being injected through innerHTML and doesn&apos;t executes it and executes all the rest of the scripts, I&apos;ve made a rough sketch of this process.
+&lt;p&gt;It means that whenever we call innerHTML, it first injects the value of innerHTML in to the DOM and then renders the entire DOM again, but somehow it recognizes the script that is being injected through innerHTML and doesn’t executes it and executes all the rest of the scripts, I’ve made a rough sketch of this process.&lt;/p&gt;
 
-![script Tag in InnerHTML](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/parser-execution.jpg){: .center-image }
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/parser-execution.jpg&quot; alt=&quot;script Tag in InnerHTML&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-HTML Code:
+&lt;p&gt;HTML Code:&lt;/p&gt;
 
-```html
-&lt;html&gt;
-  &lt;!-- Some HTML Code here --&gt;
-  &lt;p&gt;Hello World&lt;/p&gt;
-  &lt;div&gt;
-    &lt;b&gt; Some random text &lt;/b&gt;
-  &lt;/div&gt;
-  &lt;script&gt;
-    alert(&quot;What&apos;s my fault?&quot;);
-  &lt;/script&gt;
-  &lt;!-- The script injected by the innerHTML gets ignored by the parser :( --&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Some HTML Code here --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt; Some random text &lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;What&apos;s my fault?&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The script injected by the innerHTML gets ignored by the parser :( --&amp;gt;&lt;/span&gt;
 
-  &lt;!-- Rest of the scripts got the attention from the parser and got executed --&gt;
-  &lt;script&gt;
-    alert(&quot;We&apos;re special&quot;);
-  &lt;/script&gt;
-  &lt;script&gt;
-    alert(&quot;We&apos;re special&quot;);
-  &lt;/script&gt;
-  &lt;script&gt;
-    alert(&quot;We&apos;re special&quot;);
-  &lt;/script&gt;
-&lt;/html&gt;
-```
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Rest of the scripts got the attention from the parser and got executed --&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We&apos;re special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We&apos;re special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;We&apos;re special&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-So this behavior is pretty strange, when the DOM got rendered and HTML parser parsed the lines one by one from top to bottom, how it came to know which script tag to ignore and which ones to execute when the syntax is exact same for both. Interestingly, if you copies this whole HTML structure and paste it into a separate HTML file, all the scripts will execute by that same parser. Why this hypocrisy? 😏
+&lt;p&gt;So this behavior is pretty strange, when the DOM got rendered and HTML parser parsed the lines one by one from top to bottom, how it came to know which script tag to ignore and which ones to execute when the syntax is exact same for both. Interestingly, if you copies this whole HTML structure and paste it into a separate HTML file, all the scripts will execute by that same parser. Why this hypocrisy? 😏&lt;/p&gt;
 
-It&apos;s pretty clear that script tags will never ever get executed whenever the HTML is injected using the `innerHTML` property or `dangerouslySetInnerHTML` in case of ReactJS. It&apos;s the standard set by W3C that whenever _HTML Parser_ runs and parses the string within innerHTML, it parses every HTML tag and ignores if `&lt;script&gt;` tag appears, how is this happening? How the parser comes to know about all this? Enough of the suspense! 🧐
+&lt;p&gt;It’s pretty clear that script tags will never ever get executed whenever the HTML is injected using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; property or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dangerouslySetInnerHTML&lt;/code&gt; in case of ReactJS. It’s the standard set by W3C that whenever &lt;em&gt;HTML Parser&lt;/em&gt; runs and parses the string within innerHTML, it parses every HTML tag and ignores if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag appears, how is this happening? How the parser comes to know about all this? Enough of the suspense! 🧐&lt;/p&gt;
 
-Here things get&apos;s complex, get ready for a deeper dive! 🌊
+&lt;p&gt;Here things get’s complex, get ready for a deeper dive! 🌊&lt;/p&gt;
 
-Unfortunately, surface level documentations do not include details about this behavior rather just a note saying that scripts wont work with innerHTML to lessen the chances of XSS and even the answers on StackOverFlow were vague, so I read loads of documentation and came to following conclusion
+&lt;p&gt;Unfortunately, surface level documentations do not include details about this behavior rather just a note saying that scripts wont work with innerHTML to lessen the chances of XSS and even the answers on StackOverFlow were vague, so I read loads of documentation and came to following conclusion&lt;/p&gt;
 
-First, let&apos;s clear some concepts, whenever a _Document_ is created, a html parser gets associated for it and each _Document_ object has some environment variables that define the working and behavior of that parser.
+&lt;p&gt;First, let’s clear some concepts, whenever a &lt;em&gt;Document&lt;/em&gt; is created, a html parser gets associated for it and each &lt;em&gt;Document&lt;/em&gt; object has some environment variables that define the working and behavior of that parser.&lt;/p&gt;
 
-In those environment variables, a **scripting flag** exist, which is a boolean variable, whenever it is set to **false** the HTML parser will ignore the `&lt;script&gt;` tags and they won&apos;t execute, opposite is the case when flag is set to **true**
+&lt;p&gt;In those environment variables, a &lt;strong&gt;scripting flag&lt;/strong&gt; exist, which is a boolean variable, whenever it is set to &lt;strong&gt;false&lt;/strong&gt; the HTML parser will ignore the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tags and they won’t execute, opposite is the case when flag is set to &lt;strong&gt;true&lt;/strong&gt;&lt;/p&gt;
 
-Whenever `innerHTML` is called, a separate _Document_ is created which has its own html parser associated with it that has nothing to do with the main Document&apos;s parser and obviously the temporary document created by `innerHTML` has its own set of environment variables.
+&lt;p&gt;Whenever &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; is called, a separate &lt;em&gt;Document&lt;/em&gt; is created which has its own html parser associated with it that has nothing to do with the main Document’s parser and obviously the temporary document created by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; has its own set of environment variables.&lt;/p&gt;
 
-Upon creation of a separate document, `innerHTML` by default sets the **scripting flag** as **false** means that the HTML parser will ignore the scripts included as value in `innerHTML`
+&lt;p&gt;Upon creation of a separate document, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt; by default sets the &lt;strong&gt;scripting flag&lt;/strong&gt; as &lt;strong&gt;false&lt;/strong&gt; means that the HTML parser will ignore the scripts included as value in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;&lt;/p&gt;
 
-It means the `innerHTML`&apos;s document will be parsed separately and because its **scripting flag** is **false** it will not execute the scripts and the main document&apos;s will be parsed separately and scripts will be executed because its **scripting flag** is set to **true**. I tried to visualize this process in the following diagram
+&lt;p&gt;It means the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;innerHTML&lt;/code&gt;’s document will be parsed separately and because its &lt;strong&gt;scripting flag&lt;/strong&gt; is &lt;strong&gt;false&lt;/strong&gt; it will not execute the scripts and the main document’s will be parsed separately and scripts will be executed because its &lt;strong&gt;scripting flag&lt;/strong&gt; is set to &lt;strong&gt;true&lt;/strong&gt;. I tried to visualize this process in the following diagram&lt;/p&gt;
 
-![Behavior of InnerHTML](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/creation-of-document.jpg){: .center-image }
+&lt;p&gt;&lt;img src=&quot;/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/creation-of-document.jpg&quot; alt=&quot;Behavior of InnerHTML&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-That&apos;s the reason why, if you copies this whole HTML (with injected script) and place it to some other file then the ignored script will also execute because then that will be parsed by the single HTML parser with scripting flag set to true. 😌
+&lt;p&gt;That’s the reason why, if you copies this whole HTML (with injected script) and place it to some other file then the ignored script will also execute because then that will be parsed by the single HTML parser with scripting flag set to true. 😌&lt;/p&gt;
 
-## Conclusion
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-On every call to innerHTML, a new Document node is temporarily created which has its own separate HTML parser and its own set of enivronment variables, whereas our original document has a separate parser and variables, because the orignal document&apos;s scripting flag is set to true therefore all the scripts within the original document are executed on the other hand because the new temporary document&apos;s scripting flag is set to false therefore even it contains valid script tags, the parser wont put those tags into the JS execution context and thus the scripts in the new temporary document won&apos;t be executed, because to us this whole process is abstracted under the layer of innerHTML so it seems confusing that how the HTML parser ignores the script tags whereas in reality that parser never really parses the scripts injected through innerHTML, they&apos;re parsed using a separate parser.
+&lt;p&gt;On every call to innerHTML, a new Document node is temporarily created which has its own separate HTML parser and its own set of enivronment variables, whereas our original document has a separate parser and variables, because the orignal document’s scripting flag is set to true therefore all the scripts within the original document are executed on the other hand because the new temporary document’s scripting flag is set to false therefore even it contains valid script tags, the parser wont put those tags into the JS execution context and thus the scripts in the new temporary document won’t be executed, because to us this whole process is abstracted under the layer of innerHTML so it seems confusing that how the HTML parser ignores the script tags whereas in reality that parser never really parses the scripts injected through innerHTML, they’re parsed using a separate parser.&lt;/p&gt;
 
-If you still have any questions about this behavior or you think that I went wrong somewhere than I am open for discussion and I will appreciate your contribution to this research.
+&lt;p&gt;If you still have any questions about this behavior or you think that I went wrong somewhere than I am open for discussion and I will appreciate your contribution to this research.&lt;/p&gt;
 
-### Resources
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
 
-- [Element.innerHTML - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
-- [script tag create with innerHTML of a div doesn&apos;t work - StackOverFlow](https://stackoverflow.com/questions/13390588/script-tag-create-with-innerhtml-of-a-div-doesnt-work)
-- [Parsing HTML Fragments](https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments)
-- [Parsing State Flags](https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag)
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML&quot;&gt;Element.innerHTML - MDN Web Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/13390588/script-tag-create-with-innerhtml-of-a-div-doesnt-work&quot;&gt;script tag create with innerHTML of a div doesn’t work - StackOverFlow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments&quot;&gt;Parsing HTML Fragments&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag&quot;&gt;Parsing State Flags&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-### Credits
+&lt;h3 id=&quot;credits&quot;&gt;Credits&lt;/h3&gt;
 
-- [Vulnerable to XSS, React Code](https://github.com/thawkin3/xss-demo) by @thawkin3</content><author><name>Najam Ul Saqib</name></author><category term="secure coding" /><category term="XSS" /><category term="reactJS" /><category term="secure coding" /><summary type="html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the dangerouslySetInnerHTML tag. Let’s see how?</summary></entry><entry><title type="html">Hacker 101 CTF Walkthrough: BugDB v3</title><link href="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html" rel="alternate" type="text/html" title="Hacker 101 CTF Walkthrough: BugDB v3" /><published>2021-04-12T19:26:00+05:00</published><updated>2021-04-12T19:26:00+05:00</updated><id>http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3</id><content type="html" xml:base="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html">&lt;p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/thawkin3/xss-demo&quot;&gt;Vulnerable to XSS, React Code&lt;/a&gt; by @thawkin3&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Najam Ul Saqib</name></author><category term="secure coding" /><category term="XSS" /><category term="reactJS" /><category term="secure coding" /><summary type="html">While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the dangerouslySetInnerHTML tag. Let’s see how?</summary></entry><entry><title type="html">Hacker 101 CTF Walkthrough: BugDB v3</title><link href="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html" rel="alternate" type="text/html" title="Hacker 101 CTF Walkthrough: BugDB v3" /><published>2021-04-12T19:26:00+05:00</published><updated>2021-04-12T19:26:00+05:00</updated><id>http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3</id><content type="html" xml:base="http://localhost:4000/2021/04/12/hacker-101-ctf-walkthrough-bugdb-v3.html">&lt;p&gt;
   &amp;nbsp;This CTF like the previous one too has some mutations in it so likely we
   have to play with mutations. It&apos;s always a good idea to give introspection
   query a try with GraphQL voyager which retrieved following result:
@@ -2268,4 +2274,95 @@ Google Drive as well.
       an octotastic day!
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Najam Ul Saqib</name></author><category term="ctf" /><category term="hackerone" /><category term="walkthrough" /><summary type="html">I am back with another walkthrough to one of the&amp;nbsp;HackerOne&apos;s CTF Petshop Pro. Let&apos;s look at the interface of this web page. &amp;nbsp; Flag 0: This seems like a simple shopping website and remember whenever you see a shopping website like this, your first area of testing should be checkout. Whether the web app allows you to shop some free stuff or not? Sounds Cool. Let&apos;s start it this way and try to get some free stuff. Add some stuff into the cart and move to the checkout page, which will look something like this. Now I wanted some amount of Kitten photographs. Here you&apos;ll be needing the help of&amp;nbsp;Burp Suite&amp;nbsp;which is a web proxy to intercept (catch) the requests made by the browser. Set up the Burp proxy, press the &quot;Check Out&quot; button, and intercept that request. Under the cart tag, you can see a URL decoded text which is carrying the products you&apos;re trying to check out. As you can see, I have found for 8.95 which is the price of each Kitten&apos;s photograph so that I can alter this, similarly whatever you have added in the cart find its price in the cart tag and replace it with 0, which means we&apos;re turning its price to zero. Like this. Now you can see I have replaced all the price information with zero. Now lets forward this request by hitting the &quot;Forward&quot; button in Burp and here is your flag 0. We got the total to 0$. Interesting! Isn&apos;t it? Flag 1: Now HackerOne gave the hint &quot;There must be a way to administer the app&quot; on this flag, indicating that there must be some sort of admin panel on the website, or maybe some other directories. To know what directories are available on a web server, gobuster tool is the best option.I used the following command on gobuster.gobuster dir --url http://34.74.105.127/0244bb7b9a/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txtLet me tell you one thing here, SecLists helped me a lot in this CTF, you should also use SecLists as your go-to wordlist choice. Let&apos;s come back to the point. Gobuster gave me some interesting results straightaway.A directory named &quot;/login&quot; has been detected by the tool and this should be the entry point to administer the app. The interesting thing about this login page is that it tells you whether you have entered wrong username or wrong password means that you can be sure of one choice if it&apos;s correct or incorrect. This is a bad practice now, one can easily enumerate your username after several tries. For example, if I hit Najam in the username, it straightaway tells me that I have entered an invalid username and that username is something else. The simple solution to such a scenario is brute forcing, brute-forcing credentials, as this website is telling us whether the username entered is right or wrong, so first, we&apos;ll try to detect the correct username and then will look for its password.&amp;nbsp; Hints available on Hackerone helped me a lot to solve this CTF, I am not claiming that the way I approached this CTF is the optimal way, but I am sharing my experience so that one can learn from my experience and mistakes and I can learn too that where I could have made a better move. Writing a straightaway, flawless walkthrough post is an easier task but that makes no sense because there are already such walkthroughs available in tons.&amp;nbsp; Anyways, for brute-forcing, you can try multiple tools, Burp, Hydra, etc but on community version of burp, there is a drawback that on larger wordlist, the speed of brute-force attack tends to become slower so I believe Hydra would be a go-to choice in this scenario. Again I used usernames wordlist (Seclists/Usernames/names/names.txt) from Seclists, this obviously wasn&apos;t my first try, I tried many different wordlists and default credentials on the login panel and failed, this flag1 took me a lot of time to discover it. After I found the username, It was time to check the password against that username. Once you enter the correct username, the login form now shows the error of &quot;Invalid Password&quot;, its time to hunt for a password. I got a huge wordlist of 1000000 passwords, it will take you months to brute force such a huge wordlist through Burp if not years. I wanted an efficient solution, even I wasn&apos;t satisfied with Hydra here as well, Luckily, I came up with something unique, Turbo Intruder - A Burp Extension, I just loved this extension (you can view its tutorial by clicking on its name (hyperlink) I mentioned now),&amp;nbsp;@alibinowax&amp;nbsp;did a wonderful job, he created an amazing extension that was 6000x faster than usual burp intruder, so obviously that was my way to go... I started brute-forcing for the password using that gigantic wordlist using Turbo Intruder and I got the results in o time. I got the password. As I have got both username and password. I entered and bingo. Got the flag!&amp;nbsp; Flag 2:&amp;nbsp;Flag 1 really took me some time, I was hopeless about it but once you get the flag, the feeling is indescribable. Coming to our 3rd and final flag. As you can see in the screenshot above that we have got an &quot;edit&quot; button now on each photo. Why not try simple XSS? The hint was also pointing towards XSS (Bugs don&apos;t always appear in a place where the data is entered). Let&apos;s do it! &amp;nbsp;&amp;nbsp;I wrote a smile XSS payload &amp;lt;script&amp;gt; alert(&apos;Hello World&apos;) &amp;lt;/script&amp;gt; into both Name and Description section, as Price section was expecting some numeric data so writing this script there resulted in bad request error. I hit save, went to the homepage, and popup of XSS appeared means the website is vulnerable to Stored XSS. But looking at the hint again, I went to the &quot;/cart&quot; page, popups do appear here too, as the product information was being generated from the database here too, but the name section turned to flag here. Giving out our last and final flag which we got by exploiting stored XSS vulnerability in the website. This was our final flag, Petshop pro was interesting and patience-testing CTF I would say, I think marking it as an &quot;Easy CTF&quot; would be a bit unfair because flag1 was not that much easy and piece of cake here. Anyways, Have an octotastic day!</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Najam Ul Saqib</name></author><category term="ctf" /><category term="hackerone" /><category term="walkthrough" /><summary type="html">I am back with another walkthrough to one of the&amp;nbsp;HackerOne&apos;s CTF Petshop Pro. Let&apos;s look at the interface of this web page. &amp;nbsp; Flag 0: This seems like a simple shopping website and remember whenever you see a shopping website like this, your first area of testing should be checkout. Whether the web app allows you to shop some free stuff or not? Sounds Cool. Let&apos;s start it this way and try to get some free stuff. Add some stuff into the cart and move to the checkout page, which will look something like this. Now I wanted some amount of Kitten photographs. Here you&apos;ll be needing the help of&amp;nbsp;Burp Suite&amp;nbsp;which is a web proxy to intercept (catch) the requests made by the browser. Set up the Burp proxy, press the &quot;Check Out&quot; button, and intercept that request. Under the cart tag, you can see a URL decoded text which is carrying the products you&apos;re trying to check out. As you can see, I have found for 8.95 which is the price of each Kitten&apos;s photograph so that I can alter this, similarly whatever you have added in the cart find its price in the cart tag and replace it with 0, which means we&apos;re turning its price to zero. Like this. Now you can see I have replaced all the price information with zero. Now lets forward this request by hitting the &quot;Forward&quot; button in Burp and here is your flag 0. We got the total to 0$. Interesting! Isn&apos;t it? Flag 1: Now HackerOne gave the hint &quot;There must be a way to administer the app&quot; on this flag, indicating that there must be some sort of admin panel on the website, or maybe some other directories. To know what directories are available on a web server, gobuster tool is the best option.I used the following command on gobuster.gobuster dir --url http://34.74.105.127/0244bb7b9a/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txtLet me tell you one thing here, SecLists helped me a lot in this CTF, you should also use SecLists as your go-to wordlist choice. Let&apos;s come back to the point. Gobuster gave me some interesting results straightaway.A directory named &quot;/login&quot; has been detected by the tool and this should be the entry point to administer the app. The interesting thing about this login page is that it tells you whether you have entered wrong username or wrong password means that you can be sure of one choice if it&apos;s correct or incorrect. This is a bad practice now, one can easily enumerate your username after several tries. For example, if I hit Najam in the username, it straightaway tells me that I have entered an invalid username and that username is something else. The simple solution to such a scenario is brute forcing, brute-forcing credentials, as this website is telling us whether the username entered is right or wrong, so first, we&apos;ll try to detect the correct username and then will look for its password.&amp;nbsp; Hints available on Hackerone helped me a lot to solve this CTF, I am not claiming that the way I approached this CTF is the optimal way, but I am sharing my experience so that one can learn from my experience and mistakes and I can learn too that where I could have made a better move. Writing a straightaway, flawless walkthrough post is an easier task but that makes no sense because there are already such walkthroughs available in tons.&amp;nbsp; Anyways, for brute-forcing, you can try multiple tools, Burp, Hydra, etc but on community version of burp, there is a drawback that on larger wordlist, the speed of brute-force attack tends to become slower so I believe Hydra would be a go-to choice in this scenario. Again I used usernames wordlist (Seclists/Usernames/names/names.txt) from Seclists, this obviously wasn&apos;t my first try, I tried many different wordlists and default credentials on the login panel and failed, this flag1 took me a lot of time to discover it. After I found the username, It was time to check the password against that username. Once you enter the correct username, the login form now shows the error of &quot;Invalid Password&quot;, its time to hunt for a password. I got a huge wordlist of 1000000 passwords, it will take you months to brute force such a huge wordlist through Burp if not years. I wanted an efficient solution, even I wasn&apos;t satisfied with Hydra here as well, Luckily, I came up with something unique, Turbo Intruder - A Burp Extension, I just loved this extension (you can view its tutorial by clicking on its name (hyperlink) I mentioned now),&amp;nbsp;@alibinowax&amp;nbsp;did a wonderful job, he created an amazing extension that was 6000x faster than usual burp intruder, so obviously that was my way to go... I started brute-forcing for the password using that gigantic wordlist using Turbo Intruder and I got the results in o time. I got the password. As I have got both username and password. I entered and bingo. Got the flag!&amp;nbsp; Flag 2:&amp;nbsp;Flag 1 really took me some time, I was hopeless about it but once you get the flag, the feeling is indescribable. Coming to our 3rd and final flag. As you can see in the screenshot above that we have got an &quot;edit&quot; button now on each photo. Why not try simple XSS? The hint was also pointing towards XSS (Bugs don&apos;t always appear in a place where the data is entered). Let&apos;s do it! &amp;nbsp;&amp;nbsp;I wrote a smile XSS payload &amp;lt;script&amp;gt; alert(&apos;Hello World&apos;) &amp;lt;/script&amp;gt; into both Name and Description section, as Price section was expecting some numeric data so writing this script there resulted in bad request error. I hit save, went to the homepage, and popup of XSS appeared means the website is vulnerable to Stored XSS. But looking at the hint again, I went to the &quot;/cart&quot; page, popups do appear here too, as the product information was being generated from the database here too, but the name section turned to flag here. Giving out our last and final flag which we got by exploiting stored XSS vulnerability in the website. This was our final flag, Petshop pro was interesting and patience-testing CTF I would say, I think marking it as an &quot;Easy CTF&quot; would be a bit unfair because flag1 was not that much easy and piece of cake here. Anyways, Have an octotastic day!</summary></entry><entry><title type="html">How I got my first private invitation to a bug bounty program?</title><link href="http://localhost:4000/2020/07/13/how-i-got-my-first-private-invitation.html" rel="alternate" type="text/html" title="How I got my first private invitation to a bug bounty program?" /><published>2020-07-13T20:58:00+05:00</published><updated>2020-07-13T20:58:00+05:00</updated><id>http://localhost:4000/2020/07/13/how-i-got-my-first-private-invitation</id><content type="html" xml:base="http://localhost:4000/2020/07/13/how-i-got-my-first-private-invitation.html">&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left&quot; trbidi=&quot;on&quot;&gt;
+  Bug bounty platforms are rapidly gaining popularity among ethical hackers and
+  penetration testers, they provide crowdsource solutions to different
+  companies, hackers look for security loopholes in the websites and in turn
+  they get paid for a valid submission.&lt;br /&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    But as such platforms are gaining popularity and more and more people are
+    finding security bugs in public programs resulting in lesser vulnerabilities
+    to be found left, private invitations are a better choice in this scenario,
+    as the word &quot;Private&quot; explains the story, not everyone is allowed to hack on
+    the private program like public ones. Only selected hackers based on their
+    skill set and achievements are invited to private programs.
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    Hence, I got invited to one of the private programs, it is pretty confusing
+    for newbies to know that how they can be invited to a private program but
+    don&apos;t worry I&apos;ll make it clear &amp;amp; concise for you.&amp;nbsp;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    &lt;a href=&quot;https://www.blogger.com/www.hackerone.com&quot; target=&quot;_blank&quot;
+      &gt;HackerOne&lt;/a
+    &gt;&amp;nbsp;is a famous and probably number one bug bounty platform, with some
+    hackers making over 1 million $ in bounties through this platform. This
+    platform introduces an interesting way for you to learn hacking and making
+    your path to your first private invitation.&amp;nbsp;&lt;a
+      href=&quot;https://www.hacker101.com/&quot;
+      target=&quot;_blank&quot;
+      &gt;Hacker101&lt;/a
+    &gt;&amp;nbsp;is a project of HackerOne in which they post videos and lectures
+    related to hacking, they also have some CTFs for hackers to get hands-on
+    experience. The interesting thing with CTFs is that CTFs carry points and
+    once you complete some CTFs and get a total of 26 points you get invited to
+    a private program, this cycle goes on, to get your next private program you
+    have to get 26 more points in CTFs again.
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    You may have noticed that I have been posting walkthroughs of CTFs from
+    Hacker101, that&apos;s exactly what I was doing, trying to hone my skills and
+    smoothen my path towards the private invitation. I completed 26 points
+    successfully and got a private invitation instantly.
+  &lt;/div&gt;
+  &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center&quot;&gt;
+    &lt;a
+      href=&quot;https://1.bp.blogspot.com/-7wgXYP7hB7k/XwyDZD6fUdI/AAAAAAAAdfk/opajCjjsgaw87QxE_aew9RTFYDp7s0huACLcBGAsYHQ/s896/h1%2Bpvt.PNG&quot;
+      style=&quot;margin-left: 1em; margin-right: 1em&quot;
+      &gt;&lt;img
+        border=&quot;0&quot;
+        data-original-height=&quot;286&quot;
+        data-original-width=&quot;896&quot;
+        height=&quot;200&quot;
+        src=&quot;https://1.bp.blogspot.com/-7wgXYP7hB7k/XwyDZD6fUdI/AAAAAAAAdfk/opajCjjsgaw87QxE_aew9RTFYDp7s0huACLcBGAsYHQ/w625-h200/h1%2Bpvt.PNG&quot;
+        width=&quot;625&quot;
+    /&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center&quot;&gt;
+    &lt;a
+      href=&quot;https://1.bp.blogspot.com/-IW5ejZnfDKc/XwyDZD7TpfI/AAAAAAAAdfg/MTtLfvFzElIvYk0Axa9ebGWYdiqgnqgbQCLcBGAsYHQ/s579/gmail%2Bpvt.PNG&quot;
+      style=&quot;margin-left: 1em; margin-right: 1em&quot;
+      &gt;&lt;img
+        border=&quot;0&quot;
+        data-original-height=&quot;257&quot;
+        data-original-width=&quot;579&quot;
+        height=&quot;279&quot;
+        src=&quot;https://1.bp.blogspot.com/-IW5ejZnfDKc/XwyDZD7TpfI/AAAAAAAAdfg/MTtLfvFzElIvYk0Axa9ebGWYdiqgnqgbQCLcBGAsYHQ/w625-h279/gmail%2Bpvt.PNG&quot;
+        width=&quot;625&quot;
+    /&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    Quite obviously, these are PRIVATE programs meaning that you are not allowed
+    even to discuss their name in the public, forget about security bugs, if you
+    do so, you are breaking the law and is committing a crime.
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    The CTFs I solved included many different vulnerabilities like XSS (Stored
+    &amp;amp; Reflected), SQLi, IDOR, Privilege Escalation, etc so its a good
+    practice as well to go through these CTFs.
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;div&gt;
+    I hope it is pretty clear to you about how you can also get a private
+    invitation. If not, ask me in the comments.
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Najam Ul Saqib</name></author><category term="hacker101" /><category term="bugbounty" /><category term="ctf" /><category term="hackerone" /><summary type="html">Bug bounty platforms are rapidly gaining popularity among ethical hackers and penetration testers, they provide crowdsource solutions to different companies, hackers look for security loopholes in the websites and in turn they get paid for a valid submission. But as such platforms are gaining popularity and more and more people are finding security bugs in public programs resulting in lesser vulnerabilities to be found left, private invitations are a better choice in this scenario, as the word &quot;Private&quot; explains the story, not everyone is allowed to hack on the private program like public ones. Only selected hackers based on their skill set and achievements are invited to private programs. Hence, I got invited to one of the private programs, it is pretty confusing for newbies to know that how they can be invited to a private program but don&apos;t worry I&apos;ll make it clear &amp;amp; concise for you.&amp;nbsp; HackerOne&amp;nbsp;is a famous and probably number one bug bounty platform, with some hackers making over 1 million $ in bounties through this platform. This platform introduces an interesting way for you to learn hacking and making your path to your first private invitation.&amp;nbsp;Hacker101&amp;nbsp;is a project of HackerOne in which they post videos and lectures related to hacking, they also have some CTFs for hackers to get hands-on experience. The interesting thing with CTFs is that CTFs carry points and once you complete some CTFs and get a total of 26 points you get invited to a private program, this cycle goes on, to get your next private program you have to get 26 more points in CTFs again. You may have noticed that I have been posting walkthroughs of CTFs from Hacker101, that&apos;s exactly what I was doing, trying to hone my skills and smoothen my path towards the private invitation. I completed 26 points successfully and got a private invitation instantly. Quite obviously, these are PRIVATE programs meaning that you are not allowed even to discuss their name in the public, forget about security bugs, if you do so, you are breaking the law and is committing a crime. The CTFs I solved included many different vulnerabilities like XSS (Stored &amp;amp; Reflected), SQLi, IDOR, Privilege Escalation, etc so its a good practice as well to go through these CTFs. I hope it is pretty clear to you about how you can also get a private invitation. If not, ask me in the comments.</summary></entry></feed>
