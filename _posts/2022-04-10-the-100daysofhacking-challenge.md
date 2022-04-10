@@ -109,11 +109,4 @@ I maintained a GitHub repo during this challenge that contains references to all
 
 # Conclusion
 
-When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! Here are some of the benefits I gained from this challenge
-
-1. I learned a lot of new stuff which I would never have in normal circumstances
-2. I came out of my comfort zone and learnt the art of challenging yourself
-3. I made a network around me consisting of many of new friends
-4. I am more confident and disciplined on the successful completion of this marathon
-
-It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Beyond any shadow of a doubt!
+When I was starting this challenge, I was full of doubts and was not expecting anything special but I was determined to do it every day, do it a little every day and that's it. I stuck to the rules of this challenge by doing it daily and it paid dividends. Was it tough? It definitely was! I gained so many benefits from this challenge, for example, I learned a lot of new stuff which I would never have in normal circumstances, I came out of my comfort zone and learnt the art of challenging yourself, I made a network around me consisting of many new friends, I am more confident and disciplined on the successful completion of this marathon. It took so much effort to stay dedicated and disciplined but this strengthened my willpower. I thoroughly enjoyed this challenge and will carry on this momentum to hunt more bugs. Was the #100DaysOfHacking challenge worth the effort? Beyond any shadow of a doubt!
