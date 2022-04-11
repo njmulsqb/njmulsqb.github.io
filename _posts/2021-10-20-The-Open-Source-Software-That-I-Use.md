@@ -14,4 +14,5 @@ This is the list of Open Source software that I use as my daily driver! Kudos to
 - Laptop OS: Ubuntu, Kali Linux
 - Office: LibreOffice
 - FTP Client: FileZilla
+- Password Manager: Bitwarden
 - Notepad: Joplin
