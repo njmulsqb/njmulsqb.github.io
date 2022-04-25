@@ -36,6 +36,18 @@ I got 2 valid security bugs and I don't know if it was procrastination or what, 
 
 I always heard of how important it is to have a mentor, I knew I was doing something wrong and I wanted that someone could guide me, on what am I doing wrong and what should be the right direction. I approached many people asking loads of questions and obviously not silly ones e.g "Can you mentor me?", "Can you teach me how to hack?", etc rather I wrote the complete scenario and asked for their feedback but unfortunately almost no one responded positively. Most of them were unresponsive as well. I do not blame them, everyone has their own routine and not everyone is ready to help you. I just am saying that I had no mentor back then, I even asked people if we can hack together, on CTFs, or programs, etc but no one was interesting as I had nothing under my belt quite obviously. Why would one waste time with a noob? Therefore, I stopped wasting time asking people for help as it only portrayed me as a stupid begging for help.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4011940976872392"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4011940976872392"
+     data-ad-slot="2286207201"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Taking the Initiative
 
 Being a developer, I have already seen people taking on the challenge of #100DaysOfCode which is very popular among developers, in this challenge people coded in some language for 100 days straight. I decided to go with #100DaysOfHacking, upon searching online only a couple of articles were available on the #100DaysOfHacking challenge, one was successful and the other one failed on day 31-32. As I was struggling with consistency and being stuck in a learning loop I thought it was not a bad idea to give it a try and so I announced the commencement of this challenge. Here's a tweet that was part of the announcement thread
