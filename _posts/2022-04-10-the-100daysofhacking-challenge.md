@@ -7,7 +7,7 @@ tags:
   - Bug Hunting
 author: "Najam Ul Saqib"
 comments: true
-description: "In this post, I discussed my experiences with #100DaysOfHacking challenge."
+description: "In this post, I discussed my experiences with #100DaysOfHacking challenge. How I went through the challenge? What were the issues I faced? How successful it was?"
 ---
 
 # How it all started?

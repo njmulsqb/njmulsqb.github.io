@@ -1,6 +1,7 @@
 ---
 comments: true
 tags: [opensource]
+description: "This is the list of open source software I use. I admire FOSS and prefer using it over any proprietary solution"
 ---
 
 This is the list of Open Source software that I use as my daily driver! Kudos to their contributors!

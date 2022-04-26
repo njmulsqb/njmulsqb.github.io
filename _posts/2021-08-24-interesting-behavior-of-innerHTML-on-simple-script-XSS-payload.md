@@ -5,6 +5,7 @@ tags: [XSS, reactJS, secure coding]
 assets: /assets/My-Transition-To-More-Privacy-Focused-Internet/
 author: Najam Ul Saqib
 comments: true
+description: "Often times, while finding XSS we come across perfect payloads that don't fire, in this post I discuss one such scenario where an apparently malicious payload gets passed to the backend but still for some reason it doesn't work. Find out why?"
 ---
 
 While going through the secure coding practices for ReactJS I pondered on how can an application built in ReactJS be vulnerable to XSS, came to know that ReactJS inherently is pretty secure against XSS attacks and that its JSX escapes the inputs pretty well. Apart from all this, ReactJS allows a way through which user input can be parsed into the DOM and that is through the `dangerouslySetInnerHTML` tag. Let's see how?
@@ -73,7 +74,6 @@ Here in this code you can see that the user input is directly being placed in th
 {% include inArticleAds.html %}
 
 The user input of "Hello World" under Bad Example is being reflected on the page with "You searched for:" and in the DOM on dev tools on the right you can see that it is being loaded within `<span>` tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous `innerHTML` is being used in the backend. Let's test this out by giving some `<p>` tags and see how that gets reflected and parsed.
-
 
 ![p Tag Getting Reflected](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png)
 

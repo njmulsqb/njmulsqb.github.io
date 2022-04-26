@@ -9,6 +9,7 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 future: true
 # Exclude from processing.
@@ -39,7 +40,6 @@ google_analytics: G-NNW86KLKCS
 collections:
   writeups:
     output: true
-
 # Adding Pagination
 #paginate: 5
 #paginate_path: "/posts/page:num"
