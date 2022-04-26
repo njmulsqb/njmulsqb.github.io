@@ -70,7 +70,10 @@ Here in this code you can see that the user input is directly being placed in th
 
 > _Note_: dangerouslySetInnerHTML is actually a wrapper over innerHTML which is already available in DOM and can be accessed directly. React appended 'dangerously' with it to clearly discourage its use as it can make the app vulnerable to XSS through event handlers
 
+{% include inArticleAds.html %}
+
 The user input of "Hello World" under Bad Example is being reflected on the page with "You searched for:" and in the DOM on dev tools on the right you can see that it is being loaded within `<span>` tags meaning that if we insert some HTML in the search bar it will get parsed as the infamous `innerHTML` is being used in the backend. Let's test this out by giving some `<p>` tags and see how that gets reflected and parsed.
+
 
 ![p Tag Getting Reflected](/assets/interesting-behavior-of-innerHTML-on-simple-script-XSS-payload/p-tag-reflection.png)
 
