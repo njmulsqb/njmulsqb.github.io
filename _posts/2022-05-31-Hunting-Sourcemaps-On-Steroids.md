@@ -79,22 +79,9 @@ Yes, there was an easier solution, i.e to pass some random string like UUID or d
 
 The python code looked something like this:
 
-```
-import sys
-import subprocess
-import os
+<script src="https://gist.github.com/njmulsqb/1e78fceee4598734401e79aa7781a7d3.js"></script>
 
-parentDir = 'sourceMapsToJS'
-sourceMapURL = sys.argv[1]
-dirName = sourceMapURL.strip(
-    'https://').strip('http://').strip('www.').replace('/', '-').replace('.', '-')
-if not os.path.exists(parentDir):
-    os.mkdir(parentDir)
-os.chdir(parentDir)
-subprocess.call(['sourcemapper', '-url', sourceMapURL, '-output', dirName])
-```
-
-You can find it on Github here: [SourcemapWrapper](https://github.com/njmulsqb/scripts/blob/main/sourcemapWrapper.py)
+You can find it on Github here: [SourcemapWrapper](https://gist.github.com/njmulsqb/1e78fceee4598734401e79aa7781a7d3)
 
 The script did the job well, and the final command was:
 
