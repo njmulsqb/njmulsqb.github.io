@@ -9,9 +9,6 @@ author: "Najam Ul Saqib"
 comments: true
 description: "Explore real-world insights from a successful penetration test on an enterprise Active Directory environment. Learn how the domain controllers were compromised within just a few hours using multiple attack vectors. From initial recon to privilege escalation and lateral movement, this case study offers a comprehensive guide to Active Directory security weaknesses and how to fortify them."
 ---
-
-Fix the comments section before pushing this post in prod
-
 Active directory environments have always intrigued me but for some reasons I never got the chance to get my hands dirty on an enterprise level AD environment until this one. I was asked by a company (which we will refer to as "EvilCorp" -- {inspired by Mr. Robot} to not disclose their real identity here) to perform penetration test on their active directory environment. As I mentioned I had no experience with such large scale AD environment before so it involved lots of learning on the run so you might feel that I wasted some time or my approach wasn't straightforward but I am sharing it anyway so that you can learn from my mistakes and hopefully do better than me.
 
 # Scope Details
@@ -55,4 +52,51 @@ and after consulting with the IT team, I came to know that all the DCs are furth
 
 I don't know the reason behind this complex configuration but my DNS and LLMNR queries were being lost or not reachable to me. I was not able to get the hashes using LLMNR poisoning. For similar reason, IPv6 poisoning and SMB relay were also not working (IPv6 was enabled and SMB signing was disabled). This demanded more digging into the DNS services and network design (curse my weak networking concepts again) and the other network was not in scope as well so I couldnt enumerate/attack it hence without wasting more time with the uncredentialed approach, I decided to move on to the credentialed approach.
 
+# Going credentialed with the domain-joined VM
 
+I logged into the windows VM with the user credentials given to me and first thing I did was that I ran [PingCastle](https://pingcastle.com) on the VM; I will highly suggest this tool once you've got foothold as it really gives lots of information. Here's how the output summary looked like
+
+**Input PingCastle summary screenshot here**
+
+It showed 100 risk and some kerberoastable users as well, but there was something very shocking, among the administrators list I found that the user account given to me was also a member of the domain admins group. I was like "What the hell? How can a user account be a member of domain admins group?". I was not expecting this at all. I was expecting to get a low privileged user account and then I would have to escalate the privileges to domain admin but I was already a domain admin. I was not sure if this was a mistake or it was intentionally done by the IT team but I was not complaining. I was happy that I was already a domain admin and I didn't have to escalate the privileges. I was able to do anything I wanted to do in the domain. There was huge numbers of users with admin rights and mine was one of them (maybe they gave the users these rights by default?) I logged into all 4 of the DCs and I was in so at this point I can claim that I compromised the AD environment.
+
+<img src="https://media.giphy.com/media/jsZIN7jaaFLvbjPy7l/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
+
+Well, it was a good catch but felt like a cheatcode so I without informing the company, created a low-privileged user to try compromising the AD again (the new user alone should've rang the bells but it didn't) so I forgot about the domain admin account and started working on the low-privileged user account.
+
+## Compromising the AD environment with low-privileged user
+
+The user I created was given the username "test" and password was given the same as the previous user's password i.e. "ChangeMe!"
+
+With this user, I ran bloodhound via the Kali VM to map out the AD environment and it gave lots of information. Strangely, I was able to run bloodhound on DC01 and DC02 but not on DC03 and DC04 and supposedly those DNS configurations were to be blamed here as well.
+
+```bash
+sudo bloodhound-python -d evilCorp.local -u test -p ChangeMe! -ns 10.175.14.22 -c all
+```
+
+The bloodhound was also revealing the kerberoastable users that were in high value groups, I ran Plumhound on bloodhound results and it gave some interesting results. I tried ldapdomaindump but it didn't work and infact it was not required as well since Bloodhound and Plumhound did a great job
+
+```bash
+sudo python3 PlumhHound.py -x tasks/default.tasks -p 8118
+```
+
+** Insert the kerberoastable users screenshot here from bloodhound**
+
+So it made total sense to try kerberoasting first.
+
+### Kerberoasting
+
+I requested the kerberos tickets using the following command from the DC
+
+```bash
+impacket-GetUserSPNs evilCorp.local/test:ChangeMe! -dc-ip 10.175.14.22 -request
+```
+and guess what? I got the kerberos hashes for four accounts that were part of the admin group. The hashes were of type `Kerberos 5, etype 23, TGS-REP` as detected by hashes.com and module for that in hashcat is [13100](https://hashcat.net/wiki/doku.php?id=example_hashes). I used rockyou wordlist to crack the hashes.
+```bash
+hashcat -a 0 -m 13100 kerberoasting-hashes.txt ~/rockyou.txt
+```
+but nah! In a desperate attempt, I made a single wordlist by combining all the password wordlists in Seclists (the resultant file became hugeeee) and used it to crack the hashes but unfortunately it also didn't work.
+```bash
+find . -name '*.txt' -exec cat {} + | awk '!x[$0]++' > allPasswords.txt #The command that I ran in Seclists directory (Thanks ChatGPT)
+```
+ The passwords were very strong for those accounts or if not strong they were not in my wordlist at least.
