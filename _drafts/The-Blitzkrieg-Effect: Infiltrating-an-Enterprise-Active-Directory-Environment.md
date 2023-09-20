@@ -9,13 +9,14 @@ author: "Najam Ul Saqib"
 comments: true
 description: "Explore real-world insights from a successful penetration test on an enterprise Active Directory environment. Learn how the domain controllers were compromised within just a few hours using multiple attack vectors. From initial recon to privilege escalation and lateral movement, this case study offers a comprehensive guide to Active Directory security weaknesses and how to fortify them."
 ---
+
 Fix the comments section before pushing this post in prod
 
 Active directory environments have always intrigued me but for some reasons I never got the chance to get my hands dirty on an enterprise level AD environment until this one. I was asked by a company (which we will refer to as "EvilCorp" -- {inspired by Mr. Robot} to not disclose their real identity here) to perform penetration test on their active directory environment. As I mentioned I had no experience with such large scale AD environment before so it involved lots of learning on the run so you might feel that I wasted some time or my approach wasn't straightforward but I am sharing it anyway so that you can learn from my mistakes and hopefully do better than me.
 
 # Scope Details
 
-The AD environment of evilcorp was completely hosted on Azure cloud. The scope quite obviously was to compromise the domain controllers. I was given the address spaces as there were multiple subnets that contained the AD environment. The scope was limited to the AD environment only and I was not allowed to perform any attacks on the Azure cloud infrastructure.
+The AD environment of evilcorp was completely hosted on Azure cloud. The scope quite obviously was to compromise the domain controllers. I was given the address spaces as there were multiple subnets that contained the AD environment. The scope was limited to the AD environment only and I was not allowed to perform any attacks on the Azure cloud infrastructure. All the VMs in the environment were running CrowdStrike Falcon XDR.
 
 For testing I was given a domain-joined user account and also a Kali VM in the network so that I could try both credentialed and non-credential approach.
 
@@ -41,8 +42,17 @@ I scanned the other address spaces and there they were! DC01 and DC02; so in tot
 
 I first tried to see if I can break into the domain; tried to get the foothold using just Kali.
 
-## LLMNR Poisoning
+Began with LLMNR poisoning. I used Responder to poison the LLMNR and NBT-NS requests. After I ran LLMNR poisoning, I was hoping for hashes flying around in my terminal which usually happens in big environments, but I got nothing. Absolute silence! I left the the responder running over night expecting to get some hashes but the next day there was nothing on the terminal ☹️
 
-Began with LLMNR poisoning. I used Responder to poison the LLMNR and NBT-NS requests. After I ran LLMNR poisoning, I was hoping for hashes flying around in my terminal which usually happens in big environments, but I got nothing. Absolute silence! I left the the responder running over night expecting to get some hashes but the next day there was nothing on the terminal :( 
+I logged into the domain-joined machine to see if I can invoke the LLMNR poisoning manually, wrote some non-existent shares into the file explorer hoping that it will invoke LLMNR and Responder will catch the hash but nothing happened. The responder was not entertaining the LLMNR queries and it only worked when I manually entered the IP of the attacker machine like \\attacker-IP-address in the file explorer, in that case I was getting the hashes but that was not what I wanted. I wanted to get the hashes by just running responder and waiting for the hashes to come in.
 
-I logged into the domain-joined 
+Did lots of digging, spent numerous hours in it but it was not working. LLMNR was enabled on the hosts, I was able to ping all the DCs from Kali and Kali was reachable in the network too but it was not working. Everything looked fine on my end, upon running the responder in analyze mode I observed a DNS IP which I wasn't aware of
+
+![Responder Output](/assets/images/posts/ad-pentest/responder-analyze.png){:style="display:block; margin-left:auto; margin-right:auto"}
+and after consulting with the IT team, I came to know that all the DCs are further utilizing another (different) DNS server which is not accessible from my Kali VM. I was able to ping the DCs because they were in the same subnet but I was not able to resolve the hostnames because the DNS server was not accessible from my Kali VM. I was able to resolve the hostnames from the domain-joined machine because it was using the DNS server that was accessible from it. The DCs were further communicating with DCs in a separate network and organization that was not part of the scope.
+
+<img src="https://media.giphy.com/media/AjYsTtVxEEBPO/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
+
+I don't know the reason behind this complex configuration but my DNS and LLMNR queries were being lost or not reachable to me. I was not able to get the hashes using LLMNR poisoning. For similar reason, IPv6 poisoning and SMB relay were also not working. This demanded more digging into the DNS services and network design (curse my weak networking concepts again) and the other network was not in scope as well so I couldnt enumerate/attack it hence without wasting more time with the uncredentialed approach, I decided to move on to the credentialed approach.
+
+
