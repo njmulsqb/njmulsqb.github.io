@@ -34,3 +34,15 @@ Here's how one of the DC looked like in Zenmap:
 ![DC03 Zenmap Output](/assets/images/posts/ad-pentest/port-scan-zenmap.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The fact that the DC was named like DC03 and the other DC was DC04 (10.174.14.19), so there should be DC01 and DC02, right?
+
+I scanned the other address spaces and there they were! DC01 and DC02; so in total we had 4 domain controllers across 2 different VNets.
+
+# Going non-credentialed first
+
+I first tried to see if I can break into the domain; tried to get the foothold using just Kali.
+
+## LLMNR Poisoning
+
+Began with LLMNR poisoning. I used Responder to poison the LLMNR and NBT-NS requests. After I ran LLMNR poisoning, I was hoping for hashes flying around in my terminal which usually happens in big environments, but I got nothing. Absolute silence! I left the the responder running over night expecting to get some hashes but the next day there was nothing on the terminal :( 
+
+I logged into the domain-joined 
