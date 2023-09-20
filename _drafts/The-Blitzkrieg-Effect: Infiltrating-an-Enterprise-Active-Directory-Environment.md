@@ -53,6 +53,6 @@ and after consulting with the IT team, I came to know that all the DCs are furth
 
 <img src="https://media.giphy.com/media/AjYsTtVxEEBPO/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
 
-I don't know the reason behind this complex configuration but my DNS and LLMNR queries were being lost or not reachable to me. I was not able to get the hashes using LLMNR poisoning. For similar reason, IPv6 poisoning and SMB relay were also not working. This demanded more digging into the DNS services and network design (curse my weak networking concepts again) and the other network was not in scope as well so I couldnt enumerate/attack it hence without wasting more time with the uncredentialed approach, I decided to move on to the credentialed approach.
+I don't know the reason behind this complex configuration but my DNS and LLMNR queries were being lost or not reachable to me. I was not able to get the hashes using LLMNR poisoning. For similar reason, IPv6 poisoning and SMB relay were also not working (IPv6 was enabled and SMB signing was disabled). This demanded more digging into the DNS services and network design (curse my weak networking concepts again) and the other network was not in scope as well so I couldnt enumerate/attack it hence without wasting more time with the uncredentialed approach, I decided to move on to the credentialed approach.
 
 
