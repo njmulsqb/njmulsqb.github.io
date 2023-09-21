@@ -8,6 +8,7 @@ tags:
 author: "Najam Ul Saqib"
 comments: true
 description: "Explore real-world insights from a successful penetration test on an enterprise Active Directory environment. Learn how the domain controllers were compromised within just a few hours using multiple attack vectors. From initial recon to privilege escalation and lateral movement, this case study offers a comprehensive guide to Active Directory security weaknesses and how to fortify them."
+date: "2023-09-24"
 ---
 
 Active directory environments have always intrigued me but for some reasons I never got the chance to get my hands dirty on an enterprise level AD environment until this one. I was asked by a company (which we will refer to as "EvilCorp" -- {inspired by Mr. Robot} to not disclose their real identity here) to perform penetration test on their active directory environment. As I mentioned I had no experience with such large scale AD environment before so it involved lots of learning on the run so you might feel that I wasted some time or my approach wasn't straightforward but I am sharing it anyway so that you can learn from my mistakes and hopefully do better than me.
@@ -61,7 +62,7 @@ It showed 100 risk and some kerberoastable users, but there was something very s
 
 <img src="https://media.giphy.com/media/jsZIN7jaaFLvbjPy7l/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
 
-Well, it was a good catch but felt like a cheatcode so I without informing the company, created a low-privileged user to try compromising the AD again (the new user alone should've rang the bells but it didn't) so I forgot about the domain admin account and started working on the low-privileged user account.
+Well, it was indeed a catch but felt like a cheatcode so I without informing the company, created a low-privileged user to try compromising the AD again (the new user alone should've rang the bells but it didn't) so I forgot about the domain admin account and started working on the low-privileged user account.
 
 ## Compromising the AD environment (again) with low-privileged user
 
@@ -108,7 +109,7 @@ The passwords were very strong for those accounts or if not strong they were not
 After not being able to crack the Kerberos hashes; I thought of going for mimikatz and see if I can steal the credentials somehow. Running it instantly was blocked by the XDR on the host machine. I without wasting time, moved forward to _Token Impersonation_ and tried to get the tokens from the logged in sessions on different machines. I opted for Metasploit for this attack but it failed too
 ![MSFConsole](/assets/images/posts/ad-pentest/token-imper.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-it was failing with the domain admin account as well so definitely XDR was blocking everything now and soon enough I got call from the IT dept that they have identified a breach attempt, is that me?
+it was failing with the domain admin account as well so definitely XDR was blocking everything now and soon enough I got email from the IT dept that they have identified a breach attempt, was that me?
 ![CrowdStrike Falcon Alert](/assets/images/posts/ad-pentest/falcon-alert.png){:style="display:block; margin-left:auto; margin-right:auto"}
 So now some of the tools (mimikatz, msfconsole) was being caught straightaway and I had to try something else.
 <img src="https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
@@ -158,6 +159,7 @@ I used enum4linux in the process and that produced lots of information from SPNs
 - MITM6
 - SMBClient
 - SMBMap
+- Wadcoms
 
 # Summary
 
