@@ -57,7 +57,7 @@ I don't know the reason behind this complex configuration but my DNS and LLMNR q
 
 I logged into the windows VM with the user credentials given to me and first thing I did was that I ran [PingCastle](https://pingcastle.com) on the VM; I will highly suggest this tool once you've got foothold as it really gives lots of information. Here's how the output summary looked like
 ![Ping Castle Summary](/assets/images/posts/ad-pentest/pingcastle.png)
-It showed 100 risk and some kerberoastable users as well, but there was something very shocking, among the administrators list I found that the user account given to me was also a member of the domain admins group. I was like "What the hell? How can a user account be a member of domain admins group?". I was not expecting this at all. I was expecting to get a low privileged user account and then I would have to escalate the privileges to domain admin but I was already a domain admin. I was not sure if this was a mistake or it was intentionally done by the IT team but I was not complaining. I was happy that I was already a domain admin and I didn't have to escalate the privileges. I was able to do anything I wanted to do in the domain. There was huge numbers of users with admin rights and mine was one of them (maybe they gave the users these rights by default?) **I logged into all 4 of the DCs and I was in so at this point I can claim that I compromised the AD environment.**
+It showed 100 risk and some kerberoastable users, but there was something very shocking, among the administrators list I found that the user account given to me was also a member of the domain admins group. I was like "What the hell? How can a user account be a member of domain admins group?". I was not expecting this at all. I was expecting to get a low privileged user account and then I would have to escalate the privileges to domain admin but I was already a domain admin. I was not sure if this was a mistake or it was intentionally done by the IT team but I was not complaining. I was happy that I was already a domain admin and I didn't have to escalate the privileges. I was able to do anything I wanted to do in the domain. There was huge numbers of users with admin rights and mine was one of them (maybe they gave the users these rights by default?) **I logged into all 4 of the DCs and I was in so at this point I can claim that I compromised the AD environment.**
 
 <img src="https://media.giphy.com/media/jsZIN7jaaFLvbjPy7l/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
 
@@ -67,13 +67,13 @@ Well, it was a good catch but felt like a cheatcode so I without informing the c
 
 The user I created was given the username "test" and password was given the same as the previous user's password i.e. "ChangeMe!"
 
-With this user, I ran bloodhound via the Kali VM to map out the AD environment and it gave lots of information. Strangely, I was able to run bloodhound on DC01 and DC02 but not on DC03 and DC04 and supposedly those DNS configurations were to be blamed here as well.
+With this user, I ran bloodhound via the Kali VM to map out the AD environment and it gave lots of information. Strangely, I was able to run bloodhound on DC01 and DC02 but not on DC03 and DC04 and supposedly those DNS configurations were to be blamed here too.
 
 ```bash
 sudo bloodhound-python -d evilCorp.local -u test -p ChangeMe! -ns 10.175.14.22 -c all
 ```
 
-The bloodhound was also revealing the kerberoastable users that were in high value groups, I ran Plumhound on bloodhound results and it gave some interesting results. I tried ldapdomaindump but it didn't work and infact it was not required as well since Bloodhound and Plumhound did a great job
+The bloodhound was also revealing the kerberoastable users that were in high value groups, I ran Plumhound on bloodhound results and it gave some interesting results. I tried ldapdomaindump but it didn't work and infact it was not required since Bloodhound and Plumhound did a great job
 
 ```bash
 sudo python3 PlumhHound.py -x tasks/default.tasks -p 8118
@@ -114,6 +114,7 @@ So now some of the tools (mimikatz, msfconsole) was being caught straightaway an
 <img src="https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
 
 ### Let's take one step back
+
 It was time to get back to basics because by then I had tried lots of stuff and nothing seemed to work. Got back to the PingCastle report and started looking at the risks one by one, that's when one of the risks intrigued me
 ![Old Admin Passwords](/assets/images/posts/ad-pentest/admin-passwords.png){:style="display:block; margin-left:auto; margin-right:auto"}
 So apparently 13 admins have not changed their passwords in last 3 years, so password expiration doesnt seem to exist.
@@ -125,19 +126,43 @@ Let's try spraying common passwords using domain admin usernames (got those from
 ```bash
 crackmapexec smb 10.174.14.30 -u domain-admin-usernames.txt -p ChangeMe! -d EVILCORP.LOCAL --continue-on-success
 ```
-I ran it on a single machine only because this is a domain joined VM so if credential works on one machine, it will on others as well so running it on whole subnet was not required. I got the following output
+
+I ran it on a single machine only because this is a domain joined VM so if credential works on one machine, it will on others so running it on whole subnet was not required. I got the following output
 
 ![Crackmapexec Output](/assets/images/posts/ad-pentest/cme.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Yes yes yes! The hypothesis was right and humans are very lazy; got many domain admins with the same password. I tried the same password to crack the kerberos hashes just to see if I was doing it the right way and this time I was able to crack one of the hashes as well. So the hashes were not that strong, it was just that my wordlist didn't contain the mighty `ChangeMe!`
 
- I got into all 4 domain controllers AGAIN, dumped the NTDS.dit file using secretsdump and got the hashes of all the users on the domain, turned out that many other users also had the same password.
+I got into all 4 domain controllers AGAIN, dumped the NTDS.dit file using secretsdump and got the hashes of all the users on the domain, turned out that many other users also had the same password.
 
  <img src="https://media.giphy.com/media/3og0ILLVvPp8d64Jd6/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
+
+as a side note; I also tried PrintNightmare and the servers were vulnerable as well but the exploit wasn't working I guess it was XDR again. XDR interestingly didn't catch the password spray and us exfiltrating data and secrets out of the DC.
+
+I used enum4linux in the process and that produced lots of information from SPNs to users and workstations but I guess bloodhound earlier did a neat job with plumhound so I didn't use the enum4linux results. Often lots of informations also overwhelms you and you get lost in it so I decided to stick to bloodhound results only. Here is the list of tools that I used in the process
+
+- Bloodhound
+- Plumhound
+- Crackmapexec
+- Impacket
+- Hashcat
+- Responder
+- Mimikatz
+- Metasploit
+- Enum4linux
+- PingCastle
+- Nmap
+- Zenmap
+- LDAPDomainDump
+- SecretsDump
+- MITM6
+- SMBClient
+- SMBMap
+
 # Summary
 
- So in summary, the organization who spent thousands of dollars in XDR and other security solutions, got their AD compromised because of a very common best practice that was not being enforced. I believe there were many more areas that could've been looked into to compromise the AD but I skipped them; and why should I focus on them when I can compromise the AD with single password. I wanted to move forward and try compromise the AD third time but you know time is always limited on such engagements so I had to stop there.
+So in summary, the organization who spent thousands of dollars in XDR and other security solutions, got their AD compromised because of a very common best practice that was not being enforced. I believe there were many more areas that could've been looked into to compromise the AD but I skipped them; and why should I focus on them when I can compromise the AD with single password. I wanted to move forward and try compromise the AD third time but you know time is always limited on such engagements so I had to stop there.
 
- There will be cases when traditional attacks like LLMNR, SMB, MITMv6 etc won't work so don't give up, just stick to basics and you'll be able to find something that will work.
+There will be cases when traditional attacks like LLMNR, SMB, MITMv6 etc won't work so don't give up, just stick to basics and you'll be able to find something that will work.
 
- I hope you enjoyed reading this case study and I would love to read your feedback down in the comments. If you're looking for any type of pentest services, you can reach me out on [LinkedIn](https://www.linkedin.com/in/njmulsqb/) or via email on hello@tecvity.co
+I hope you enjoyed reading this case study and I would love to read your feedback down in the comments. If you're looking for any type of pentest services, you can reach me out on [LinkedIn](https://www.linkedin.com/in/njmulsqb/) or via email on hello@tecvity.co
