@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Blitzkrieg Effect: Infiltrating an Enterprise Active Directory Environment"
+title: "The Blitzkrieg Effect: Infiltrating an Enterprise Active Directory Environment Twice"
 tags:
   - Active Directory
   - Penetration Test
@@ -112,3 +112,32 @@ it was failing with the domain admin account as well so definitely XDR was block
 ![CrowdStrike Falcon Alert](/assets/images/posts/ad-pentest/falcon-alert.png){:style="display:block; margin-left:auto; margin-right:auto"}
 So now some of the tools (mimikatz, msfconsole) was being caught straightaway and I had to try something else.
 <img src="https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
+
+### Let's take one step back
+It was time to get back to basics because by then I had tried lots of stuff and nothing seemed to work. Got back to the PingCastle report and started looking at the risks one by one, that's when one of the risks intrigued me
+![Old Admin Passwords](/assets/images/posts/ad-pentest/admin-passwords.png){:style="display:block; margin-left:auto; margin-right:auto"}
+So apparently 13 admins have not changed their passwords in last 3 years, so password expiration doesnt seem to exist.
+![No Password Expiration](/assets/images/posts/ad-pentest/password-policy.png){:style="display:block; margin-left:auto; margin-right:auto"}
+so yeah!
+
+Let's try spraying common passwords using domain admin usernames (got those from Plumhound results) but common passwords lists are huge and they will produce lots of noise and account lockouts, right? So what if we first try the password that was supplied to us with the user account i.e. ChangeMe!? This is the password that is being used in the organization and it seems like IT admin creates account with this password and given the fact that the password expiration is not enabled, and the user is not enforced to change the password on first login (basic practice but huge impact) I decided to gave it a try.
+
+```bash
+crackmapexec smb 10.174.14.30 -u domain-admin-usernames.txt -p ChangeMe! -d EVILCORP.LOCAL --continue-on-success
+```
+I ran it on a single machine only because this is a domain joined VM so if credential works on one machine, it will on others as well so running it on whole subnet was not required. I got the following output
+
+![Crackmapexec Output](/assets/images/posts/ad-pentest/cme.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+Yes yes yes! The hypothesis was right and humans are very lazy; got many domain admins with the same password. I tried the same password to crack the kerberos hashes just to see if I was doing it the right way and this time I was able to crack one of the hashes as well. So the hashes were not that strong, it was just that my wordlist didn't contain the mighty `ChangeMe!`
+
+ I got into all 4 domain controllers AGAIN, dumped the NTDS.dit file using secretsdump and got the hashes of all the users on the domain, turned out that many other users also had the same password.
+
+ <img src="https://media.giphy.com/media/3og0ILLVvPp8d64Jd6/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
+# Summary
+
+ So in summary, the organization who spent thousands of dollars in XDR and other security solutions, got their AD compromised because of a very common best practice that was not being enforced. I believe there were many more areas that could've been looked into to compromise the AD but I skipped them; and why should I focus on them when I can compromise the AD with single password. I wanted to move forward and try compromise the AD third time but you know time is always limited on such engagements so I had to stop there.
+
+ There will be cases when traditional attacks like LLMNR, SMB, MITMv6 etc won't work so don't give up, just stick to basics and you'll be able to find something that will work.
+
+ I hope you enjoyed reading this case study and I would love to read your feedback down in the comments. If you're looking for any type of pentest services, you can reach me out on [LinkedIn](https://www.linkedin.com/in/njmulsqb/) or via email on hello@tecvity.co
