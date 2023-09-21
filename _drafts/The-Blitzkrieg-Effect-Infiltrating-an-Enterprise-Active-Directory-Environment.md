@@ -9,11 +9,12 @@ author: "Najam Ul Saqib"
 comments: true
 description: "Explore real-world insights from a successful penetration test on an enterprise Active Directory environment. Learn how the domain controllers were compromised within just a few hours using multiple attack vectors. From initial recon to privilege escalation and lateral movement, this case study offers a comprehensive guide to Active Directory security weaknesses and how to fortify them."
 ---
+
 Active directory environments have always intrigued me but for some reasons I never got the chance to get my hands dirty on an enterprise level AD environment until this one. I was asked by a company (which we will refer to as "EvilCorp" -- {inspired by Mr. Robot} to not disclose their real identity here) to perform penetration test on their active directory environment. As I mentioned I had no experience with such large scale AD environment before so it involved lots of learning on the run so you might feel that I wasted some time or my approach wasn't straightforward but I am sharing it anyway so that you can learn from my mistakes and hopefully do better than me.
 
 # Scope Details
 
-The AD environment of evilcorp was completely hosted on Azure cloud. The scope quite obviously was to compromise the domain controllers. I was given the address spaces as there were multiple subnets that contained the AD environment. The scope was limited to the AD environment only and I was not allowed to perform any attacks on the Azure cloud infrastructure. All the VMs in the environment were running CrowdStrike Falcon XDR.
+The AD environment of Evilcorp was completely hosted on Azure cloud. The scope quite obviously was to compromise the domain controllers. I was given the address spaces as there were multiple subnets that contained the AD environment. The scope was limited to the AD environment only and I was not allowed to perform any attacks on the Azure cloud infrastructure. All the VMs in the environment were running CrowdStrike Falcon XDR.
 
 For testing I was given a domain-joined user account and also a Kali VM in the network so that I could try both credentialed and non-credential approach.
 
@@ -62,7 +63,7 @@ It showed 100 risk and some kerberoastable users as well, but there was somethin
 
 Well, it was a good catch but felt like a cheatcode so I without informing the company, created a low-privileged user to try compromising the AD again (the new user alone should've rang the bells but it didn't) so I forgot about the domain admin account and started working on the low-privileged user account.
 
-## Compromising the AD environment with low-privileged user
+## Compromising the AD environment (again) with low-privileged user
 
 The user I created was given the username "test" and password was given the same as the previous user's password i.e. "ChangeMe!"
 
@@ -78,8 +79,6 @@ The bloodhound was also revealing the kerberoastable users that were in high val
 sudo python3 PlumhHound.py -x tasks/default.tasks -p 8118
 ```
 
-** Insert the kerberoastable users screenshot here from bloodhound**
-
 So it made total sense to try kerberoasting first.
 
 ### Kerberoasting
@@ -89,12 +88,27 @@ I requested the kerberos tickets using the following command from the DC
 ```bash
 impacket-GetUserSPNs evilCorp.local/test:ChangeMe! -dc-ip 10.175.14.22 -request
 ```
+
 and guess what? I got the kerberos hashes for four accounts that were part of the admin group. The hashes were of type `Kerberos 5, etype 23, TGS-REP` as detected by hashes.com and module for that in hashcat is [13100](https://hashcat.net/wiki/doku.php?id=example_hashes). I used rockyou wordlist to crack the hashes.
+
 ```bash
 hashcat -a 0 -m 13100 kerberoasting-hashes.txt ~/rockyou.txt
 ```
+
 but nah! In a desperate attempt, I made a single wordlist by combining all the password wordlists in Seclists (the resultant file became hugeeee) and used it to crack the hashes but unfortunately it also didn't work.
+
 ```bash
 find . -name '*.txt' -exec cat {} + | awk '!x[$0]++' > allPasswords.txt #The command that I ran in Seclists directory (Thanks ChatGPT)
 ```
- The passwords were very strong for those accounts or if not strong they were not in my wordlist at least.
+
+The passwords were very strong for those accounts or if not strong they were not in my wordlist at least.
+
+### Trying to steal credentials (and getting caught by XDR)
+
+After not being able to crack the Kerberos hashes; I thought of going for mimikatz and see if I can steal the credentials somehow. Running it instantly was blocked by the XDR on the host machine. I without wasting time, moved forward to _Token Impersonation_ and tried to get the tokens from the logged in sessions on different machines. I opted for Metasploit for this attack but it failed too
+![MSFConsole](/assets/images/posts/ad-pentest/token-imper.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+it was failing with the domain admin account as well so definitely XDR was blocking everything now and soon enough I got call from the IT dept that they have identified a breach attempt, is that me?
+![CrowdStrike Falcon Alert](/assets/images/posts/ad-pentest/falcon-alert.png){:style="display:block; margin-left:auto; margin-right:auto"}
+So now some of the tools (mimikatz, msfconsole) was being caught straightaway and I had to try something else.
+<img src="https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
