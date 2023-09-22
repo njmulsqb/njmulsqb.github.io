@@ -15,7 +15,7 @@ Active directory environments have always intrigued me but for some reasons I ne
 
 # Scope Details
 
-The AD environment of Evilcorp was completely hosted on Azure cloud. The scope quite obviously was to compromise the domain controllers. I was given the address spaces as there were multiple subnets that contained the AD environment. The scope was limited to the AD environment only and I was not allowed to perform any attacks on the Azure cloud infrastructure. All the VMs in the environment were running CrowdStrike Falcon XDR.
+The AD environment of Evilcorp was completely hosted on Azure cloud. The goal quite obviously was to compromise the domain controllers. I was given the address spaces as there were multiple subnets that contained the AD environment. The scope was limited to the AD environment only and I was not allowed to perform any attacks on the Azure cloud infrastructure. All the VMs in the environment were running CrowdStrike Falcon XDR.
 
 For testing I was given a domain-joined user account and also a Kali VM in the network so that I could try both credentialed and non-credential approach.
 
@@ -23,7 +23,7 @@ For testing I was given a domain-joined user account and also a Kali VM in the n
 
 Given my weak concepts of networking (I dont really love learning about subnets and stuff, but strong networking skills would've greatly helped me here) I started with the basics. I started with the subnet that contained the Kali VM and the domain controller. I ran a simple nmap scan to sweep the network, find live hosts and DC IPs. Soon I realized that my Kali VM is in different subnet whereas the domain-joined windows VM is in different one but nevertheless I scanned the subnet that contained the Windows VM and it brought me some information about the domain controllers.
 
-You can detect the domain controllers by looking for the LDAP port (389) and Kerberos port (88) open on the host. There were other common ports among the DC's as well. I used Zenmap for larger networks as I like the way it displays the results.
+You can detect the domain controllers by looking for the LDAP port (389) and Kerberos port (88) open on the host. There were other common ports among the DC's as well. I use Zenmap for larger networks as I like the way it displays the results.
 
 ![LDAP Ports](/assets/images/posts/ad-pentest/ldap.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
@@ -43,7 +43,7 @@ I first tried to see if I can break into the domain; tried to get the foothold u
 
 Began with LLMNR poisoning. I used Responder to poison the LLMNR and NBT-NS requests. After I ran LLMNR poisoning, I was hoping for hashes flying around in my terminal which usually happens in big environments, but I got nothing. Absolute silence! I left the the responder running over night expecting to get some hashes but the next day there was nothing on the terminal ☹️
 
-I logged into the domain-joined machine to see if I can invoke the LLMNR poisoning manually, wrote some non-existent shares into the file explorer hoping that it will invoke LLMNR and Responder will catch the hash but nothing happened. The responder was not entertaining the LLMNR queries and it only worked when I manually entered the IP of the attacker machine like \\attacker-IP-address in the file explorer, in that case I was getting the hashes but that was not what I wanted. I wanted to get the hashes by just running responder and waiting for the hashes to come in.
+I logged into the domain-joined machine to see if I can invoke the LLMNR poisoning manually, wrote some non-existent shares into the file explorer hoping that it will invoke LLMNR and Responder will catch the hash but nothing happened. The responder was not entertaining the LLMNR queries and it only worked when I manually entered the IP of the attacker machine like `\\attacker-IP-address` in the file explorer, in that case I was getting the hashes but that was not what I wanted. I wanted to get the hashes by just running responder and wait for users to invoke LLMNR queries.
 
 Did lots of digging, spent numerous hours in it but it was not working. LLMNR was enabled on the hosts, I was able to ping all the DCs from Kali and Kali was reachable in the network too but it was not working. Everything looked fine on my end, upon running the responder in analyze mode I observed a DNS IP which I wasn't aware of
 
@@ -58,7 +58,7 @@ I don't know the reason behind this complex configuration but my DNS and LLMNR q
 
 I logged into the windows VM with the user credentials given to me and first thing I did was that I ran [PingCastle](https://pingcastle.com) on the VM; I will highly suggest this tool once you've got foothold as it really gives lots of information. Here's how the output summary looked like
 ![Ping Castle Summary](/assets/images/posts/ad-pentest/pingcastle.png)
-It showed 100 risk and some kerberoastable users, but there was something very shocking, among the administrators list I found that the user account given to me was also a member of the domain admins group. I was like "What the hell? How can a user account be a member of domain admins group?". I was not expecting this at all. I was expecting to get a low privileged user account and then I would have to escalate the privileges to domain admin but I was already a domain admin. I was not sure if this was a mistake or it was intentionally done by the IT team but I was not complaining. I was happy that I was already a domain admin and I didn't have to escalate the privileges. I was able to do anything I wanted to do in the domain. There was huge numbers of users with admin rights and mine was one of them (maybe they gave the users these rights by default?) **I logged into all 4 of the DCs and I was in so at this point I can claim that I compromised the AD environment.**
+It showed 100/100 risk level and some kerberoastable users, but there was something very shocking, among the administrators list I found that the user account given to me was also a member of the domain admins group. I was like "What the hell? How can a user account be a member of domain admins group?". I was not expecting this at all. I was expecting to get a low privileged user account and then I would have to escalate the privileges to domain admin but I was already a domain admin. I was not sure if this was a mistake or it was intentionally done by the IT team but I was not complaining. I was happy that I was already a domain admin and I didn't have to escalate the privileges. I was able to do anything I wanted to do in the domain. There was huge numbers of users with admin rights and mine was one of them (maybe they gave the users these rights by default?) **I logged into all 4 of the DCs and I was in so at this point I can claim that I compromised the AD environment.**
 
 <img src="https://media.giphy.com/media/jsZIN7jaaFLvbjPy7l/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
 
@@ -66,7 +66,7 @@ Well, it was indeed a catch but felt like a cheatcode so I without informing the
 
 ## Compromising the AD environment (again) with low-privileged user
 
-The user I created was given the username "test" and password was given the same as the previous user's password i.e. "ChangeMe!"
+The user I created was given the username "test" and password was given the same as the previous user's password i.e. "ChangeMe!" and role of Domain User only.
 
 With this user, I ran bloodhound via the Kali VM to map out the AD environment and it gave lots of information. Strangely, I was able to run bloodhound on DC01 and DC02 but not on DC03 and DC04 and supposedly those DNS configurations were to be blamed here too.
 
@@ -109,7 +109,7 @@ The passwords were very strong for those accounts or if not strong they were not
 After not being able to crack the Kerberos hashes; I thought of going for mimikatz and see if I can steal the credentials somehow. Running it instantly was blocked by the XDR on the host machine. I without wasting time, moved forward to _Token Impersonation_ and tried to get the tokens from the logged in sessions on different machines. I opted for Metasploit for this attack but it failed too
 ![MSFConsole](/assets/images/posts/ad-pentest/token-imper.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-it was failing with the domain admin account as well so definitely XDR was blocking everything now and soon enough I got email from the IT dept that they have identified a breach attempt, was that me?
+it was failing with the domain admin account as well so definitely XDR was blocking everything now and soon enough I got email from the IT dept that they have identified a breach attempt asking if that was me.
 ![CrowdStrike Falcon Alert](/assets/images/posts/ad-pentest/falcon-alert.png){:style="display:block; margin-left:auto; margin-right:auto"}
 So now some of the tools (mimikatz, msfconsole) was being caught straightaway and I had to try something else.
 <img src="https://media.giphy.com/media/w89ak63KNl0nJl80ig/giphy.gif" alt="LLMNR Poisoning" style="display:block; margin-left:auto; margin-right:auto">
@@ -117,12 +117,14 @@ So now some of the tools (mimikatz, msfconsole) was being caught straightaway an
 ### Let's take one step back
 
 It was time to get back to basics because by then I had tried lots of stuff and nothing seemed to work. Got back to the PingCastle report and started looking at the risks one by one, that's when one of the risks intrigued me
-![Old Admin Passwords](/assets/images/posts/ad-pentest/admin-passwords.png){:style="display:block; margin-left:auto; margin-right:auto"}
-So apparently 13 admins have not changed their passwords in last 3 years, so password expiration doesnt seem to exist.
-![No Password Expiration](/assets/images/posts/ad-pentest/password-policy.png){:style="display:block; margin-left:auto; margin-right:auto"}
-so yeah!
 
-Let's try spraying common passwords using domain admin usernames (got those from Plumhound results) but common passwords lists are huge and they will produce lots of noise and account lockouts, right? So what if we first try the password that was supplied to us with the user account i.e. ChangeMe!? This is the password that is being used in the organization and it seems like IT admin creates account with this password and given the fact that the password expiration is not enabled, and the user is not enforced to change the password on first login (basic practice but huge impact) I decided to gave it a try.
+![Old Admin Passwords](/assets/images/posts/ad-pentest/admin-passwords.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+So apparently 13 admins have not changed their passwords in last 3 years, which means password expiration doesnt exist. Ping Castle report verified this.
+
+![No Password Expiration](/assets/images/posts/ad-pentest/password-policy.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
+Let's try spraying common passwords using domain admin usernames (got those from Plumhound results) but common passwords lists are huge and they will produce lots of noise and cause account lockouts, right? So what if we first try the password that was supplied to us with the user account i.e. ChangeMe!? This is the password that is being used in the organization and it seems like IT admin creates account with this password and given the fact that the password expiration is not enabled, and the user is not enforced to change the password on first login (basic practice but huge impact) I decided to gave it a try.
 
 ```bash
 crackmapexec smb 10.174.14.30 -u domain-admin-usernames.txt -p ChangeMe! -d EVILCORP.LOCAL --continue-on-success
@@ -132,7 +134,7 @@ I ran it on a single machine only because this is a domain joined VM so if crede
 
 ![Crackmapexec Output](/assets/images/posts/ad-pentest/cme.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-Yes yes yes! The hypothesis was right and humans are very lazy; got many domain admins with the same password. I tried the same password to crack the kerberos hashes just to see if I was doing it the right way and this time I was able to crack one of the hashes as well. So the hashes were not that strong, it was just that my wordlist didn't contain the mighty `ChangeMe!`
+Yes yes yes! The hypothesis was right; got many domain admins with the same password. I tried the same password to crack the kerberos hashes just to see if I was doing it the right way and this time I was able to crack one of the hashes as well. So the hashes were not that strong, it was just that my wordlist didn't contain the mighty `ChangeMe!`
 
 I got into all 4 domain controllers AGAIN, dumped the NTDS.dit file using secretsdump and got the hashes of all the users on the domain, turned out that many other users also had the same password.
 
