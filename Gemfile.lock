@@ -208,6 +208,7 @@ GEM
     zeitwerk (2.6.11)
 
 PLATFORMS
+  ruby
   universal-darwin-22
   x64-mingw-ucrt
   x64-mingw32
