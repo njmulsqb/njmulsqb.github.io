@@ -169,4 +169,4 @@ So in summary, the organization who spent thousands of dollars in XDR and other 
 
 There will be cases when traditional attacks like LLMNR, SMB, MITMv6 etc won't work so don't give up, just stick to basics and you'll be able to find something that will work.
 
-I hope you enjoyed reading this case study and I would love to read your feedback down in the comments. If you're looking for any type of pentest services, you can reach me out on [LinkedIn](https://www.linkedin.com/in/njmulsqb/) or via email on hello@tecvity.co
+I hope you enjoyed reading this case study and I would love to read your feedback down in the comments. If you're looking for any type of pentest services, you can reach me out on [LinkedIn](https://www.linkedin.com/in/njmulsqb/) or via email on najam@tecvity.co
