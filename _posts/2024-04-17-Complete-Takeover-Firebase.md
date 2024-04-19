@@ -102,37 +102,9 @@ function App() {
         console.error("Error deleting file:", error);
       });
   };
-
-  return (
-    <div className="App">
-      <form onSubmit={handleSubmit} className="form">
-        <input type="file" />
-        <button type="submit">Upload</button>
-      </form>
-      <button onClick={handleDownloadAllContent}>Download All Content</button>
-      <div className="delete-file">
-        <input
-          type="text"
-          value={deleteFileName}
-          onChange={(e) => setDeleteFileName(e.target.value)}
-          placeholder="Enter filename to delete"
-        />
-        <button onClick={handleDeleteFile}>Delete File</button>
-      </div>
-      {!imgUrl && (
-        <div className="progress-bar">
-          <div className="inner-bar" style={{ width: `${progressPercent}%` }}>
-            {progressPercent}%
-          </div>
-        </div>
-      )}
-      {imgUrl && <img src={imgUrl} alt="uploaded file" height={200} />}
-    </div>
-  );
 }
 
 export default App;
-
 ```
 I know the implementation is dirty, but as long as it worked I am okay with it, also the target was to test the DB not to build a responsive web app ;)
 
