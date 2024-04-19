@@ -6,7 +6,7 @@ tags:
   - Offensive Security
 author: "Najam Ul Saqib"
 comments: true
-description: "Explore real-world insights from a successful penetration test on an enterprise Active Directory environment. Learn how the domain controllers were compromised within just a few hours using multiple attack vectors. From initial recon to privilege escalation and lateral movement, this case study offers a comprehensive guide to Active Directory security weaknesses and how to fortify them."
+description: "I in a penetration test got complete access to Firebase database of a Flutter app; Firebase databases are usually linked with mobile apps so this was a unique experience for me."
 date: "2024-04-19"
 ---
 
@@ -26,7 +26,7 @@ Now I wanted to know how this configuration can be exploited, upon searching for
 
 I found NPM package for Firebase which meant I can build a Javascript app to consume Firebase database, and I followed the following article to create baseline app for Firebase: [Upload files to Firebase Cloud Storage in Firebase v9 with React](https://blog.logrocket.com/firebase-cloud-storage-firebase-v9-react/) and then tweaked it further to perform CRUD operations on the database.
 
-The tweaked version of React app is uploaded on my Github profile which you can access [here]()
+The tweaked version of React app is uploaded on my Github profile which you can access [here](https://github.com/njmulsqb/Firebase-Access-Tester)
 
 I was able to access database, upload file, delete file and dump all the data as well, so it was a big win.
 
