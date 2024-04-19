@@ -26,7 +26,7 @@ Now I wanted to know how this configuration can be exploited, upon searching for
 
 Upon further research, I found NPM package for Firebase which meant I can build a Javascript app to consume Firebase database, and I followed the following article to create baseline app for Firebase: [Upload files to Firebase Cloud Storage in Firebase v9 with React](https://blog.logrocket.com/firebase-cloud-storage-firebase-v9-react/) and then tweaked it further to perform CRUD operations on the database.
 
-The tweaked version of React app is uploaded on my Github profile which can be access [here](https://github.com/njmulsqb/Firebase-Access-Tester)
+The tweaked version of React app is uploaded on my Github profile which can be accessed [here](https://github.com/njmulsqb/Firebase-Access-Tester)
 
 ```js
 import "./App.css";
@@ -134,6 +134,7 @@ function App() {
 export default App;
 
 ```
+I know the implementation is dirty, but as long as it worked I am okay with it, also the target was to test the DB not to build a responsive web app ;)
 
 Utilizing Firebase library, I was able to access database, upload files, delete files and dump all the data as well, so it was a big win.
 
