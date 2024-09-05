@@ -3,4 +3,4 @@ layout: default
 title: About Me
 ---
 
-WIP
+I am a student of cybersecurity; always trying to learn new skills in the niche of offensive security.
