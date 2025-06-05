@@ -60,7 +60,7 @@ Fun fact, Microsoft support also liked this :D
 ### The Takeaways
 1. Always create multiple private DNS zones manually as this is not handled by Azure if you create a new private endpoint.
 2. If you create a new PE, it will overwrite the A record that can stop your previous PE from working in that resource group as well.
-3. If creating multiple PDSs is not an option for you, consider VNet peering
+3. If creating multiple PDSs is not an option for you, consider VNet peering.
 
 
 To troubleshoot PEs, I found [this](https://learn.microsoft.com/en-us/azure/private-link/troubleshoot-private-endpoint-connectivity) documentation from Microsoft to be very helpful so must check out if stuck with PEs.
