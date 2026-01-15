@@ -1,0 +1,14 @@
+{% if paginator.total_pages > 1 %}
+<ul class="pagination text-center">
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i></a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><i class="fa fa-arrow-right"></i></a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

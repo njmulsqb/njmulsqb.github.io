@@ -1,0 +1,24 @@
+<!--======  SERVICE-CATEGORIES PART START ======-->
+<section class="service-area service-categories pt-100 pb-60">
+    <div class="container">
+        <div class="row">
+            {% for feature in site.features %}
+            <div class="col-lg-4">
+                <div class="single-service-area">
+                    <span class="service-num">{% if forloop.index < 10 %} 0 {{forloop.index}} {% else %} {{forloop.index}} {% endif %}</span>
+                </div>
+                {% if feature.icon %}
+                    <div class="service-icon">
+                        <img src="{{feature.icon}}" alt="{{feature.title}}"/>
+                    </div>
+                {% endif %}
+                <div class="service-content">
+                    <h4>{{feature.title}}</h4>
+                    <p>{{feature.content}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--======  SERVICE-CATEGORIES PART END ======-->

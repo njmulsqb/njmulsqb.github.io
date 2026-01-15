@@ -1,0 +1,22 @@
+<nav>
+  <ul id="mobile-menu">
+    <li class="{% if page.url == '/'%} current {% else %} normal {% endif %}">
+      <a href="{{site.url}}#home">Home</a>
+    </li>
+    <li><a href="{{site.url}}#about">About</a></li>
+    <li><a href="{{site.url}}#services">Services</a></li>
+    <!-- <li><a href="{{site.url}}#portfolio">portfolio</a></li> -->
+    <!-- <li><a href="{{site.url}}#team">team</a></li>
+        <li><a href="{{site.url}}#price">price</a></li> -->
+    <li
+      class="{% if page.url == '/blog/' %} current {% else %} normal {% endif %}"
+    >
+      <a href="{{site.url}}#blog">Blog</a>
+      <ul class="submenu">
+        <li><a href="/blog">Latest Blog</a></li>
+        <li><a href="/blog-details">Blog Details</a></li>
+      </ul>
+    </li>
+    <li><a href="{{site.url}}#contact">Contact</a></li>
+  </ul>
+</nav>

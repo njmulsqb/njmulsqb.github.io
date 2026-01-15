@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include page_header.html %}
+<!--======  BLOG PART START ======-->
+<section class="blog-area latest-blogs pb-140 pt-140">
+    <div class="container">
+        <div class="row">
+            {% for post in page.posts %}
+            <div class="col-lg-4">
+                <div class="single-blog-item pb-60">
+                    {% if post.post_image %}
+                    <div class="single-blog-img">
+                        <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}"/></a>
+                    </div>
+                    {% endif %}
+                    <div class="single-blog-item-content">
+                        {% if post.author %}
+                         <span><i class="fas fa-user-alt"></i>{{post.author}}</span>
+                        {% endif %}
+                        {% if post.date %}
+                         <span><i class="far fa-calendar-alt"></i>{{post.date | date_to_string}}</span>
+                        {% endif %}
+                        <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+                        <p>{{post.excerpt | strip_html | truncate: 150}}</p>
+                        <a href="{{post.url}}" class="view-details-btn">View Details <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                 </div>
+             </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--======  BLOG PART END ======-->

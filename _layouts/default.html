@@ -1,55 +1,197 @@
-
-
-
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="/assets/styles/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/styles/customFile.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="{% if page.description %} {{page.description}} {% else %} {{site.description}} {% endif %}"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    {% include head-custom.html %}
+    <!-- Preconnect to external domains for faster resource loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 
-{% seo %}
+    <!-- Google Fonts with font-display swap for better performance -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+    />
+
+    <!-- Critical CSS - loads first for above-the-fold content -->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/responsive.css"
+    />
+
+    <!-- Non-critical CSS - can be loaded with lower priority -->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/all.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/magnific-popup.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/slick.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/slick-menu.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Fallback for browsers that don't support onload -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{site.url}}{{site.baseurl}}/assets/css/all.css"
+      />
+      <link
+        rel="stylesheet"
+        href="{{site.url}}{{site.baseurl}}/assets/css/magnific-popup.css"
+      />
+      <link
+        rel="stylesheet"
+        href="{{site.url}}{{site.baseurl}}/assets/css/slick.css"
+      />
+      <link
+        rel="stylesheet"
+        href="{{site.url}}{{site.baseurl}}/assets/css/slick-menu.css"
+      />
+    </noscript>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{site.url}}{{site.baseurl}}/assets/images/favicon.png"
+    />
+
+    <!-- Defer Tailwind CDN to avoid blocking render -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
+
+    <title>
+      {% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}
+    </title>
+    {% if site.environment == 'production' %} {% include analytics.html %} {%
+    endif %}
   </head>
-
   <body>
-
-    <header>
-      <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
-        <section >
-          <a href="https://www.github.com/njmulsqb" title="Github"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/njmulsqb" title="linkedin"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-          <a href="https://www.infosec.exchange/@cybersoldier" title="mastodon"><i class="fa-brands fa-mastodon"></i></a>
-          <a  href="/feed.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i>
-          </a>
-
-        </section>
-        <a href="/"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Home</button></a>
-        <a href="/posts"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Posts</button></a>
-        <a href="{{ site.baseurl }}/archive"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Archive</button></a>
-        <a href="{{ site.baseurl }}/aboutme"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">About Me</button></a>
-
-            </div>
-   </header>
-
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-      {% include comments.html %}
+    <!--======  PRELOADER PART START ======-->
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_four"></div>
+        </div>
+      </div>
     </div>
-    {% include google-analytics.html %}
+    <!--======  PRELOADER PART END ======-->
+
+    <!--======  OFFCANVAS-SEARCH PART START ======-->
+    <div class="search-form">
+      <div class="offcanvas-search-area">
+        <form action="#">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search.."
+            required
+          />
+          <span class="close-bar"><i class="fas fa-times"></i></span>
+        </form>
+        <ul id="results-container"></ul>
+      </div>
+    </div>
+
+    <!--======  OFFCANVAS-SEARCH PART END ======-->
+    {% include header.html %} {{content}} {% include footer.html %}
+
+    <!--======  SCROLL-TO-TOP PART START ======-->
+    <div class="scroll-to-top">
+      <span id="return-to-top"><i class="fa fa-arrow-up"></i></span>
+    </div>
+    <!--====== SCROLL-TO-TOP PART END ======-->
+    <!--====== jquery js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/vendor/jquery-1.12.4.min.js"
+      defer
+    ></script>
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.waypoints.min.js"
+      defer
+    ></script>
+    <!--====== Bootstrap js ======-->
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/popper.min.js"
+      defer
+    ></script>
+    <!--====== Slick js ======-->
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/slick.min.js"
+      defer
+    ></script>
+    <!--====== Slick js ======-->
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/slick-menu.min.js"
+      defer
+    ></script>
+    <!--====== counterup js ======-->
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.counterup.min.js"
+      defer
+    ></script>
+    <!--====== Magnific Popup js ======-->
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.magnific-popup.min.js"
+      defer
+    ></script>
+    <!--====== onepage-nav Popup js ======-->
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.nav.js"
+      defer
+    ></script>
+    <script
+      src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"
+      defer
+    ></script>
+    <!--====== Main js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js" defer></script>
   </body>
 </html>
