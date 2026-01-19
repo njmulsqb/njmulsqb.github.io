@@ -1,0 +1,12 @@
+{
+  "name": "najam-blog",
+  "version": "1.0.0",
+  "description": "Najam Ul Saqib - Security & Technology Blog",
+  "scripts": {
+    "tailwind": "tailwindcss -i assets/css/tailwind-input.css -o assets/css/tailwind.css",
+    "tailwind:watch": "tailwindcss -i assets/css/tailwind-input.css -o assets/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}
