@@ -1,0 +1,36 @@
+<!--======  PROJECTS PART START ======-->
+<section class="project-counter-area">
+  <div class="container">
+    <div class="row pb-32">
+      <div class="col-lg-6">
+        <div class="section-title project-title">
+          <p class="section-para">
+            <span></span>{{ site.data.settings.projects_settings.title }}
+          </p>
+          <h1>{{ site.data.settings.projects_settings.description }}</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 text-right">
+        <a
+          href="{{ site.data.settings.projects_settings.button.link }}"
+          class="btn counter-btn"
+          >{{ site.data.settings.projects_settings.button.name }}<i
+            class="fa fa-arrow-right"
+          ></i
+        ></a>
+      </div>
+    </div>
+    <div class="row justify-center">
+      {% for counter in site.data.settings.projects_settings.counter %}
+      <div class="col-lg-3 col-md-6">
+        <div class="counter-icon">{{ counter.icon }}</div>
+        <div class="counter-text">
+          <h1 class="count">{{ counter.count }}</h1>
+          <p>{{ counter.name }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--======  PROJECTS PART END ======-->

@@ -1,0 +1,178 @@
+teams_settings:
+  title: Collaborators & Experts
+  description: Meet the brilliant minds I collaborate with
+
+blogs_settings:
+  title: Blog & Insights
+  description: My latest thoughts and discoveries
+  button:
+    name: "view all blogs"
+    link: "/blog/"
+
+videos_settings:
+  title: Watch Our Latest Videos
+  description: Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
+  youtube_link: "https://www.youtube.com/watch?v=iogabydg2y0"
+  button:
+    name: "Learn More "
+    link: "#"
+
+services_settings:
+  title: What I Do
+  description: Practical, No-Noise Security Services
+  list:
+    - title: Application Security
+      description: Identifying and fixing vulnerabilities in your web and mobile applications before hackers exploit them. We perform rigorous testing to ensure your code is secure by design.
+      icon: '<i class="fas fa-laptop-code"></i>'
+      url: "#"
+    - title: Cloud Security Reviews
+      description: Assessing your cloud infrastructure (AWS, Azure, GCP) to identify misconfigurations and enforce best practices. We help you lock down your environment without slowing down deployment.
+      icon: '<i class="fas fa-cloud"></i>'
+      url: "#"
+    - title: Pentesting
+      description: Simulating real-world cyberattacks to find weak points in your systems. Our expert-led penetration testing reveals critical gaps that automated scanners miss.
+      icon: '<i class="fas fa-user-secret"></i>'
+      url: "#"
+    - title: Secure SDLC
+      description: Integrating security into every stage of your software development lifecycle. We help you build secure software from the ground up, reducing technical debt and risk.
+      icon: '<i class="fas fa-code-branch"></i>'
+      url: "#"
+    - title: DevSecOps guidance
+      description: Automating security within your CI/CD pipelines. We enable your team to ship code faster and safer by embedding security checks directly into your workflows.
+      icon: '<i class="fas fa-cogs"></i>'
+      url: "#"
+    - title: Engineering team advisory
+      description: Empowering your engineering team with security knowledge and best practices. We provide ongoing mentorship and strategic advice to build a security-first culture.
+      icon: '<i class="fas fa-users-cog"></i>'
+      url: "#"
+
+projects_settings:
+  title: Key Achievements
+  description: My Journey and Achievements
+  button:
+    name: "get started "
+    link: "#"
+  counter:
+    - icon: '<i class="fas fa-rocket"></i>'
+      name: "Project completed"
+      count: 55
+    - icon: '<i class="fas fa-life-ring"></i>'
+      name: "Satisfied Clients"
+      count: 27
+    - icon: '<i class="fas fa-trophy"></i>'
+      name: "Awards Won"
+      count: 6
+
+portfolios_settings:
+  title: My Portfolio
+  description: A showcase of my creative work
+  button:
+    name: "View more"
+    link: "#"
+  button2:
+    name: "Let’s Talk"
+    link: "#"
+
+cta_settings:
+  title: Have Any Creative Project
+  description: We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure
+  image: /assets/images/cta-text.png
+  button:
+    name: "meet with us"
+    link: "#"
+
+textimonials_settings:
+  image: /assets/images/testimonial/1.png
+  textimonial:
+    - name: "Muhammad Danish"
+      position: "Senior Security Engineer"
+      date: "January 23, 2024"
+      rating: 5
+      text: "From the initial stages of the project to its completion, Najam exhibited a thorough understanding of the requirements and helped in completing the project ensuring that the codebase was not only robust but also maintainable. Thanks brother"
+      image: "/assets/images/testimonial/1582536557877.jpeg"
+    - name: "Victoria González"
+      position: "Information Security Expert"
+      date: "January 22, 2024"
+      rating: 5
+      text: "I've had the privilege of working closely with Najam on several security projects, and I have been consistently impressed by their expertise and professionalism. He possesses a deep understanding of security vulnerabilities and their ability to identify and address potential threats is truly remarkable."
+      image: ""
+    - position: "Azure Architecture Validation & Implementation (IoT Hub, Logic Apps, Service Bus, Blob Storage)"
+      date: "Jul 11, 2025 - Sep 29, 2025"
+      rating: 5
+      text: "Najam is an excellent resource and I would have no hesitation in hiring him again. He completed a complex Azure Architecture piece of work and I was very impressed with his ability to solve problems and get the job done. He held the team to high standards and was prompt and reliable with his delivery."
+      image: ""
+    - position: "Microsoft Defender for Business Roll-Out (Windows 11 PCs + macOS) - M365 Business Premium"
+      date: "Jul 31, 2025 - Aug 6, 2025"
+      rating: 5
+      text: "Really appreciated working with Najam. He was very professional, diligent, and accommodating. I will definitely come back to him for my next IT security job."
+      image: ""
+
+abouts_settings:
+  title: About Me
+  description: My background, skills, and passion
+  image: "/assets/images/about-us/najam.png"
+  image2: "/assets/images/about-us/2.png"
+  text: A
+  text2: Avoids pleasure itself, because it is pleasure, but because those who do not know how to pursuetw pleasure ration counter consequences that ares extremely painful. Nor again is tanyone who loves or pursues or desires to obtain pain
+  list:
+    - item: Web Design
+      link: "#"
+    - item: Web Development
+      link: "#"
+    - item: Graphics Arts
+      link: "#"
+    - item: Product Marketing
+      link: "#"
+    - item: User Research
+      link: "#"
+  button:
+    name: "Contact Us"
+    link: "#contact"
+
+pricings_settings:
+  title: our pricing
+  description: Popular Pricing Plan For Creative Project
+  button:
+    name: make plan
+    link: "#"
+  list:
+    - name: "01 <span>basic</span>"
+      image: "/assets/images/price-icon.png"
+      text: "<span>$45.99/month</span>"
+      listitem:
+        - item: Web Design (UX/UI)
+        - item: Software Development
+        - item: Fashion Design (Arts)
+        - item: Web Development (php)
+      lowerlistitem:
+        - item: Game Design & DV
+        - item: Computer Hardware
+    - name: "02 <span>smart</span>"
+      image: "/assets/images/price-icon.png"
+      text: "<span>$65.99/month</span>"
+      listitem:
+        - item: Web Design (UX/UI)
+        - item: Software Development
+        - item: Fashion Design (Arts)
+        - item: Web Development (php)
+      lowerlistitem:
+        - item: Game Design & DV
+        - item: Computer Hardware
+    - name: "03 <span>Premium</span>"
+      image: "/assets/images/price-icon.png"
+      text: "<span>$103.99/month</span>"
+      listitem:
+        - item: Web Design (UX/UI)
+        - item: Software Development
+        - item: Fashion Design (Arts)
+        - item: Web Development (php)
+      lowerlistitem:
+        - item: Game Design & DV
+        - item: Computer Hardware
+404_settings:
+  title: 404
+  description: The page you are lookng for cannot be found
+  image: /assets/images/404.svg
+  button:
+    name: "Go Back to Home Page"
+    link: "#"

@@ -1,0 +1,80 @@
+<header>
+  <style>
+    .header-logo-link {
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      letter-spacing: 0.025em;
+      transition: color 300ms;
+    }
+    .header-logo-link:hover {
+      color: #60a5fa;
+    }
+  </style>
+  <!-- <div class="top-header-area">
+    <div class="container">
+        <div class="row border-bottom">
+            <div class="col-lg-9">
+                <div class="row">
+                    {% if site.phone_number %}
+                    <div class="col-lg-3">
+                        <div class="top-header-content">
+                            <span><i class="fas fa-phone"></i>{{site.phone_number}}</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.address %}
+                    <div class="col-lg-4">
+                        <div class="top-header-content">
+                            <span><i class="fas fa-map-marker-alt"></i>{{site.address}}</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.office_time %}
+                    <div class="col-lg-5">
+                        <div class="top-header-content">
+                            <span><i class="far fa-clock"></i>{{site.office_time}}</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="top-header-social-links">
+                    <ul>
+                        {% if site.facebook_url %}
+                         <li><a href="{{site.facebook_url}}" target="__blank"><i class="fab fa-facebook-f"></i></a></li>
+                        {% endif %}
+                        {% if site.twitter_url %}
+                         <li><a href="{{site.twitter_url}}" target="__blank"><i class="fab fa-twitter"></i></a></li>
+                        {% endif %}
+                        {% if site.instagram_url %}
+                         <li><a href="{{site.instagram_url}}" target="__blank"><i class="fab fa-instagram"></i></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+  <div class="bottom-header-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="logo flex items-center">
+            <a class="header-logo-link" href="{{site.url}}{{site.baseurl}}"
+              >Najam Ul Saqib</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-9 text-right">
+          <div class="mobile-menu-wrap"></div>
+          <div class="header-search">
+            <span class="search-btn"><i class="fa fa-search"></i></span>
+          </div>
+          <div class="main-menu">{% include navigation.html %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,374 @@
+---
+layout: default
+---
+
+<style>
+  /* Typography */
+  h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    color: #111827;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color: #1f2937;
+    line-height: 1.375;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    margin-top: 1.25rem;
+    color: #1f2937;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+    color: #1f2937;
+  }
+
+  /* Code blocks */
+  code {
+    background-color: #111827;
+    color: #f3f4f6;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-family: monospace;
+  }
+
+  pre {
+    background-color: #111827;
+    color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    border: 1px solid #374151;
+  }
+
+  pre code {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .highlight {
+    background-color: #111827;
+    color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    border: 1px solid #374151;
+  }
+
+  .highlight pre {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Lists */
+  ul,
+  ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  ul ol li {
+    margin-bottom: 0.5rem;
+    color: #374151;
+    list-style-type: disc !important;
+  }
+
+  ol li {
+    margin-bottom: 0.5rem;
+    color: #374151;
+    list-style-type: decimal;
+  }
+
+  /* Links */
+  a {
+    color: #2563eb;
+
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #1e40af;
+  }
+
+  /* Post content */
+  .post-content {
+    color: #374151;
+    line-height: 1.625;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  .post-content p {
+    margin-bottom: 1rem;
+  }
+
+  /* Tags and Categories */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .tags li {
+    list-style: none;
+  }
+
+  .tags a,
+  .tags span {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+
+  .tags a:hover,
+  .tags span:hover {
+    background-color: #bfdbfe;
+    text-decoration: none;
+  }
+
+  .tag-heading {
+    font-weight: bold;
+    color: #1f2937;
+    margin-right: 0.5rem;
+  }
+
+  /* Share buttons */
+  .single-blog-details-box-time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .single-blog-details-box-time span {
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .single-blog-details-box-time ul {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: auto;
+    padding-left: 0;
+  }
+
+  .single-blog-details-box-time ul li {
+    list-style: none;
+    margin: 0;
+  }
+
+  .single-blog-details-box-time ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+
+  .single-blog-details-box-time ul li a:hover {
+    background-color: #1e40af;
+  }
+
+  .single-blog-details-box-time ul li:first-child {
+    color: #4b5563;
+    font-weight: 600;
+  }
+
+  /* Related posts / navigation */
+  .colered-box-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+
+  @media (min-width: 768px) {
+    .colered-box-text {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .colered-box-text span {
+    display: block;
+  }
+
+  .colered-box-text a {
+    display: block;
+    padding: 0.75rem;
+    background-color: white;
+    border-radius: 0.25rem;
+    border: 1px solid #d1d5db;
+    color: #2563eb;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .colered-box-text a:hover {
+    border-color: #2563eb;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Comments section */
+  .comments-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .blog-details-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+
+  /* Blog image */
+  .blog-boxed-img {
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-boxed-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* General spacing */
+  .single-blog-details-box {
+    margin-bottom: 2rem;
+  }
+</style>
+{% include page_header.html %}
+
+<!--======  blog-details PART START ======-->
+<section class="blog-details pt-140 pb-140">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="single-blog-details-box">
+          {% if page.post_image %}
+          <div class="blog-boxed-img">
+            <img src="{{page.post_image}}" class="w-100" alt="{{page.title}}" />
+          </div>
+          {% endif %}
+          <div class="single-blog-details-box-time">
+            {% if page.author %}
+            <span><i class="fas fa-user-alt"></i>{{page.author}}</span>
+            {% endif %} {% if page.date %}
+            <span
+              ><i class="far fa-calendar-alt"></i>{{page.date |
+              date_to_long_string}}</span
+            >
+            {% endif %}
+            <ul>
+              <li>share</li>
+              <li>
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{page.post_image }}&description="
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on Pinterest"
+                >
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h2>{{page.title}}</h2>
+          <div class="post-content">{{page.content}}</div>
+        </div>
+
+        <div class="populer-tags">
+          {% if page.tags.size > 0%}
+          <ul class="tags">
+            <li class="tag-heading">Popular Tag :</li>
+          </ul>
+          <div class="tags">{{page | tags | capitalize}}</div>
+          {% endif %} {% include social-share.html %}
+        </div>
+        <!-- <div class="colered-box-text">
+          {% if page.previous.url %}
+          <span
+            ><a href="{{page.previous.url}}"
+              >{{page.previous.title | truncate: 65}}</a
+            ></span
+          >
+          {% endif %} {% if page.next.url %}
+          <span
+            ><a href="{{page.next.url}}"
+              >{{page.next.title | truncate: 65}}</a
+            ></span
+          >
+          {% endif %}
+        </div> -->
+        <div class="comments-section">
+          <h2 class="blog-details-heading">Client’s Comments</h2>
+          {% include disqus-comments.html %}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sidebar">{% include sidebar.html %}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--======  blog-details PART end ======-->

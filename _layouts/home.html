@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="{% if page.description %} {{page.description}} {% else %} {{site.description}} {% endif %}"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <!--====== Bootstrap css (critical) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/bootstrap.min.css"
+    />
+    <!--====== Style css (critical) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/style.css"
+    />
+    <!--====== Fontawesome pro css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/all.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!--====== Magnific Popup css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/magnific-popup.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!--====== Slick css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/slick.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!--====== Slick menu css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/slick-menu.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!--====== Default css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/default.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!--====== Responsive css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/responsive.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{site.url}}{{site.baseurl}}/assets/images/favicon.png"
+    />
+    <title>
+      {% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}
+    </title>
+    {% if site.environment == 'production' %} {% include analytics.html %} {%
+    endif %}
+  </head>
+  <body>
+    <!--======  PRELOADER PART START ======-->
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_four"></div>
+        </div>
+      </div>
+    </div>
+    <!--======  PRELOADER PART END ======-->
+
+    <!--======  OFFCANVAS-SEARCH PART START ======-->
+    <div class="search-form">
+      <div class="offcanvas-search-area">
+        <form action="#">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search.."
+            required
+          />
+          <span class="close-bar"><i class="fas fa-times"></i></span>
+        </form>
+        <ul id="results-container"></ul>
+      </div>
+    </div>
+
+    <!--======  OFFCANVAS-SEARCH PART END ======-->
+    {% include header.html %} {{content}} {% include footer.html %}
+
+    <!--======  SCROLL-TO-TOP PART START ======-->
+    <div class="scroll-to-top">
+      <span id="return-to-top"><i class="fa fa-arrow-up"></i></span>
+    </div>
+    <!--======  SCROLL-TO-TOP PART END ======-->
+    <!--====== jquery js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.waypoints.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/popper.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/slick.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/slick-menu.min.js"></script>
+    <!--====== counterup js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.counterup.min.js"></script>
+    <!--====== Magnific Popup js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.magnific-popup.min.js"></script>
+    <!--====== onepage-nav Popup js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.nav.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
+    <!--====== Tailwind CSS (moved to end for non-blocking load) ======-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+    ></script>
+  </body>
+</html>
