@@ -311,6 +311,7 @@ p {
   z-index: 99;
   background: #00203c;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   top: 0;
@@ -324,10 +325,19 @@ p {
 .offcanvas-search-area.search-bar-active {
   right: 0;
 }
+.offcanvas-search-area form {
+  width: 100%;
+  text-align: center;
+}
 .offcanvas-search-area form input {
+  width: 80%;
+  max-width: 600px;
   border-radius: 50px;
-  padding: 25px;
+  padding: 15px 30px;
   color: #333;
+  background: #fff;
+  border: none;
+  font-size: 18px;
 }
 
 .offcanvas-search-area span.close-bar {

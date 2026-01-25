@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,94 +11,62 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Preconnect to external domains for faster resource loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-
-    <!-- Google Fonts with font-display swap for better performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <!--====== Bootstrap css (critical) ======-->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      href="{{relative_url}}/assets/css/bootstrap.min.css"
     />
-
-    <!-- Critical CSS - loads first for above-the-fold content -->
+    <!--====== Style css (critical) ======-->
+    <link rel="stylesheet" href="{{relative_url}}/assets/css/style.css" />
+    <!--====== Fontawesome pro css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/default.css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/responsive.css"
-    />
-
-    <!-- Non-critical CSS - can be loaded with lower priority -->
-    <link
-      rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/all.css"
+      href="{{relative_url}}/assets/css/all.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
+    <!--====== Magnific Popup css (deferred) ======-->
     <link
       rel="stylesheet"
       href="{{site.url}}{{site.baseurl}}/assets/css/magnific-popup.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
+    <!--====== Slick css (deferred) ======-->
     <link
       rel="stylesheet"
       href="{{site.url}}{{site.baseurl}}/assets/css/slick.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
+    <!--====== Slick menu css (deferred) ======-->
     <link
       rel="stylesheet"
       href="{{site.url}}{{site.baseurl}}/assets/css/slick-menu.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
-
-    <!-- Fallback for browsers that don't support onload -->
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="{{site.url}}{{site.baseurl}}/assets/css/all.css"
-      />
-      <link
-        rel="stylesheet"
-        href="{{site.url}}{{site.baseurl}}/assets/css/magnific-popup.css"
-      />
-      <link
-        rel="stylesheet"
-        href="{{site.url}}{{site.baseurl}}/assets/css/slick.css"
-      />
-      <link
-        rel="stylesheet"
-        href="{{site.url}}{{site.baseurl}}/assets/css/slick-menu.css"
-      />
-    </noscript>
-
+    <!--====== Default css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/default.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <!--====== Responsive css (deferred) ======-->
+    <link
+      rel="stylesheet"
+      href="{{site.url}}{{site.baseurl}}/assets/css/responsive.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="{{site.url}}{{site.baseurl}}/assets/images/favicon.png"
     />
-
-    <!-- Defer Tailwind CDN to avoid blocking render -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-      defer
-    ></script>
-
     <title>
       {% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}
     </title>
@@ -142,56 +110,31 @@
     <div class="scroll-to-top">
       <span id="return-to-top"><i class="fa fa-arrow-up"></i></span>
     </div>
-    <!--====== SCROLL-TO-TOP PART END ======-->
+    <!--======  SCROLL-TO-TOP PART END ======-->
     <!--====== jquery js ======-->
     <script src="{{site.url}}{{site.baseurl}}/assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/vendor/jquery-1.12.4.min.js"
-      defer
-    ></script>
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.waypoints.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.waypoints.min.js"></script>
     <!--====== Bootstrap js ======-->
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.min.js"
-      defer
-    ></script>
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/popper.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/popper.min.js"></script>
     <!--====== Slick js ======-->
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/slick.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/slick.min.js"></script>
     <!--====== Slick js ======-->
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/slick-menu.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/slick-menu.min.js"></script>
     <!--====== counterup js ======-->
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.counterup.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.counterup.min.js"></script>
     <!--====== Magnific Popup js ======-->
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.magnific-popup.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.magnific-popup.min.js"></script>
     <!--====== onepage-nav Popup js ======-->
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/jquery.nav.js"
-      defer
-    ></script>
-    <script
-      src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"
-      defer
-    ></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.nav.js"></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
     <!--====== Main js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js" defer></script>
+    <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
+    <!--====== Tailwind CSS (moved to end for non-blocking load) ======-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+    ></script>
   </body>
 </html>
