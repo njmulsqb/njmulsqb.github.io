@@ -1,0 +1,196 @@
+---
+layout: default
+---
+
+{% include page_header.html %}
+
+<!--====== CONTACT PART START ======-->
+<section class="contact-area section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2>Get In Touch</h2>
+          <p>
+            Have a question or want to work together? We'd love to hear from you.
+            Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-8">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="btn hero-btn">
+                  Send Message <i class="fa fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="contact-info">
+          <div class="single-info mb-4">
+            <div class="info-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h5>Email</h5>
+              <p>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="single-info mb-4">
+            <div class="info-icon">
+              <i class="fa fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h5>Address</h5>
+              <p>{{ site.address }}</p>
+            </div>
+          </div>
+
+          <div class="single-info mb-4">
+            <div class="info-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <h5>Phone</h5>
+              <p>
+                <a href="tel:{{ site.phone_number }}">{{ site.phone_number }}</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="single-info">
+            <div class="info-icon">
+              <i class="fa fa-clock"></i>
+            </div>
+            <div class="info-content">
+              <h5>Office Hours</h5>
+              <p>{{ site.office_time }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====== CONTACT PART END ======-->
+
+<style>
+  .contact-area {
+    background: #f8f9fa;
+  }
+
+  .contact-form .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-form .form-control:focus {
+    border-color: var(--primary-color, #007bff);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+  }
+
+  .contact-info .single-info {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-info .info-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color, #007bff);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  .contact-info .info-icon i {
+    font-size: 20px;
+  }
+
+  .contact-info .info-content h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .contact-info .info-content p {
+    margin: 0;
+    color: #666;
+  }
+
+  .contact-info .info-content a {
+    color: var(--primary-color, #007bff);
+    text-decoration: none;
+  }
+
+  .contact-info .info-content a:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -50,8 +50,8 @@ projects_settings:
   title: Key Achievements
   description: My Journey and Achievements
   button:
-    name: "get started "
-    link: "#"
+    name: "About me"
+    link: "/about/"
   counter:
     - icon: '<i class="fas fa-rocket"></i>'
       name: "Project completed"
@@ -78,8 +78,8 @@ cta_settings:
   description: We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure
   image: /assets/images/cta-text.png
   button:
-    name: "meet with us"
-    link: "#"
+    name: "Contact Us"
+    link: "/contact/"
 
 textimonials_settings:
   image: /assets/images/testimonial/1.png
