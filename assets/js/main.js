@@ -17,12 +17,12 @@ $(function () {
 
 //scroll-to-top
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 350) {        
+        if ($(this).scrollTop() >= 600) {        
             $('.scroll-to-top').fadeIn(200);    
         } else {
             $('.scroll-to-top').fadeOut(200);   
         }
-    });
+    }).trigger('scroll');
 
     $('.scroll-to-top').on('click', function(){
         $('html').animate({
@@ -46,7 +46,7 @@ $('.main-menu nav ul').onePageNav();
 
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
-        if (scroll < 110) {
+        if (scroll < 50) {
             $(".bottom-header-area").removeClass("sticky");
         } else {
             $(".bottom-header-area").addClass("sticky");
@@ -58,16 +58,18 @@ $('.main-menu nav ul').onePageNav();
 //====search
     $(".search-btn").on('click', function(){
         $(".offcanvas-search-area").addClass("search-bar-active");
+        $("body").addClass("search-active");
     });
 
     $(".close-bar i").on('click', function(){
         $(".offcanvas-search-area").removeClass("search-bar-active");
+        $("body").removeClass("search-active");
     });
 
 
     //===== hero Active slick slider
     $('.hero-carousel-active').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         autoplay: false,
         autoplaySpeed: 3000,
@@ -151,7 +153,7 @@ $('.main-menu nav ul').onePageNav();
 
     //===== team-carousel-active
     $('.team-carousel-active').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -216,7 +218,9 @@ $('.main-menu nav ul').onePageNav();
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      json: '/search.json'
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{url}">- {title}</a></li>',
+      noResultsText: '<li>No results found</li>'
     });
 
 });

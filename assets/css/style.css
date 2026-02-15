@@ -146,10 +146,11 @@ p {
   transition: 0.6s ease-in-out;
 }
 .btn i {
+  display: inline-block;
   transition: 0.6s;
 }
 .btn:hover i {
-  padding-left: 10px;
+  transform: translateX(8px);
 }
 .btn:hover {
   background: #fff;
@@ -308,7 +309,7 @@ p {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  z-index: 1100;
   background: #00203c;
   display: flex;
   flex-direction: column;
@@ -321,6 +322,13 @@ p {
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
+  overflow-y: auto;
+}
+body.search-active {
+  overflow: hidden;
+}
+body.search-active .scroll-to-top {
+  display: none !important;
 }
 .offcanvas-search-area.search-bar-active {
   right: 0;
@@ -376,6 +384,7 @@ p {
   color: #2e42b9;
   border-radius: 50%;
   cursor: pointer;
+  display: none;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -388,7 +397,7 @@ p {
 ----------------------------------------*/
 header {
   position: absolute;
-  z-index: 3;
+  z-index: 1000;
   width: 100%;
 }
 .bottom-header-area.sticky {
@@ -396,11 +405,13 @@ header {
   width: 100%;
   top: 0;
   background: #00203c;
-  transition: 0.7s ease-in-out;
-  -webkit-transition: 0.7s ease-in-out;
-  -moz-transition: 0.7s ease-in-out;
-  -ms-transition: 0.7s ease-in-out;
-  -o-transition: 0.7s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 /* sticky-header css start */
@@ -664,44 +675,7 @@ header {
   visibility: hidden;
 }
 
-.hero-carousel-active .slick-dots {
-  position: absolute;
-  right: 200px;
-  top: 50%;
-  transform: translatey(-50%);
-}
-.hero-carousel-active .slick-dots li {
-  margin: 5px 0;
-}
-.hero-carousel-active .slick-dots li button {
-  display: none;
-}
-.hero-carousel-active .slick-dots li,
-.team-carousel-active .slick-dots li {
-  width: 7px;
-  height: 7px;
-  background: #fff;
-  border-radius: 50%;
-  margin: 15px 0;
-  cursor: pointer;
-  transition: all 0.4s linear 0s;
-}
-.hero-carousel-active .slick-dots li.slick-active,
-.team-carousel-active .slick-dots li.slick-active {
-  position: relative;
-  z-index: 1;
-}
-.hero-carousel-active .slick-dots li.slick-active:before,
-.team-carousel-active .slick-dots li.slick-active:before {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: -7px;
-  left: -6px;
-  content: "";
-  border: 1px solid #ddd;
-  border-radius: 50%;
-}
+
 
 .btn.hero-btn {
   margin-right: 30px;
@@ -732,6 +706,10 @@ header {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   width: 80px;
   height: 90px;
   text-align: center;
@@ -744,6 +722,10 @@ header {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   font-size: 24px;
   color: #8b96ff;
   animation: scrolli 2s infinite;
@@ -994,6 +976,7 @@ header {
   transition: 0.3s;
 }
 .service-btn i {
+  display: inline-block;
   transition: 0.3s;
   font-size: 12px;
   padding-left: 4px;
@@ -1003,7 +986,7 @@ header {
   color: #fff;
 }
 .service-btn:hover i {
-  padding-left: 10px;
+  transform: translateX(8px);
 }
 .single-service-box:hover .single-service-icon-box {
   background: #f26c4f;
@@ -1025,12 +1008,13 @@ header {
   border-bottom: 1px solid #abb5c3;
 }
 .portfolio-btn-2 i {
+  display: inline-block;
   font-size: 15px;
   padding-left: 3px;
   transition: 0.3s ease-in-out;
 }
 .portfolio-btn-2:hover i {
-  padding-left: 10px;
+  transform: translateX(8px);
 }
 .btn.portfolio-btn:hover {
   background: #1f2732;
@@ -1047,12 +1031,13 @@ header {
   border-bottom: 1px solid #abb5c3;
 }
 .portfolio-btn-2 i {
+  display: inline-block;
   font-size: 15px;
   padding-left: 3px;
   transition: 0.3s ease-in-out;
 }
 .portfolio-btn-2:hover i {
-  padding-left: 10px;
+  transform: translateX(8px);
 }
 .btn.portfolio-btn:hover {
   background: #1f2732;
@@ -1196,24 +1181,7 @@ header {
   font-weight: 700;
 }
 
-.team-carousel-active .slick-dots {
-  position: absolute;
-  left: 46%;
-  transform: translatey(-50%);
-  bottom: -20%;
-}
-.team-carousel-active .slick-dots li button {
-  display: none;
-}
-.team-carousel-active .slick-dots li {
-  background: #f26c4f;
-  display: inline-block;
-  margin: 0 10px;
-}
-.team-carousel-active .slick-dots li.slick-active::before {
-  border-color: #f26c4f;
-  border-radius: 5px;
-}
+
 
 /*----------------------------------------
    11. VIDEO css
@@ -1891,12 +1859,13 @@ header {
   transition: 0.3s ease-in-out;
 }
 .latest-blogs .view-details-btn i {
+  display: inline-block;
   padding-left: 3px;
   font-size: 14px;
   transition: 0.3s ease-in-out;
 }
 .latest-blogs .view-details-btn:hover i {
-  padding-left: 10px;
+  transform: translateX(8px);
 }
 .latest-blogs .view-details-btn:hover {
   color: #333;
@@ -2192,12 +2161,13 @@ h2.blog-details-heading::after {
   color: #f26c4f;
 }
 .comments-replay-btn i {
+  display: inline-block;
   padding-left: 3px;
   font-size: 12px;
   transition: 0.3s ease-in-out;
 }
 .comments-replay-btn:hover i {
-  padding-left: 10px;
+  transform: translateX(8px);
 }
 
 .comments-replay-btn {
@@ -2499,15 +2469,52 @@ h4.blog-details-heading::after {
 .section-title.contact-title h1 {
   margin-bottom: 0;
 }
+.search-results-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
 #results-container {
-  padding-left: 35px;
+  max-width: 45%;
+  margin: 10px auto;
+  width: 100%;
+}
+#results-container li {
+  width: 100%;
 }
 #results-container li a {
-  display: inline-block;
+  display: block;
   color: #fff;
-  padding: 5px 0;
-  border-bottom: 2px dotted #222;
+  padding: 10px 0;
+  border-bottom: 2px dashed #817f7f;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s;
 }
+#results-container li a:hover {
+  color: #f26c4f;
+  padding-left: 10px;
+}
+.search-results-heading {
+  display: none;
+  color: #f26c4f;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#results-container:not(:empty) + .search-results-heading {
+  display: block;
+}
+@media (max-width: 767px) {
+  #results-container {
+    max-width: 90%;
+  }
+}
+
 
 /*----------------------------------------
    21. 404 css

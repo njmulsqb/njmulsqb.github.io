@@ -156,6 +156,13 @@
 }
 
 @media (max-width: 991px) {
+    .scroll-to-top {
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+        transform: none;
+        -webkit-transform: none;
+    }
 
     .top-header-area {
         display: none;
@@ -163,9 +170,13 @@
     .main-menu {
 	display: none;
     }
+    .logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .header-search {
         padding-top: 0;
-        margin-top: -33px;
+        margin-top: 0;
     }
     .bottom-header-area.sticky .header-search {
         padding-top: 0px;
@@ -340,7 +351,7 @@
 .mobile-menu-wrap {
     position: absolute;
     right: 42px;
-    top: -46px;
+    top: -66px;
     width: 250px;
   }
   .bottom-header-area .col-lg-10 {
@@ -523,10 +534,7 @@
     }
     
     .bottom-header-area.sticky  .mobile-menu-wrap {
-        position: absolute;
-        right: 42px;
-        top: -58px;
-        width: 250px;
+        width: auto;
     }
     #portfolio .pb-30 {
         padding-bottom: 0;
