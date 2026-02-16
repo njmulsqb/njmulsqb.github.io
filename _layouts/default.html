@@ -90,18 +90,23 @@
     <!--======  OFFCANVAS-SEARCH PART START ======-->
     <div class="search-form">
       <div class="offcanvas-search-area">
-        <h3 style="color: #fff; margin-bottom: 20px; text-align: center;">Search my blog posts</h3>
-        <form action="#">
-          <input
-            type="text"
-            id="search-input"
-            placeholder="Search in my posts..."
-          />
-          <span class="close-bar"><i class="fas fa-times"></i></span>
-        </form>
+        <div class="search-header">
+          <h3 style="color: #fff; margin: 40px 0px; text-align: center;">Search my blog posts</h3>
+          <form action="#">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search in my posts..."
+            />
+            <span class="close-bar"><i class="fas fa-times"></i></span>
+          </form>
+        </div>
         <div class="search-results-wrapper">
+          <h4 class="search-results-heading">
+            Search Results 
+            <span id="results-count" style="font-size: 16px; font-weight: normal; opacity: 0.8;"></span>
+          </h4>
           <ul id="results-container"></ul>
-          <h4 class="search-results-heading">Searched Results</h4>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ $(function () {
 
 //scroll-to-top
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 600) {        
+        if ($(this).scrollTop() >= 600 && ($(window).scrollTop() + $(window).height() < $(document).height() - 50)) {        
             $('.scroll-to-top').fadeIn(200);    
         } else {
             $('.scroll-to-top').fadeOut(200);   
@@ -42,15 +42,32 @@ $('.main-menu nav ul').onePageNav();
 
 
 
-    //===== Sticky
+    //===== Sticky with scroll direction detection
 
+    let lastScrollTop = 0;
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
+        var windowWidth = $(window).width();
+        
         if (scroll < 50) {
-            $(".bottom-header-area").removeClass("sticky");
+            $(".bottom-header-area").removeClass("sticky sticky-down sticky-up");
         } else {
-            $(".bottom-header-area").addClass("sticky");
+            // Only apply scroll direction logic on mobile (below 776px)
+            if (windowWidth < 776) {
+                // Detect scroll direction
+                if (scroll > lastScrollTop) {
+                    // Scrolling down
+                    $(".bottom-header-area").removeClass("sticky-up").addClass("sticky sticky-down");
+                } else {
+                    // Scrolling up
+                    $(".bottom-header-area").removeClass("sticky-down").addClass("sticky sticky-up");
+                }
+            } else {
+                // Desktop: simple sticky without direction
+                $(".bottom-header-area").addClass("sticky").removeClass("sticky-down sticky-up");
+            }
         }
+        lastScrollTop = scroll;
     });
 
 
@@ -215,13 +232,59 @@ $('.main-menu nav ul').onePageNav();
         }
     });
 
+
     var sjs = SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
       json: '/search.json',
       searchResultTemplate: '<li><a href="{url}">- {title}</a></li>',
-      noResultsText: '<li>No results found</li>'
+      noResultsText: '<li>No results found</li>',
+      success: function() {
+        updateResultCount();
+      }
     });
+
+    // Function to update result count
+    function updateResultCount() {
+      const resultsContainer = document.getElementById('results-container');
+      const resultsCount = document.getElementById('results-count');
+      const searchInput = document.getElementById('search-input');
+      
+      if (resultsContainer && resultsCount) {
+        const items = resultsContainer.querySelectorAll('li');
+        const count = items.length;
+        
+        if (searchInput.value.trim() === '') {
+          resultsCount.textContent = '';
+        } else if (count === 1 && items[0].textContent === 'No results found') {
+          resultsCount.textContent = '(0 found)';
+        } else {
+          resultsCount.textContent = `(${count} found)`;
+        }
+      }
+    }
+
+    // Watch for changes in the results container
+    const resultsContainer = document.getElementById('results-container');
+    if (resultsContainer) {
+      const observer = new MutationObserver(function() {
+        updateResultCount();
+      });
+      
+      observer.observe(resultsContainer, {
+        childList: true,
+        subtree: true
+      });
+    }
+
+    // Update count when search input changes
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        setTimeout(updateResultCount, 100);
+      });
+    }
+
 
 });
 

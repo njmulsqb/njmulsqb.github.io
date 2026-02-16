@@ -1,15 +1,29 @@
 <header>
   <style>
-    .header-logo-link {
-      color: white;
-      font-weight: bold;
-      font-size: 25px;
-      letter-spacing: 0.025em;
-      transition: color 300ms;
+    @media (min-width: 768px) {
+      .header-logo-link {
+        color: white;
+        font-weight: bold;
+        font-size: clamp(20px, 1.5vw + 10px, 25px);
+        letter-spacing: 0.025em;
+        transition: color 300ms;
+        margin-top: -20px;
+      }
+      .header-logo-link:hover {
+        color: #60a5fa;
+      }
     }
-    .header-logo-link:hover {
-      color: #60a5fa;
-    }
+     .header-logo-link {
+        color: white;
+        font-weight: bold;
+        font-size: clamp(20px, 1.5vw + 10px, 25px);
+        letter-spacing: 0.025em;
+        transition: color 300ms;
+       
+      }
+      .header-logo-link:hover {
+        color: #60a5fa;
+      }
   </style>
   <!-- <div class="top-header-area">
     <div class="container">
@@ -59,15 +73,15 @@
 </div> -->
   <div class="bottom-header-area">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-6">
           <div class="logo flex items-center">
             <a class="header-logo-link" href="{{site.url}}{{site.baseurl}}"
-              >Najam Ul Saqib</a
+              >{{site.title}}</a
             >
           </div>
         </div>
-        <div class="col-lg-9 text-right">
+        <div class="col-lg-9 col-6 text-right">
           <div class="mobile-menu-wrap"></div>
           <div class="header-search">
             <span class="search-btn"><i class="fa fa-search"></i></span>

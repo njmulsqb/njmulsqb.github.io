@@ -2,61 +2,33 @@
 <section class="testimonial-area" id="testimonial">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5">
-        <img
-          src="{{site.url}}{{site.baseurl}}{{ site.data.settings.textimonials_settings.image }}"
-          alt=""
-          class=""
-          aria-hidden="true"
-        />
-      </div>
-      <div class="col-lg-7 textimonial-carousel-active">
-        {% for textimonial in
-        site.data.settings.textimonials_settings.textimonial %}
-        <div class="single-testimonial-content">
-          <span class="testimonial-quote"
-            ><i class="fa fa-quote-right"></i
-          ></span>
-          {% if textimonial.rating %}
-          <div class="rating" style="margin-bottom: 10px">
-            {% for i in (1..textimonial.rating) %}
-            <i class="fa fa-star" style="color: #ffd700"></i>
-            {% endfor %}
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <div class="textimonial-carousel-active">
+          {% for textimonial in site.data.settings.textimonials_settings.textimonial %}
+          <div class="single-testimonial-content">
+            <span class="testimonial-quote">
+              <i class="fa fa-quote-right"></i>
+            </span>
+            {% if textimonial.rating %}
+            <div class="rating" style="margin-bottom: 20px">
+              {% for i in (1..textimonial.rating) %}
+              <i class="fa fa-star" style="color: #ffd700"></i>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <p style="font-size: clamp(18px, 1.5vw + 10px, 24px); line-height: 1.6;">{{ textimonial.text }}</p>
+            <div class="autohor-details" style="padding-left: 0;">
+              <h5 class="author-name" style="padding-left: 0;">
+                {% if textimonial.name %}{{ textimonial.name }}{% else %}Anonymous{% endif %}
+                <span>{% if textimonial.position %}{{ textimonial.position }}{% else %}Not given{% endif %}</span>
+                {% if textimonial.date %}
+                <span style="display: block; font-size: 0.5em; font-weight: normal; margin-top: 10px; color: #ccc;">{{ textimonial.date }}</span>
+                {% endif %}
+              </h5>
+            </div>
           </div>
-          {% endif %}
-          <p style="font-size: 20px">{{ textimonial.text }}</p>
-          <div class="autohor-details">
-            {% assign author_image = textimonial.image %} {% if author_image ==
-            nil or author_image == "" %} {% assign author_image =
-            "/assets/images/testimonial/avatar.webp" %} {% endif %}
-            <img
-              src="{{site.url}}{{site.baseurl}}{{ author_image }}"
-              alt=""
-              class="author-img"
-            />
-            <h5 class="author-name">
-              {% if textimonial.name %}{{ textimonial.name }}{% else
-              %}Anonymous{% endif %}
-              <span
-                >{% if textimonial.position %}{{ textimonial.position }}{% else
-                %}Not given{% endif %}</span
-              >
-              {% if textimonial.date %}
-              <span
-                style="
-                  display: block;
-                  font-size: 0.5em;
-                  font-weight: normal;
-                  margin-top: 4px;
-                  color: #888;
-                "
-                >{{ textimonial.date }}</span
-              >
-              {% endif %}
-            </h5>
-          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>

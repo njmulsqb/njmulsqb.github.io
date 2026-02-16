@@ -6,7 +6,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   making application and cloud security headache-free for engineering teams.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ireactinitiative.org" # the base hostname & protocol for your site, e.g. http://example.com
-
+title: "Najam Ul Saqib"
 #General Settings
 facebook_url: "https://facebook.com/tortoizthemes"
 twitter_url: "https://twitter.com/tortoizthemes"
