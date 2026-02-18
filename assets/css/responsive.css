@@ -5,6 +5,12 @@
 }
 
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
     .top-header-content span {
@@ -23,9 +29,6 @@
     }
     .hero-para {
         font-size: 22px;
-    }
-    .hero-heading {
-        font-size: 70px;
     }
     .btn {
         padding: 25px 40px;
@@ -171,15 +174,18 @@
 	display: none;
     }
     .logo {
-        padding-bottom: 20px;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .header-search {
         padding-top: 0;
-        margin-top: -10px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
     }
     .bottom-header-area.sticky .header-search {
-        padding-top: 5px;
-        padding-bottom: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .btn {
         padding: 25px 40px;
@@ -194,15 +200,12 @@
     .hero-para::before {
         height: 64px;
     }
-    .hero-heading {
-        font-size: 60px;
-    }
     .hero-scrolli {
         bottom: 30px;
-        width: 50px;
-        height: 56px;
-        border-width: 3px;
-        border-radius: 18px;
+        width: 60px;
+        height: 60px;
+        border-width: 2px;
+        border-radius: 50%;
     }
     .hero-scrolli span {
         font-size: 18px;
@@ -259,8 +262,25 @@
     .project-counter-area .text-right {
         text-align: left !important;
     }
-    .project-counter-area .col-lg-3.col-md-6 {
-        margin-bottom: 40px;
+    .project-counter-area .col-lg-3.col-md-6,
+    .project-counter-area .col-6 {
+        margin-bottom: 30px;
+    }
+    .single-counter-item {
+        padding: 25px 20px;
+    }
+    .counter-icon {
+        font-size: 38px;
+        margin-right: 15px;
+    }
+    .counter-text {
+        padding-left: 15px;
+    }
+    .counter-text h1 {
+        font-size: 36px;
+    }
+    .counter-text p {
+        font-size: 13px;
     }
     .absolute-price-num {
         left: 323px;
@@ -293,7 +313,8 @@
         margin-top: 30px;
     }
     .project-counter-area {
-        padding-top: 130px;
+        padding-top: 75px;
+        padding-bottom: 40px;
     }
     .breadcrumb-content {
         padding-top: 240px;
@@ -348,48 +369,26 @@
     .portfolio-overlay-content {
         bottom: 10px;
     }
-    .slicknav_menu{
-        display: block;
-      }
-      
-.mobile-menu-wrap {
-    position: absolute;
-    right: 42px;
-    top: -66px;
-    width: 250px;
-  }
-  .bottom-header-area .col-lg-10 {
-    position: relative;
-    z-index: 1;
-  }
-  .mobile-menu-wrap .slicknav_menu {
-	background: transparent;
-    margin-top: 45px;
-}
-.slicknav_menu .slicknav_menutxt {
-	display: none;
-}
-.slicknav_nav {
-	background: #333;
-}
-.slicknav_nav a {
-	text-align: left;
-}
-.slicknav_btn {
-	background-color: transparent;
-}
-
+/* removed old mobile-menu-wrap and slicknav styles */
 }
  
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-    .header-search {
-        display: block;
-        margin-top: -10px;
+    .counter-area {
+        margin-top: 30px;
     }
-    .offcanvas-search-area {
-        display: none;
+    .header-search {
+        display: flex;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        z-index: 1005;
+    }
+    .search-btn i {
+        font-size: 20px;
     }
     .hero-carousel-active .slick-dots {
         right: 20px;
@@ -397,9 +396,6 @@
     .bottom-header-area.sticky .logo {
         padding-top: 14px;
         padding-bottom: 15px;
-    }
-    .hero-heading {
-        font-size: 50px;
     }
     .hero-para {
         font-size: 16px;
@@ -459,9 +455,27 @@
     .autohor-details {
         margin-top: 80px;
     }
+    .single-testimonial-content {
+        padding: 0 40px;
+    }
     .textimonial-carousel-active .slick-arrow {
-        right: 10px;
-        bottom: 11%;
+        top: auto;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+    .textimonial-carousel-active .slick-arrow.prev {
+        margin-left: -35px;
+        left: 50%;
+    }
+    .textimonial-carousel-active .slick-arrow.next {
+        margin-left: 35px;
+        left: 50%;
+        right: auto;
+    }
+    .testimonial-area {
+        padding-bottom: 120px;
     }
     .absolute-price-num {
         left: 153px;
@@ -470,13 +484,14 @@
         left: 5px;
     }
     .hero-area-content {
-        padding-top: 150px;
+        padding-top: 100px;
     }
     .single-testimonial-content p {
         font-size: 18px;
     }
     .footer-bottom-area p {
         padding-left: 15px;
+        padding-right: 15px;
     }
     .single-portfolio-item {
         margin-bottom: 30px;
@@ -540,8 +555,8 @@
         padding: 0 40px;
     }
     
-    .bottom-header-area.sticky  .mobile-menu-wrap {
-        width: auto;
+    .bottom-header-area.sticky  .mobile-nav-toggle {
+        margin-top: 0;
     }
     #portfolio .pb-30 {
         padding-bottom: 0;
@@ -559,5 +574,43 @@
 @media (max-width: 479px){
     .single-address-area span {
         font-size: 16px;
+    }
+    .counter-area {
+        margin-top: 30px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .counter-area [class*="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+    }
+    .single-counter-item {
+        padding: 20px 10px;
+        border-radius: 15px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        width: 100%;
+    }
+    .counter-icon {
+        font-size: 30px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .counter-text {
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid #f26c4f;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .counter-text h1 {
+        font-size: 24px;
+    }
+    .counter-text p {
+        font-size: 10px;
+        margin-bottom: 0;
     }
 }

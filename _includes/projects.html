@@ -20,13 +20,15 @@
         ></a>
       </div>
     </div>
-    <div class="row justify-center">
+    <div class="row justify-center counter-area">
       {% for counter in site.data.settings.projects_settings.counter %}
-      <div class="col-lg-3 col-md-6">
-        <div class="counter-icon">{{ counter.icon }}</div>
-        <div class="counter-text">
-          <h1 class="count">{{ counter.count }}</h1>
-          <p>{{ counter.name }}</p>
+      <div class="col-lg-3 col-md-6 col-6 d-flex">
+        <div class="single-counter-item d-flex align-items-center mb-30 w-100">
+          <div class="counter-icon">{{ counter.icon }}</div>
+          <div class="counter-text">
+            <h1 class="count">{{ counter.count }}</h1>
+            <p>{{ counter.name }}</p>
+          </div>
         </div>
       </div>
       {% endfor %}

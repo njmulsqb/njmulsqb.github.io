@@ -30,58 +30,66 @@ $(function () {
         }, 1000);
     });
 //mobile-menu
-    $("#mobile-menu").slicknav({
-        prependTo: ".mobile-menu-wrap",
-        allowParentlinks:true
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileSidebar = document.getElementById('mobile-sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const body = document.body;
+
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', function() {
+            mobileSidebar.classList.add('active');
+            sidebarOverlay.classList.add('active');
+            body.style.overflow = 'hidden';
+        });
+    }
+
+    function hideSidebar() {
+        mobileSidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        body.style.overflow = '';
+    }
+
+    if (closeSidebar) {
+        closeSidebar.addEventListener('click', hideSidebar);
+    }
+
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', hideSidebar);
+    }
+
+    // Close sidebar when clicking a link
+    $('.mobile-nav a').on('click', function() {
+        hideSidebar();
     });
 
 //one page nav
+if ($('.main-menu ul').length) {
+    $('.main-menu ul').onePageNav({
+        currentClass: 'current',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing'
+    });
+}
 
-$('.main-menu nav ul').onePageNav();
 
 
 
-
-    //===== Sticky with scroll direction detection
-
-    let lastScrollTop = 0;
+    //===== Sticky header simple logic
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
-        var windowWidth = $(window).width();
-        
         if (scroll < 50) {
-            $(".bottom-header-area").removeClass("sticky sticky-down sticky-up");
+            $(".bottom-header-area").removeClass("sticky");
         } else {
-            // Only apply scroll direction logic on mobile (below 776px)
-            if (windowWidth < 776) {
-                // Detect scroll direction
-                if (scroll > lastScrollTop) {
-                    // Scrolling down
-                    $(".bottom-header-area").removeClass("sticky-up").addClass("sticky sticky-down");
-                } else {
-                    // Scrolling up
-                    $(".bottom-header-area").removeClass("sticky-down").addClass("sticky sticky-up");
-                }
-            } else {
-                // Desktop: simple sticky without direction
-                $(".bottom-header-area").addClass("sticky").removeClass("sticky-down sticky-up");
-            }
+            $(".bottom-header-area").addClass("sticky");
         }
-        lastScrollTop = scroll;
     });
 
 
 
-//====search
-    $(".search-btn").on('click', function(){
-        $(".offcanvas-search-area").addClass("search-bar-active");
-        $("body").addClass("search-active");
-    });
-
-    $(".close-bar i").on('click', function(){
-        $(".offcanvas-search-area").removeClass("search-bar-active");
-        $("body").removeClass("search-active");
-    });
 
 
     //===== hero Active slick slider
@@ -244,11 +252,12 @@ $('.main-menu nav ul').onePageNav();
       }
     });
 
-    // Function to update result count
+    // Function to update result count and scroll to top
     function updateResultCount() {
       const resultsContainer = document.getElementById('results-container');
       const resultsCount = document.getElementById('results-count');
       const searchInput = document.getElementById('search-input');
+      const resultsWrapper = document.querySelector('.search-results-wrapper');
       
       if (resultsContainer && resultsCount) {
         const items = resultsContainer.querySelectorAll('li');
@@ -260,6 +269,11 @@ $('.main-menu nav ul').onePageNav();
           resultsCount.textContent = '(0 found)';
         } else {
           resultsCount.textContent = `(${count} found)`;
+        }
+
+        // Always scroll back to top when results change
+        if (resultsWrapper) {
+            resultsWrapper.scrollTop = 0;
         }
       }
     }
@@ -281,11 +295,25 @@ $('.main-menu nav ul').onePageNav();
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
       searchInput.addEventListener('input', function() {
-        setTimeout(updateResultCount, 100);
+        setTimeout(updateResultCount, 0);
       });
     }
 
+    // Fixing search button for mobile (using delegated event for better support)
+    $(document).on('click', '.search-btn', function(e) {
+        e.preventDefault();
+        $(".offcanvas-search-area").addClass("search-bar-active");
+        $("body").addClass("search-active");
+        // Focus the input
+        setTimeout(() => {
+            $('#search-input').focus();
+        }, 300);
+    });
 
+    $(document).on('click', ".close-bar i, .sidebar-overlay, .close-bar", function(){
+        $(".offcanvas-search-area").removeClass("search-bar-active");
+        $("body").removeClass("search-active");
+    });
 });
 
 // Update year

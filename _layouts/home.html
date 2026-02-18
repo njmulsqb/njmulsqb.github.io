@@ -27,6 +27,7 @@
       media="print"
       onload="this.media = 'all'"
     />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--====== Magnific Popup css (deferred) ======-->
     <link
       rel="stylesheet"
@@ -89,6 +90,7 @@
 
      <div class="search-form">
       <div class="offcanvas-search-area">
+        <span class="close-bar"><i class="fas fa-times"></i></span>
         <div class="search-header">
           <h3 style="color: #fff; margin: 40px 0px; text-align: center;">Search my blog posts</h3>
           <form action="#">
@@ -97,7 +99,6 @@
               id="search-input"
               placeholder="Search in my posts..."
             />
-            <span class="close-bar"><i class="fas fa-times"></i></span>
           </form>
         </div>
         <div class="search-results-wrapper">

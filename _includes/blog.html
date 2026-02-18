@@ -10,7 +10,7 @@
           <h1>{{ site.data.settings.blogs_settings.description }}</h1>
         </div>
       </div>
-      <div class="col-lg-8 text-right">
+      <div class="col-lg-8 text-right mt-10 md:mt-o">
         <a
           href="{{ site.data.settings.blogs_settings.button.link }}"
           class="btn blog-btn"
@@ -20,7 +20,7 @@
         ></a>
       </div>
     </div>
-    <div class="row">
+    <div class="row gap-5 md:gap-0">
       {% for post in site.posts limit: 3 %}
       <div class="col-lg-4">
         <div class="single-blog-area">
