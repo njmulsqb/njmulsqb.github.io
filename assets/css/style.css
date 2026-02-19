@@ -498,12 +498,21 @@ header {
   transform: translateY(0);
 }
 
-/* Mobile sticky positioning - simpler 100% width to fix margin issue */
+/* Mobile sticky positioning */
 @media (max-width: 991px) {
   .bottom-header-area.sticky {
     width: 100%;
     left: 0;
     top: 0;
+    animation: slideDown 0.3s ease forwards;
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 }
 
@@ -617,10 +626,10 @@ header {
   font-weight: 600;
   text-transform: capitalize;
   padding: 40px 0;
-  padding-right: 10px;
+  padding-right: 8px;
   position: relative;
   z-index: 1;
-  margin-right: 15px;
+  margin-right: 12px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.01em;
   text-decoration: none !important;
@@ -632,21 +641,21 @@ header {
 
 /* Nav CTA Button */
 .nav-cta-item {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .nav-cta-btn {
-    background: #60a5fa !important;
+    background: #f26c4f !important;
     color: #fff !important;
     padding: 10px 22px !important;
     border-radius: 50px;
     font-weight: 700 !important;
     transition: all 0.3s ease !important;
-    box-shadow: 0 4px 10px rgba(96, 165, 250, 0.3);
+   
 }
 .nav-cta-btn:hover {
-    background: #3b82f6 !important;
+    background: #e46447 !important;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+   
 }
 .nav-cta-btn:after {
     display: none !important;
@@ -665,7 +674,7 @@ header {
 /* 02. submenu css */
 .main-menu ul li ul.submenu {
   position: absolute;
-  width: 220px;
+  width: 130px;
   top: 110%;
   background: #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -980,6 +989,17 @@ header {
     opacity: 0;
   }
 }
+.hero-scrolli.dark-variant {
+  border-color: rgba(0, 32, 60, 0.2);
+  background: rgba(0, 32, 60, 0.05);
+}
+.hero-scrolli.dark-variant span {
+  color: #00203c;
+}
+.hero-scrolli.dark-variant:hover {
+  background: rgba(0, 32, 60, 0.1);
+  border-color: #60a5fa;
+}
 
 /*----------------------------------------
    04. SERVICE-CATEGORIES css
@@ -1069,7 +1089,14 @@ header {
   background: #f26c4f;
 }
 .section-title h1 {
-  font-size: clamp(32px, 4vw + 10px, 58px);
+  font-size: clamp(32px, 4vw + 10px, 45px);
+  margin-bottom: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1f2732;
+}
+.section-title p {
+  font-size: clamp(20px, 4vw + 10px, 25px);
   margin-bottom: 30px;
   font-weight: 800;
   line-height: 1.2;
@@ -1161,16 +1188,18 @@ header {
 }
 .single-service-box {
   background: #182f5d;
-  min-height: 280px;
-  height: auto;
+  height: 100%;
   padding: 45px;
   padding-top: 50px;
   overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  transition: all 0.3s ease;
 }
 .single-service-icon-box {
   width: 170px;
   height: 170px;
-  float: left;
+  flex-shrink: 0;
   text-align: center;
   background: #25467d;
   border-radius: 50%;
@@ -1197,11 +1226,13 @@ header {
   right: -10px;
 }
 .service-box-content {
-  padding-left: 206px;
+  flex-grow: 1;
+  padding-left: 36px;
 }
 .service-box-content h3 {
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 .service-box-content p {
@@ -1546,7 +1577,8 @@ header {
 ----------------------------------------*/
 .project-counter-area {
   padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 140px;
+  position: relative;
 }
 .project-counter-area .col-lg-3.col-md-6,
 .project-counter-area .col-6 {
@@ -1561,12 +1593,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.03);
   height: 100%;
 }
-.single-counter-item:hover {
-  background: #fff;
-  transform: translateY(-7px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  border-color: rgba(96, 165, 250, 0.3);
-}
+
 .btn.counter-btn {
   margin-top: 30px;
 }
@@ -1714,7 +1741,9 @@ header {
   z-index: 1;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-  height: 750px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .single-price-box h3 {
   font-size: 26px;
@@ -1759,7 +1788,7 @@ header {
 }
 .btn.price-btn {
   padding: 25px 40px;
-  margin-top: 40px;
+  margin-top: auto;
 }
 .hover-pricing-text {
   visibility: hidden;
@@ -1818,7 +1847,6 @@ header {
   background: -webkit-linear-gradient(-45deg, #1f2099 0%, #497ef2 100%);
   background: linear-gradient(135deg, #1f2099 0%, #497ef2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2099', endColorstr='#497ef2',GradientType=1 );
-  height: 660px;
 }
 .single-price-box.active h3 {
   color: #fff;
@@ -1830,7 +1858,7 @@ header {
   color: #fff;
 }
 .single-price-box.active:hover {
-  height: 750px;
+  transform: translateY(-5px);
 }
 .single-price-box.active .absolute-price-num {
   background: #1f2099;
@@ -2846,4 +2874,14 @@ h4.blog-details-heading::after {
   .counter-area {
     margin-top: 50px;
   }
+  .subblog{
+    padding: 5px 10px !important;
+  }
+}
+.counter-about{
+  margin-right: 10px;
+}
+.fa-arrow-right:before {
+    content: "\f061";
+    margin-left: 7px;
 }

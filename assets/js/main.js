@@ -9,10 +9,18 @@ $(function () {
 
 //header-scroll
     let areaHeight = $('[data-scroll-area="true"]').height();
-    $('.hero-scrolli').on('click', function(){
-        $('html').animate({
-            scrollTop: areaHeight
-        }, 1000);
+    $('.hero-scrolli').on('click', function(e){
+        let target = $(this).attr('href');
+        if (target && target.startsWith('#')) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 80 // offset for sticky header
+            }, 1000);
+        } else {
+            $('html').animate({
+                scrollTop: areaHeight
+            }, 1000);
+        }
     });
 
 //scroll-to-top
@@ -81,7 +89,7 @@ if ($('.main-menu ul').length) {
     //===== Sticky header simple logic
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
-        if (scroll < 50) {
+        if (scroll < 10) {
             $(".bottom-header-area").removeClass("sticky");
         } else {
             $(".bottom-header-area").addClass("sticky");

@@ -24,8 +24,9 @@ html, body {
         font-size: 12px;
     }
     .main-menu ul li a {
-        font-size: 15px;
-        padding-right: 18px;
+        font-size: 14px;
+        padding-right: 8px;
+        margin-right: 8px;
     }
     .hero-para {
         font-size: 22px;
@@ -74,13 +75,13 @@ html, body {
         margin-top: 40px;
     }
     .single-price-box.active {
-        height: 590px;
+        height: auto;
     }
     .single-price-box.active:hover {
-        height: 693px;
+        transform: translateY(-5px);
     }
     .single-price-box:hover {
-        height: 690px;
+        transform: translateY(-5px);
     }
     .btn.price-btn:hover i {
         padding-left: 0;
@@ -430,13 +431,13 @@ html, body {
         margin-left: 70px;
     }
     .single-service-icon-box {
-        float: none;
         margin-bottom: 30px;
     }
     .service-box-content {
         padding-left: 0;
     }
     .single-service-box {
+        flex-direction: column;
         height: auto;
         min-height: 280px;
     }

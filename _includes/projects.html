@@ -1,8 +1,8 @@
 <!--======  PROJECTS PART START ======-->
-<section class="project-counter-area">
+<section class="project-counter-area" id="achievements">
   <div class="container">
     <div class="row pb-10">
-      <div class="col-lg-6">
+      <div class="col-lg-8">
         <div class="section-title project-title">
           <p class="section-para">
             <span></span>{{ site.data.settings.projects_settings.title }}
@@ -10,12 +10,12 @@
           <h1>{{ site.data.settings.projects_settings.description }}</h1>
         </div>
       </div>
-      <div class="col-lg-6 text-right">
+      <div class="col-lg-4 text-right">
         <a
           href="{{ site.data.settings.projects_settings.button.link }}"
           class="btn counter-btn"
           >{{ site.data.settings.projects_settings.button.name }}<i
-            class="fa fa-arrow-right"
+            class="fa fa-arrow-right counter-about" 
           ></i
         ></a>
       </div>
@@ -33,6 +33,9 @@
       </div>
       {% endfor %}
     </div>
+    <!-- <a href="#testimonial" class="hero-scrolli dark-variant" style="bottom: 40px;">
+      <span><i class="fa fa-arrow-down"></i></span>
+    </a> -->
   </div>
 </section>
 <!--======  PROJECTS PART END ======-->
