@@ -682,10 +682,10 @@ header {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
   opacity: 0;
-  border-radius: 12px;
   padding: 10px 0;
   overflow: hidden;
 }
+
 .main-menu ul li ul.submenu li {
     display: block;
 }
@@ -702,7 +702,7 @@ header {
 }
 .main-menu ul li ul.submenu li:hover a {
   background: #f8fafc;
-  color: #60a5fa;
+  color: #f26c4f;
   display: block;
 }
 .main-menu ul li:hover ul.submenu {

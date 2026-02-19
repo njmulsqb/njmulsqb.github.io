@@ -4,14 +4,14 @@
       width: 270px;
         color: white;
         font-weight: 800;
-        font-size: clamp(17px, 1.5vw + 12px, 50px);
+        font-size: clamp(17px, 1.5vw + 12px, 30px);
         letter-spacing: -0.02em;
         transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
         text-decoration: none;
         display: inline-block;
     }
     .header-logo-link:hover {
-        color: #60a5fa;
+        color: #f26c4f;
         transform: translateY(-1px);
     }
     
@@ -59,6 +59,9 @@
     }
 
     @media (max-width: 991px) {
+      .header-container {
+        padding: 5px;
+      }
        .header-logo-link {
       width: 160px !important;
         color: white;
@@ -95,7 +98,7 @@
   </style>
 
   <div class="bottom-header-area">
-    <div class="container">
+    <div class="container header-container">
       <div class="row align-items-center">
         <div class="col-lg-2 col-6">
           <div class="logo">
