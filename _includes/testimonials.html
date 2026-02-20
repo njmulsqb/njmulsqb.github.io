@@ -10,19 +10,19 @@
               <i class="fa fa-quote-right"></i>
             </span>
             {% if textimonial.rating %}
-            <div class="rating" style="margin-bottom: 20px">
+            <div class="testimonial-rating">
               {% for i in (1..textimonial.rating) %}
-              <i class="fa fa-star" style="color: #ffd700"></i>
+              <i class="fa fa-star"></i>
               {% endfor %}
             </div>
             {% endif %}
-            <p style="font-size: clamp(18px, 1.5vw + 10px, 24px); line-height: 1.6;">{{ textimonial.text }}</p>
-            <div class="autohor-details" style="padding-left: 0;">
-              <h5 class="author-name" style="padding-left: 0;">
+            <p class="testimonial-text">{{ textimonial.text }}</p>
+            <div class="autohor-details">
+              <h5 class="author-name">
                 {% if textimonial.name %}{{ textimonial.name }}{% else %}Anonymous{% endif %}
                 <span>{% if textimonial.position %}{{ textimonial.position }}{% else %}Not given{% endif %}</span>
                 {% if textimonial.date %}
-                <span style="display: block; font-size: 0.5em; font-weight: normal; margin-top: 10px; color: #ccc;">{{ textimonial.date }}</span>
+                <span class="author-date">{{ textimonial.date }}</span>
                 {% endif %}
               </h5>
             </div>

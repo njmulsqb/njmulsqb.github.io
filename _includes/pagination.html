@@ -2,12 +2,25 @@
 <ul class="pagination text-center">
   {% if paginator.previous_page %}
   <li>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i></a>
+    <a href="{{ paginator.previous_page_path }}" rel="noopener noreferrer"><i class="fa fa-arrow-left"></i></a>
   </li>
   {% endif %}
+
+  {% for trail in paginator.page_trail %}
+  {% if trail.num == paginator.page %}
+  <li class="active">
+    <span>{{ trail.num }}</span>
+  </li>
+  {% else %}
+  <li>
+    <a href="{{ trail.path }}" rel="noopener noreferrer">{{ trail.num }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+
   {% if paginator.next_page %}
   <li>
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><i class="fa fa-arrow-right"></i></a>
+    <a href="{{ paginator.next_page_path }}" rel="noopener noreferrer"><i class="fa fa-arrow-right"></i></a>
   </li>
   {% endif %}
 </ul>

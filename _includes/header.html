@@ -1,108 +1,11 @@
 <header id="main-header">
-  <style>
-    .header-logo-link {
-      width: 270px;
-        color: white;
-        font-weight: 800;
-        font-size: clamp(17px, 1.5vw + 12px, 30px);
-        letter-spacing: -0.02em;
-        transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
-        text-decoration: none;
-        display: inline-block;
-    }
-    .header-logo-link:hover {
-        color: #f26c4f;
-        transform: translateY(-1px);
-    }
-    
-    /* Sticky Header Enhancements */
-    .bottom-header-area.sticky {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        background: rgba(0, 32, 60, 0.95) !important;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        z-index: 2000;
-        transform: none !important;
-    }
-
-    /* Mobile Toggle */
-    .mobile-nav-toggle {
-        display: none;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-        z-index: 1001;
-        margin-left: 15px;
-        height: 40px;
-        width: 40px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        transition: transform 0.3s ease;
-    }
-    .mobile-nav-toggle:hover {
-        transform: scale(1.1);
-    }
-    .mobile-nav-toggle .bar {
-        display: block;
-        width: 22px;
-        height: 2px;
-        background-color: #fff;
-        margin: 3px 0;
-        transition: all 0.3s ease;
-    }
-
-    @media (max-width: 991px) {
-      .header-container {
-        padding: 5px;
-      }
-       .header-logo-link {
-      width: 160px !important;
-        color: white;
-        font-weight: 800;
-        font-size: clamp(17px, 1.5vw + 12px, 22px);
-        letter-spacing: -0.02em;
-        transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
-        text-decoration: none;
-        display: inline-block;
-    }
-        .mobile-nav-toggle {
-            display: flex;
-        }
-        .main-menu {
-            display: none;
-        }
-        .header-search {
-            height: 40px;
-            width: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .nav-cta-item {
-            margin-left: 0;
-            margin-top: 30px;
-            text-align: center;
-        }
-        .nav-cta-btn {
-            display: inline-block;
-            width: 100%;
-        }
-    }
-  </style>
 
   <div class="bottom-header-area">
     <div class="container header-container">
       <div class="row align-items-center">
         <div class="col-lg-2 col-6">
           <div class="logo">
-            <a class="header-logo-link" href="{{site.url}}{{site.baseurl}}">
+            <a class="header-logo-link" href="{{site.url}}{{site.baseurl}}" rel="noopener noreferrer">
               {{site.title}}
             </a>
           </div>
@@ -129,7 +32,7 @@
   <!-- Mobile Sidebar Menu -->
   <div class="mobile-sidebar" id="mobile-sidebar">
     <div class="sidebar-header">
-      <a class="header-logo-link" href="{{site.url}}{{site.baseurl}}">{{site.title}}</a>
+      <a class="header-logo-link" href="{{site.url}}{{site.baseurl}}" rel="noopener noreferrer">{{site.title}}</a>
       <button class="close-sidebar" id="close-sidebar"><i class="fa fa-times"></i></button>
     </div>
     <div class="sidebar-content">

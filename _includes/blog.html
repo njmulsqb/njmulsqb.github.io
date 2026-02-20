@@ -14,6 +14,7 @@
         <a
           href="{{ site.data.settings.blogs_settings.button.link }}"
           class="btn blog-btn"
+          rel="noopener noreferrer"
           >{{ site.data.settings.blogs_settings.button.name }}<i
             class="fa fa-arrow-right"
           ></i
@@ -26,7 +27,7 @@
         <div class="single-blog-area">
           {% if post.post_image %}
           <div class="single-blog-img">
-            <a href="{{relative_url}}/{{post.url}}"
+            <a href="{{relative_url}}/{{post.url}}" rel="noopener noreferrer"
               ><img
                 src="{{post.post_image}}"
                 class="img-fluid"
@@ -41,10 +42,10 @@
               date_to_long_string}}
             </p>
             {% endif %}
-            <a href="{{post.url}}"
+            <a href="{{post.url}}" rel="noopener noreferrer"
               ><p class="styled-para">{{post.title | truncate: 50}}</p></a
             >
-            <a href="{{post.url}}" class="blog-read-more"
+            <a href="{{post.url}}" class="blog-read-more" rel="noopener noreferrer"
               >Read More <i class="fa fa-arrow-right"></i
             ></a>
           </div>

@@ -9,8 +9,8 @@
             </div>
             <div class="col-lg-7 text-right">
                 <div class="portfolio-btn-area">
-                    <a href="{{ site.data.settings.portfolios_settings.button.link }}" class="btn portfolio-btn">{{ site.data.settings.portfolios_settings.button.name }} <i class="fa fa-arrow-right"></i></a>
-                    <a href="{{ site.data.settings.portfolios_settings.button2.link }}" class="portfolio-btn-2">{{ site.data.settings.portfolios_settings.button2.name }}<i class="fa fa-arrow-right"></i></a>
+                    <a href="{{ site.data.settings.portfolios_settings.button.link }}" class="btn portfolio-btn" rel="noopener noreferrer">{{ site.data.settings.portfolios_settings.button.name }} <i class="fa fa-arrow-right"></i></a>
+                    <a href="{{ site.data.settings.portfolios_settings.button2.link }}" class="portfolio-btn-2" rel="noopener noreferrer">{{ site.data.settings.portfolios_settings.button2.name }}<i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -20,11 +20,11 @@
             {% for portfolio in site.portfolios limit: 1 %}
             <div class="col-lg-4 col-md-4">
                 <div class="single-portfolio-item">
-                    <a href="{{portfolio.post_image}}" class="img-popup"><img src="{{portfolio.post_image}}"  alt="{{portfolio.title}}"/></a>
+                    <a href="{{portfolio.post_image}}" class="img-popup" rel="noopener noreferrer"><img src="{{portfolio.post_image}}"  alt="{{portfolio.title}}"/></a>
                     <div class="portfolio-overlay-content">
                         <h2>{{portfolio.title}}</h2>
                         <p>{{portfolio.sub_title}}</p>
-                        <a href="{{portfolio.url}}" class="portfolio-icon"><i class="fa fa-arrow-right"></i></a>
+                        <a href="{{portfolio.url}}" class="portfolio-icon" rel="noopener noreferrer"><i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -34,11 +34,11 @@
                    {% for portfolio in site.portfolios offset: 1 %}
                     <div class="col-lg-6 pb-30 col-md-6">
                         <div class="single-portfolio-item">
-                            <a href="{{portfolio.post_image}}" class="img-popup"><img src="{{portfolio.post_image}}"  alt="{{portfolio.title}}"/></a>
+                            <a href="{{portfolio.post_image}}" class="img-popup" rel="noopener noreferrer"><img src="{{portfolio.post_image}}"  alt="{{portfolio.title}}"/></a>
                             <div class="portfolio-overlay-content">
                                 <h2>{{portfolio.title}}</h2>
                                 <p>{{portfolio.sub_title}}</p>
-                                <a href="{{portfolio.url}}" class="portfolio-icon"><i class="fa fa-arrow-right"></i></a>
+                                <a href="{{portfolio.url}}" class="portfolio-icon" rel="noopener noreferrer"><i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
