@@ -290,7 +290,7 @@ layout: default
         <div class="single-blog-details-box">
           {% if page.post_image %}
           <div class="blog-boxed-img">
-            <img src="{{page.post_image}}" class="w-100" alt="{{page.title}}" />
+            <img src="{{ page.post_image | relative_url }}" class="w-100" alt="{{page.title}}" />
           </div>
           {% endif %}
           <div class="single-blog-details-box-time">

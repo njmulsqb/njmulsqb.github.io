@@ -17,56 +17,56 @@
     <!--====== Bootstrap css (critical) ======-->
     <link
       rel="stylesheet"
-      href="{{relative_url}}/assets/css/bootstrap.min.css"
+      href="{{ '/assets/css/bootstrap.min.css' | relative_url }}"
     />
     <!--====== Style css (critical) ======-->
-    <link rel="stylesheet" href="{{relative_url}}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     <!--====== Fontawesome pro css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{relative_url}}/assets/css/all.css"
+      href="{{ '/assets/css/all.css' | relative_url }}"
       media="print"
       onload="this.media = 'all'"
     />
     <!--====== Magnific Popup css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/magnific-popup.css"
+      href="{{ '/assets/css/magnific-popup.css' | relative_url }}"
       media="print"
       onload="this.media = 'all'"
     />
     <!--====== Slick css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/slick.css"
+      href="{{ '/assets/css/slick.css' | relative_url }}"
       media="print"
       onload="this.media = 'all'"
     />
     <!--====== Slick menu css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/slick-menu.css"
+      href="{{ '/assets/css/slick-menu.css' | relative_url }}"
       media="print"
       onload="this.media = 'all'"
     />
     <!--====== Default css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/default.css"
+      href="{{ '/assets/css/default.css' | relative_url }}"
       media="print"
       onload="this.media = 'all'"
     />
     <!--====== Responsive css (deferred) ======-->
     <link
       rel="stylesheet"
-      href="{{site.url}}{{site.baseurl}}/assets/css/responsive.css"
+      href="{{ '/assets/css/responsive.css' | relative_url }}"
       media="print"
       onload="this.media = 'all'"
     />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="{{site.url}}{{site.baseurl}}/assets/images/favicon-openproject.ico"
+      href="{{ '/assets/images/favicon-openproject.ico' | relative_url }}"
     />
     <title>
       {% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}
@@ -121,25 +121,25 @@
     </div>
     <!--======  SCROLL-TO-TOP PART END ======-->
     <!--====== jquery js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="{{ '/assets/js/vendor/modernizr-3.6.0.min.js' | relative_url }}"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.waypoints.min.js"></script>
+    <script src="{{ '/assets/js/jquery.waypoints.min.js' | relative_url }}"></script>
     <!--====== Bootstrap js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/popper.min.js"></script>
+    <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/popper.min.js' | relative_url }}"></script>
     <!--====== Slick js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/slick.min.js"></script>
+    <script src="{{ '/assets/js/slick.min.js' | relative_url }}"></script>
     <!--====== Slick js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/slick-menu.min.js"></script>
+    <script src="{{ '/assets/js/slick-menu.min.js' | relative_url }}"></script>
     <!--====== counterup js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.counterup.min.js"></script>
+    <script src="{{ '/assets/js/jquery.counterup.min.js' | relative_url }}"></script>
     <!--====== Magnific Popup js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ '/assets/js/jquery.magnific-popup.min.js' | relative_url }}"></script>
     <!--====== onepage-nav Popup js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/jquery.nav.js"></script>
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
+    <script src="{{ '/assets/js/jquery.nav.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/simple-jekyll-search.min.js' | relative_url }}"></script>
     <!--====== Main js ======-->
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <!--====== Tailwind CSS (moved to end for non-blocking load) ======-->
     <script
       defer

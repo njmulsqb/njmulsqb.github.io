@@ -12,7 +12,7 @@
       </div>
       <div class="col-lg-5 text-right mt-10 md:mt-0">
         <a
-          href="{{ site.data.settings.blogs_settings.button.link }}"
+          href="{{ site.data.settings.blogs_settings.button.link | relative_url }}"
           class="btn blog-btn"
           rel="noopener noreferrer"
           >{{ site.data.settings.blogs_settings.button.name }}<i
@@ -27,9 +27,9 @@
         <div class="single-blog-area">
           {% if post.post_image %}
           <div class="single-blog-img">
-            <a href="{{relative_url}}/{{post.url}}" rel="noopener noreferrer"
+            <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"
               ><img
-                src="{{post.post_image}}"
+                src="{{ post.post_image | relative_url }}"
                 class="img-fluid"
                 alt="{{post.title}}"
             /></a>
@@ -42,10 +42,10 @@
               date_to_long_string}}
             </p>
             {% endif %}
-            <a href="{{post.url}}" rel="noopener noreferrer"
+            <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"
               ><p class="styled-para">{{post.title | truncate: 50}}</p></a
             >
-            <a href="{{post.url}}" class="blog-read-more" rel="noopener noreferrer"
+            <a href="{{ post.url | relative_url }}" class="blog-read-more" rel="noopener noreferrer"
               >Read More <i class="fa fa-arrow-right"></i
             ></a>
           </div>

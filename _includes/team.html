@@ -16,20 +16,20 @@
       <div class="col-lg-4">
         <div class="single-team-area">
           <div class="single-team-img text-center">
-            <img src="{{site.url}}{{site.baseurl}}{{team.image}}" alt="" />
+            <img src="{{ team.image | relative_url }}" alt="" />
             <span class="team-icon-1"
               ><img
-                src="{{site.url}}{{site.baseurl}}/assets/images/team/icon/1.png"
+                src="{{ '/assets/images/team/icon/1.png' | relative_url }}"
                 alt=""
             /></span>
             <span class="team-icon-2"
               ><img
-                src="{{site.url}}{{site.baseurl}}/assets/images/team/icon/2.png"
+                src="{{ '/assets/images/team/icon/2.png' | relative_url }}"
                 alt=""
             /></span>
             <span class="team-icon-3"
               ><img
-                src="{{site.url}}{{site.baseurl}}/assets/images/team/icon/3.png"
+                src="{{ '/assets/images/team/icon/3.png' | relative_url }}"
                 alt=""
             /></span>
           </div>

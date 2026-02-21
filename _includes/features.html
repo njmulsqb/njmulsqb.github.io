@@ -9,7 +9,7 @@
                 </div>
                 {% if feature.icon %}
                     <div class="service-icon">
-                        <img src="{{feature.icon}}" alt="{{feature.title}}"/>
+                        <img src="{{feature.icon | relative_url}}" alt="{{feature.title}}"/>
                     </div>
                 {% endif %}
                 <div class="service-content">

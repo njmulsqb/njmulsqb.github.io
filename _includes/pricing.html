@@ -19,7 +19,7 @@
             <h2>{{ list.name }}</h2>
           </div>
           <img
-            src="{{site.url}}{{site.baseurl}}{{ list.image }}"
+            src="{{ list.image | relative_url }}"
             alt=""
             class="price-icon"
           />

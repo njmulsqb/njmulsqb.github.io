@@ -1,12 +1,12 @@
 <ul>
-    <li><a href="#home" rel="noopener noreferrer">Home</a></li>
-    <li><a href="#about" rel="noopener noreferrer">About</a></li>
-    <li><a href="#services" rel="noopener noreferrer">Services</a></li>
-    <li><a href="#achievements" rel="noopener noreferrer">Achievements</a></li>
+    <li><a href="{{ '/#home' | relative_url }}" rel="noopener noreferrer">Home</a></li>
+    <li><a href="{{ '/#about' | relative_url }}" rel="noopener noreferrer">About</a></li>
+    <li><a href="{{ '/#services' | relative_url }}" rel="noopener noreferrer">Services</a></li>
+    <li><a href="{{ '/#achievements' | relative_url }}" rel="noopener noreferrer">Achievements</a></li>
     <li>
-      <a href="#blog" rel="noopener noreferrer">Blog</a>
+      <a href="{{ '/#blog' | relative_url }}" rel="noopener noreferrer">Blog</a>
       <ul class="submenu">
-        <li><a class="subblog" href="/blog" rel="noopener noreferrer">Latest Blog</a></li>
+        <li><a class="subblog" href="{{ '/blog/index.html' | relative_url }}" rel="noopener noreferrer">Latest Blog</a></li>
       </ul>
     </li>
     <!-- <li>
@@ -15,6 +15,6 @@
       >
     </li> -->
     <li class="nav-cta-item">
-      <a href="/contact/" class="nav-cta-btn" rel="noopener noreferrer">Contact Us</a>
+      <a href="{{ '/contact/' | relative_url }}" class="nav-cta-btn" rel="noopener noreferrer">Contact Us</a>
     </li>
   </ul>

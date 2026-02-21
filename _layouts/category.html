@@ -12,7 +12,7 @@ layout: default
                 <div class="single-blog-item pb-60">
                     {% if post.post_image %}
                     <div class="single-blog-img">
-                        <a href="{{post.url}}" rel="noopener noreferrer"><img src="{{post.post_image}}" alt="{{post.title}}"/></a>
+                        <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"><img src="{{ post.post_image | relative_url }}" alt="{{post.title}}"/></a>
                     </div>
                     {% endif %}
                     <div class="single-blog-item-content">
@@ -22,9 +22,9 @@ layout: default
                         {% if post.date %}
                          <span><i class="far fa-calendar-alt"></i>{{post.date | date_to_string}}</span>
                         {% endif %}
-                        <h4><a href="{{post.url}}" rel="noopener noreferrer">{{post.title}}</a></h4>
+                        <h4><a href="{{ post.url | relative_url }}" rel="noopener noreferrer">{{post.title}}</a></h4>
                         <p>{{post.excerpt | strip_html | truncate: 150}}</p>
-                        <a href="{{post.url}}" class="view-details-btn" rel="noopener noreferrer">View Details <i class="fa fa-arrow-right"></i></a>
+                        <a href="{{ post.url | relative_url }}" class="view-details-btn" rel="noopener noreferrer">View Details <i class="fa fa-arrow-right"></i></a>
                     </div>
                  </div>
              </div>
