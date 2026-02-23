@@ -1,0 +1,50 @@
+<!--======  PRICING PART START ======-->
+<section class="pricing-area pt-140 pb-140" id="price">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 text-center">
+        <div class="section-title pricing-title pb-80">
+          <p class="section-para">
+            <span></span>{{ site.data.settings.pricings_settings.title }}
+          </p>
+          <h1>{{ site.data.settings.pricings_settings.description }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for list in site.data.settings.pricings_settings.list %}
+      <div class="col-lg-4">
+        <div class="single-price-box">
+          <div class="absolute-price-num">
+            <h2>{{ list.name }}</h2>
+          </div>
+          <img
+            src="{{ list.image | relative_url }}"
+            alt=""
+            class="price-icon"
+          />
+          <h3>{{ list.text }}</h3>
+          {% for listitem in list.listitem %}
+          <p><i class="fa fa-arrow-right"></i>{{ listitem.item }}</p>
+          {% endfor %}
+
+          <div class="hover-pricing-text">
+            {% for lowerlistitem in list.lowerlistitem %}
+            <p><i class="fa fa-arrow-right"></i>{{ lowerlistitem.item }}</p>
+            {% endfor %}
+          </div>
+
+          <a
+            href="{{ site.data.settings.pricings_settings.button.link }}"
+            class="btn price-btn"
+            >{{ site.data.settings.pricings_settings.button.name }}<i
+              class="fa fa-arrow-right"
+            ></i
+          ></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--======  PRICING PART END ======-->

@@ -1,0 +1,36 @@
+<!--======  TESTIMONIAL PART START ======-->
+<section class="testimonial-area" id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <div class="textimonial-carousel-active">
+          {% for textimonial in site.data.settings.textimonials_settings.textimonial %}
+          <div class="single-testimonial-content">
+            <span class="testimonial-quote">
+              <i class="fa fa-quote-right"></i>
+            </span>
+            {% if textimonial.rating %}
+            <div class="testimonial-rating">
+              {% for i in (1..textimonial.rating) %}
+              <i class="fa fa-star"></i>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <p class="testimonial-text">{{ textimonial.text }}</p>
+            <div class="autohor-details">
+              <h5 class="author-name">
+                {% if textimonial.name %}{{ textimonial.name }}{% else %}Anonymous{% endif %}
+                <span>{% if textimonial.position %}{{ textimonial.position }}{% else %}Not given{% endif %}</span>
+                {% if textimonial.date %}
+                <span class="author-date">{{ textimonial.date }}</span>
+                {% endif %}
+              </h5>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--======  TESTIMONIAL PART END ======-->

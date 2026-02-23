@@ -1,0 +1,41 @@
+<!--======  SERVICE PART START ======-->
+<section class="service-area service-bg pt-140 pb-90" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 text-center pb-80">
+        <div class="section-title service-title">
+          <span
+            ><img
+              src="{{ '/assets/images/service-text.png' | relative_url }}"
+              alt=""
+          /></span>
+          <h1 class="section-para">
+            <span></span>{{ site.data.settings.services_settings.title }}
+          </h1>
+          <p>{{ site.data.settings.services_settings.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-30">
+      {% for service in site.data.settings.services_settings.list %}
+      <div class="col-lg-6 mb-4">
+        <div class="single-service-box">
+          <div class="single-service-icon-box">
+            <p>
+              {% if forloop.index < 10 %} 0{{forloop.index}} {% else %}
+              {{forloop.index}} {% endif %}
+            </p>
+            {% if service.icon %} {{service.icon}} {% endif %}
+          </div>
+          <div class="service-box-content">
+            <h3>{{service.title}}</h3>
+            <p>{{service.description}}</p>
+            <!-- <a href="{{service.url}}" class="service-btn">Read More <i class="fa fa-arrow-right"></i></a> -->
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--======  ABOUT-US PART END ======-->
