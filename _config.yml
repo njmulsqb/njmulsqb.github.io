@@ -5,17 +5,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   FOSS enthusiast, and founder of Exfiltra, a company focused on
   making application and cloud security headache-free for engineering teams.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://elishaadamu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 title: "Najam Ul Saqib"
 #General Settings
-facebook_url: "https://facebook.com/tortoizthemes"
-twitter_url: "https://twitter.com/tortoizthemes"
-behance_url: "https://behance.com/tortoizthemes"
-instagram_url: "https://instagram.com/tortoizthemes"
+
 logo_url: "/assets/images/logo.png"
-phone_number: "+012 (345) 77 999"
-address: "55 New Sodor Road, USA"
-office_time: "Sun - Friday : 10 am - 08 pm"
 
 # Build settings
 theme: minima
