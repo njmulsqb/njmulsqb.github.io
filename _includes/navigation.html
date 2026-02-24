@@ -1,14 +1,18 @@
 <ul>
     <li><a href="{{ '/#home' | relative_url }}" rel="noopener noreferrer">Home</a></li>
-    <li class="{% if page.url == '/about/' %}current{% endif %}">
-        <a href="{{ '/#about' | relative_url }}" rel="noopener noreferrer">About</a>
-    </li>
     <li><a href="{{ '/#services' | relative_url }}" rel="noopener noreferrer">Services</a></li>
     <li><a href="{{ '/#achievements' | relative_url }}" rel="noopener noreferrer">Achievements</a></li>
+    <li class="{% if page.url == '/about/' %}current{% endif %}">
+        <a href="{{ '/about' | relative_url }}" rel="noopener noreferrer">About</a>
+    </li>
     <li>
-      <a href="{{ '/#blog' | relative_url }}" rel="noopener noreferrer">Blog</a>
+      <a href="{{ '/blogs' | relative_url }}" rel="noopener noreferrer">Blogs</a>
+    </li>
+    <li>
+      <a href="#" rel="noopener noreferrer">Pages <i class="fa fa-angle-down"></i></a>
       <ul class="submenu">
-        <li><a class="subblog" href="{{ '/blog/index.html' | relative_url }}" rel="noopener noreferrer">Latest Blog</a></li>
+        <li><a href="{{ '/talks-training/' | relative_url }}" rel="noopener noreferrer">Talks & Training</a></li>
+        <li><a href="{{ '/wins/' | relative_url }}" rel="noopener noreferrer">My wins</a></li>
       </ul>
     </li>
     <li class="nav-cta-item">

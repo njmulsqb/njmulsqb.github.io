@@ -112,7 +112,7 @@
 @keyframes titleEntrance {
     from { 
         opacity: 0; 
-        transform: translateY(30px) scale(0.98); 
+        transform: translateY(20px) scale(1.03); 
         filter: blur(10px);
     }
     to { 
@@ -124,6 +124,16 @@
 
 @keyframes underlineGrow {
     to { transform: scaleX(1); }
+}
+
+@keyframes headerZoomOut {
+    from { transform: scale(1.05); }
+    to { transform: scale(1); }
+}
+
+.premium-header .header-overlay,
+.premium-header .header-grid {
+    animation: headerZoomOut 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .premium-header::after {
