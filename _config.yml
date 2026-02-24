@@ -1,13 +1,29 @@
 title: "Najam Ul Saqib"
 email: "najam@exfiltra.com"
 description: >- # this means to ignore newlines until "baseurl:"
-  I’m Najam — a security consultant, AppSec & CloudSec practitioner,
+  I’m Najam, a security consultant, AppSec & CloudSec practitioner,
   FOSS enthusiast, and founder of Exfiltra, a company focused on
   making application and cloud security headache-free for engineering teams.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 title: "Najam Ul Saqib"
 #General Settings
+socials:
+  - name: "Email"
+    url: "mailto:najam@exfiltra.com"
+    icon: "fas fa-envelope"
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/njmulsqb/"
+    icon: "fab fa-linkedin"
+  - name: "YouTube"
+    url: "https://www.youtube.com/@cybersoldiernjm"
+    icon: "fab fa-youtube"
+  - name: "Mastodon"
+    url: "https://infosec.exchange/@cybersoldier"
+    icon: "fab fa-mastodon"
+  - name: "Pixelfed"
+    url: "https://pixelfed.social/shiningstar"
+    icon: "fas fa-images"
 
 logo_url: "/assets/images/logo.png"
 
