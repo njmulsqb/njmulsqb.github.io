@@ -1,6 +1,8 @@
 <ul>
     <li><a href="{{ '/#home' | relative_url }}" rel="noopener noreferrer">Home</a></li>
-    <li><a href="{{ '/#about' | relative_url }}" rel="noopener noreferrer">About</a></li>
+    <li class="{% if page.url == '/about/' %}current{% endif %}">
+        <a href="{{ '/#about' | relative_url }}" rel="noopener noreferrer">About</a>
+    </li>
     <li><a href="{{ '/#services' | relative_url }}" rel="noopener noreferrer">Services</a></li>
     <li><a href="{{ '/#achievements' | relative_url }}" rel="noopener noreferrer">Achievements</a></li>
     <li>
@@ -9,11 +11,6 @@
         <li><a class="subblog" href="{{ '/blog/index.html' | relative_url }}" rel="noopener noreferrer">Latest Blog</a></li>
       </ul>
     </li>
-    <!-- <li>
-      <a href="/contact/"
-        >Contact <i class="fas fa-external-link-alt" style="font-size: 12px; opacity: 0.7; margin-left: 5px;"></i></a
-      >
-    </li> -->
     <li class="nav-cta-item">
       <a href="{{ '/contact/' | relative_url }}" class="nav-cta-btn" rel="noopener noreferrer">Contact Us</a>
     </li>

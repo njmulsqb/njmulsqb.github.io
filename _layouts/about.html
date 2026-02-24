@@ -21,11 +21,11 @@ layout: default
         />
       </div>
       <div class="bio-content">
-        <span class="lead-text text-orange">👋 Hey, I’m Najam</span>
+        <span class="lead-text text-orange"><i class="fas fa-hand-sparkles"></i> Hey, I’m Najam</span>
         <h2>Security Engineer <span class="text-orange">&</span> Entrepreneur</h2>
         <p>
           I build secure systems, solve difficult problems, and believe deeply in privacy, transparency, and open-source values. 
-          My path started in software development, but curiosity for how systems break — and how they can be defended — pulled me into security.
+          My path started in software development, but curiosity for how systems break, and how they can be defended, pulled me into security.
         </p>
       </div>
     </div>
@@ -33,8 +33,8 @@ layout: default
     <!-- JOURNEY TO PATH - Interactive Career Timeline -->
     <div class="journey-path-container">
       <div class="journey-title">
-        <h3>⚡ The Journey to <span class="text-orange">Path</span></h3>
-        <p>From code to security to founder — every step shaped the mission</p>
+        <h3><i class="fas fa-map-signs"></i> My <span class="text-orange">Professional Path</span></h3>
+        <p>The evolution from software engineering to security leadership and founding Exfiltra</p>
       </div>
 
       <!-- Interactive Path Nodes -->
@@ -42,7 +42,7 @@ layout: default
         <div class="path-progress" id="pathProgress"></div>
         
         <div class="path-node" onclick="activateNode(0, true)">
-          <div class="node-dot">👨‍💻</div>
+          <div class="node-dot"><i class="fas fa-code"></i></div>
           <div class="node-info">
             <div class="node-label">Software Engineer</div>
             <div class="node-date">2021-2022</div>
@@ -50,7 +50,7 @@ layout: default
         </div>
 
         <div class="path-node" onclick="activateNode(1, true)">
-          <div class="node-dot">🔒</div>
+          <div class="node-dot"><i class="fas fa-lock"></i></div>
           <div class="node-info">
             <div class="node-label">AppSec Engineer</div>
             <div class="node-date">2022-2023</div>
@@ -58,7 +58,7 @@ layout: default
         </div>
 
         <div class="path-node" onclick="activateNode(2, true)">
-          <div class="node-dot">🛡️</div>
+          <div class="node-dot"><i class="fas fa-shield-alt"></i></div>
           <div class="node-info">
             <div class="node-label">Senior Security</div>
             <div class="node-date">2023-2024</div>
@@ -66,7 +66,7 @@ layout: default
         </div>
 
         <div class="path-node" onclick="activateNode(3, true)">
-          <div class="node-dot">🖋️</div>
+          <div class="node-dot"><i class="fas fa-pen-nib"></i></div>
           <div class="node-info">
             <div class="node-label">Founder</div>
             <div class="node-date">2024-Present</div>
@@ -82,7 +82,7 @@ layout: default
         </div>
         <div class="detail-content" id="detail-1">
           <h4>Securing the Flow</h4>
-          <p>Transitioned to Application Security at Systems Limited. This is where the obsession started — understanding not just how to build, but how to protect complex enterprise ecosystems.</p>
+          <p>Transitioned to Application Security at Systems Limited. This is where the obsession started, understanding not just how to build, but how to protect complex enterprise ecosystems.</p>
         </div>
         <div class="detail-content" id="detail-2">
           <h4>Expertise & Leadership</h4>
@@ -105,38 +105,20 @@ layout: default
       </div>
     </div>
 
-    <!-- Middle: Building & Open Source -->
-    <div class="bento-grid">
-      <div class="bento-card">
-        <h3><span class="text-orange">🚀</span> Currently Building</h3>
-        <p class="mb-3"><strong>Exfiltra</strong> is making application and cloud security simpler, predictable, and accessible for growing teams.</p>
-        <p>Real-world experience, no buzzwords. Engineering-friendly security services for high-growth products.</p>
-        
-        <a href="https://exfiltra.com/" target="_blank" class="ex-link" rel="noopener noreferrer" aria-label="Visit Exfiltra (opens in a new tab)">
-          Visit Exfiltra →
-        </a>
+
+
+    <!-- Unified Section: What I Stand For & Open Source -->
+    <div class="unified-philosophy-section">
+      <div class="philosophy-header text-center">
+        <h3 class="mb-3"><span class="text-orange"><i class="fas fa-lightbulb"></i></span> What I Stand For</h3>
+        <p class="philosophy-summary">
+          I run my entire workflow on Linux and FOSS tools. It’s not just a preference; it's a philosophy 
+          defined by <span class="text-orange">transparency</span>, <span class="text-orange">privacy</span>, 
+          and building technology that serves people, not the other way around.
+        </p>
       </div>
 
-      <div class="bento-card">
-        <h3><span class="text-orange">🐧</span> Open Source Ethos</h3>
-        <p>I run my entire workflow on Linux and FOSS tools. It’s not just a preference — it's a philosophy.</p>
-        
-        <div class="os-icon-grid mt-4" style="display: flex; gap: 20px; justify-content: center;">
-          <span style="font-size: 40px;">🐧</span>
-          <span style="font-size: 40px;">🔓</span>
-          <span style="font-size: 40px;">🌐</span>
-        </div>
-        
-        <blockquote style="margin-top: 25px; font-style: italic; color: #666; border-left: 3px solid var(--primary-orange); padding-left: 20px;">
-          "Building technology that serves people, not the other way around."
-        </blockquote>
-      </div>
-    </div>
-
-    <!-- Values Section -->
-    <div class="bento-card mt-4">
-      <h3 class="text-center mb-5"><span class="text-orange">💡</span> What I Stand For</h3>
-      <div class="values-grid">
+      <div class="values-grid mt-5">
         <div class="value-item">
           <i class="fas fa-balance-scale"></i>
           <h4>Ethos</h4>
@@ -155,10 +137,24 @@ layout: default
       </div>
     </div>
 
+    <!-- Section: Currently Building (Centered) -->
+    <div class="building-section text-center mt-5 pt-5">
+      <h3 class="mb-4"><span class="text-orange"><i class="fas fa-rocket"></i></span> Currently Building</h3>
+      <div class="building-content-centered">
+        <p class="mb-4">
+          <strong>Exfiltra</strong> is making application and cloud security simpler, predictable, and accessible for growing teams. 
+          Real-world experience, no buzzwords. Engineering-friendly security services for high-growth products.
+        </p>
+        <a href="https://exfiltra.com/" target="_blank" class="ex-link" rel="noopener noreferrer" aria-label="Visit Exfiltra (opens in a new tab)">
+          Explore Exfiltra <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
+      </div>
+    </div>
+
     <!-- Connect Footer -->
     <div class="text-center mt-5 pt-4">
-      <p style="font-size: 18px; color: #666;">
-        <span class="hand-wave">👋</span> That's my story — 
+        <p style="font-size: 18px; color: #666;">
+        <span class="hand-wave"><i class="fas fa-hand-peace"></i></span> That's my story: 
         <a href="{{ '/contact' | relative_url }}" style="color: var(--primary-orange); font-weight: 600; text-decoration: none; border-bottom: 2px dotted var(--primary-orange);" aria-label="Connect with me">
           let's connect
         </a>
@@ -203,21 +199,42 @@ function activateNode(index, manual = false) {
     else content.classList.remove('active');
   });
 
-  // Update Terminal Box
+  // Update Terminal Box with Backspacing + Typing Effect
   const data = journeyData[index];
   document.getElementById('term-location').innerText = data.location;
   document.getElementById('term-role').innerText = data.role;
   
-  const typingEl = document.getElementById('term-typing');
-  typingEl.classList.remove('typing-animation');
-  void typingEl.offsetWidth; // Trigger reflow
-  typingEl.innerText = data.msg;
-  typingEl.classList.add('typing-animation');
+  updateTerminalTyping(data.msg);
 
   if (manual) {
     clearInterval(journeyInterval);
     startJourneyAutoRotation();
   }
+}
+
+let isTyping = false;
+async function updateTerminalTyping(newMsg) {
+  const typingEl = document.getElementById('term-typing');
+  if (isTyping) return; // Prevent overlapping animations
+  isTyping = true;
+
+  const currentMsg = typingEl.innerText;
+  
+  // 1. Backspacing
+  for (let i = currentMsg.length; i >= 0; i--) {
+    typingEl.innerText = currentMsg.substring(0, i);
+    await new Promise(r => setTimeout(r, 30));
+  }
+
+  await new Promise(r => setTimeout(r, 300)); // Pause at empty terminal
+
+  // 2. Typing
+  for (let i = 0; i <= newMsg.length; i++) {
+    typingEl.innerText = newMsg.substring(0, i);
+    await new Promise(r => setTimeout(r, 50));
+  }
+
+  isTyping = false;
 }
 
 function startJourneyAutoRotation() {
