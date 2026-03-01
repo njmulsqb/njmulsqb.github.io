@@ -86,14 +86,26 @@ if ($('.main-menu ul').length) {
 
 
 
-    //===== Sticky header simple logic
+    var lastScrollTop = 0;
+    var scrollThreshold = 10;
+    
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
-        if (scroll < 10) {
-            $(".bottom-header-area").removeClass("sticky");
+        var header = $(".bottom-header-area");
+        
+        if (scroll < scrollThreshold) {
+            header.removeClass("sticky header-hidden");
         } else {
-            $(".bottom-header-area").addClass("sticky");
+            header.addClass("sticky");
+            
+            if (scroll > lastScrollTop && scroll > 100) {
+                header.addClass("header-hidden");
+            } else {
+                header.removeClass("header-hidden");
+            }
         }
+        
+        lastScrollTop = scroll;
     });
 
 

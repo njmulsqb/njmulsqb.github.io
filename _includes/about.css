@@ -31,7 +31,7 @@
     grid-template-columns: 350px 1fr;
     gap: 60px;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     animation: profileScaleOut 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
@@ -44,12 +44,12 @@
     width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.2s ease-out;
     border: 8px solid #f8f9fa;
   }
 
   .about-us-img:hover .about-img-1 {
-    transform: scale(1.05);
+    transform: scale(0.99);
   }
 
   .about-us-img::before {
@@ -92,7 +92,7 @@
 
   /* JOURNEY TO PATH - New Interactive Section */
   .journey-path-container {
-    margin: 60px 0 40px;
+    margin: 80px 0 80px;
     padding: 40px;
     background: var(--gradient-1);
     border-radius: var(--border-radius);
@@ -171,13 +171,13 @@
     text-align: center;
     flex: 1;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-out;
   }
 
   /* Controlled Hover Effect */
   .path-node:hover .node-dot {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(242, 108, 79, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 3px 10px rgba(242, 108, 79, 0.12);
   }
 
   /* Remove individual icon scaling to keep it clean */
@@ -198,11 +198,11 @@
     font-weight: 900;
     font-size: 20px;
     color: var(--primary-orange);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1); /* Reduced overshoot */
+    transition: all 0.3s ease-out;
   }
 
   .node-dot i {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-out;
   }
 
   /* Removed per-node color overrides to unify with theme */
@@ -269,24 +269,24 @@
   }
 
   .path-node.active .node-dot {
-    transform: scale(1.15); /* Slightly smaller base active scale */
+    transform: scale(1.06);
     border-width: 4px;
     background: #fff;
-    box-shadow: 0 0 15px rgba(242, 108, 79, 0.2);
+    box-shadow: 0 0 10px rgba(242, 108, 79, 0.15);
   }
 
   /* Ensure no additional size increase when hovering an active node */
   .path-node.active:hover .node-dot {
-    transform: scale(1.15); 
+    transform: scale(1.06); 
   }
 
   .path-node .node-label, .path-node .node-date {
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
   }
 
   .path-node.active .node-label {
     color: var(--primary-orange);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 
   /* Terminal Box */
@@ -332,11 +332,9 @@
   }
 
   .unified-philosophy-section {
-    padding: 60px 40px;
-    background: #fcfcfc;
-    border: 1px solid #eee;
-    border-radius: var(--border-radius);
-    margin-top: 40px;
+    padding: 80px 40px;
+    margin-top: 80px;
+    border-top: 1px solid #eee;
   }
 
   .philosophy-summary {
@@ -375,7 +373,8 @@
   /* Centered Building Section */
   .building-section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0;
+    padding-top: 80px;
     border-top: 1px solid #eee;
   }
 
@@ -428,12 +427,12 @@
     padding: 30px;
     background: white;
     border-radius: 16px;
-    transition: transform 0.3s;
+    transition: transform 0.2s ease, border-color 0.3s;
     border: 1px solid #f0f0f0;
   }
 
   .value-item:hover {
-    transform: translateY(-3px);
+    transform: scale(0.99);
     border-color: var(--primary-orange);
   }
 
@@ -466,6 +465,7 @@
       grid-template-columns: 1fr;
       gap: 40px;
       text-align: center;
+      margin-bottom: 80px;
     }
     
     .about-us-img { 
@@ -513,6 +513,10 @@
       padding: 60px 0;
     }
 
+    .profile-grid {
+      margin-bottom: 60px;
+    }
+
     .bento-grid {
       grid-template-columns: 1fr;
     }
@@ -530,6 +534,17 @@
 
     .journey-path-container {
       padding: 30px 20px;
+      margin: 60px 0 60px;
+    }
+
+    .unified-philosophy-section {
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .building-section {
+      margin: 80px auto 0;
+      padding-top: 60px;
     }
 
     .bio-content h2 {

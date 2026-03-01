@@ -498,7 +498,11 @@ header {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, background 0.3s ease;
-  transform: none;
+  transform: translateY(0);
+}
+
+.bottom-header-area.sticky.header-hidden {
+  transform: translateY(-100%);
 }
 
 /* Header logo */
