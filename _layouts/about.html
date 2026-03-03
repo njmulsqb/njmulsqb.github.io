@@ -53,7 +53,7 @@ layout: default
       <div class="path-visual" id="pathVisual">
         <div class="path-progress" id="pathProgress"></div>
         
-        <div class="path-node" onclick="activateNode(0, true)">
+        <div class="path-node" onclick="activateNode(0, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(0, true); }" tabindex="0" role="button" aria-label="Software Engineer at Tkxel, 2021-2022">
           <div class="node-dot"><i class="fas fa-code"></i></div>
           <div class="node-info">
             <div class="node-label">Software Engineer</div>
@@ -61,7 +61,7 @@ layout: default
           </div>
         </div>
 
-        <div class="path-node" onclick="activateNode(1, true)">
+        <div class="path-node" onclick="activateNode(1, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(1, true); }" tabindex="0" role="button" aria-label="Application Security Engineer at Systems Limited, 2022-2023">
           <div class="node-dot"><i class="fas fa-lock"></i></div>
           <div class="node-info">
             <div class="node-label">AppSec Engineer</div>
@@ -69,7 +69,7 @@ layout: default
           </div>
         </div>
 
-        <div class="path-node" onclick="activateNode(2, true)">
+        <div class="path-node" onclick="activateNode(2, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(2, true); }" tabindex="0" role="button" aria-label="Senior Security Engineer at Constellation Software, 2023-2024">
           <div class="node-dot"><i class="fas fa-shield-alt"></i></div>
           <div class="node-info">
             <div class="node-label">Senior Security Engineer</div>
@@ -77,7 +77,7 @@ layout: default
           </div>
         </div>
 
-        <div class="path-node" onclick="activateNode(3, true)">
+        <div class="path-node" onclick="activateNode(3, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(3, true); }" tabindex="0" role="button" aria-label="Founder of Exfiltra, 2024-Present">
           <div class="node-dot"><i class="fas fa-pen-nib"></i></div>
           <div class="node-info">
             <div class="node-label">Founder</div>
@@ -199,6 +199,9 @@ function activateNode(index, manual = false) {
   const progressLine = document.getElementById('pathProgress');
   const detailContents = document.querySelectorAll('.detail-content');
   
+  // Safety check
+  if (nodes.length === 0) return;
+  
   // Update Nodes
   nodes.forEach((node, i) => {
     if (i === index) node.classList.add('active');
@@ -219,15 +222,21 @@ function activateNode(index, manual = false) {
 
   // Update Terminal Box with Backspacing + Typing Effect
   const data = journeyData[index];
-  document.getElementById('term-location').innerText = data.location;
-  document.getElementById('term-role').innerText = data.role;
+  const termLocation = document.getElementById('term-location');
+  const termRole = document.getElementById('term-role');
+  const termStatusCommand = document.getElementById('term-status-command');
+  
+  if (termLocation) termLocation.innerText = data.location;
+  if (termRole) termRole.innerText = data.role;
   
   // Update terminal status command based on whether the node date includes "Present"
-  const currentNode = nodes[index];
-  const nodeDateEl = currentNode.querySelector('.node-date');
-  const nodeDate = nodeDateEl ? nodeDateEl.innerText : '';
-  const statusCommand = nodeDate.includes('Present') ? 'status --current' : 'status --completed';
-  document.getElementById('term-status-command').innerText = statusCommand;
+  if (termStatusCommand && nodes[index]) {
+    const currentNode = nodes[index];
+    const nodeDateEl = currentNode.querySelector('.node-date');
+    const nodeDate = nodeDateEl ? nodeDateEl.innerText : '';
+    const statusCommand = nodeDate.includes('Present') ? 'status --current' : 'status --completed';
+    termStatusCommand.innerText = statusCommand;
+  }
   
   updateTerminalTyping(data.msg);
 
@@ -240,26 +249,31 @@ function activateNode(index, manual = false) {
 let isTyping = false;
 async function updateTerminalTyping(newMsg) {
   const typingEl = document.getElementById('term-typing');
+  if (!typingEl) return; // Safety check
   if (isTyping) return; // Prevent overlapping animations
   isTyping = true;
 
-  const currentMsg = typingEl.innerText;
-  
-  // 1. Backspacing
-  for (let i = currentMsg.length; i >= 0; i--) {
-    typingEl.innerText = currentMsg.substring(0, i);
-    await new Promise(r => setTimeout(r, 30));
+  try {
+    const currentMsg = typingEl.innerText;
+    
+    // 1. Backspacing
+    for (let i = currentMsg.length; i >= 0; i--) {
+      typingEl.innerText = currentMsg.substring(0, i);
+      await new Promise(r => setTimeout(r, 30));
+    }
+
+    await new Promise(r => setTimeout(r, 300)); // Pause at empty terminal
+
+    // 2. Typing
+    for (let i = 0; i <= newMsg.length; i++) {
+      typingEl.innerText = newMsg.substring(0, i);
+      await new Promise(r => setTimeout(r, 50));
+    }
+  } catch (error) {
+    console.error('Terminal typing animation error:', error);
+  } finally {
+    isTyping = false;
   }
-
-  await new Promise(r => setTimeout(r, 300)); // Pause at empty terminal
-
-  // 2. Typing
-  for (let i = 0; i <= newMsg.length; i++) {
-    typingEl.innerText = newMsg.substring(0, i);
-    await new Promise(r => setTimeout(r, 50));
-  }
-
-  isTyping = false;
 }
 
 function startJourneyAutoRotation() {
@@ -274,10 +288,24 @@ function startJourneyAutoRotation() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-  const nodes = document.querySelectorAll('.path-node');
-  if (nodes.length > 0) {
-    activateNode(0);
-    startJourneyAutoRotation();
+  try {
+    const nodes = document.querySelectorAll('.path-node');
+    if (nodes.length > 0) {
+      // Use setTimeout to prevent blocking page load
+      setTimeout(() => {
+        activateNode(0);
+        startJourneyAutoRotation();
+      }, 100);
+    }
+  } catch (error) {
+    console.error('Journey path initialization error:', error);
+  }
+});
+
+// Clean up interval on page unload to prevent memory leaks
+window.addEventListener('beforeunload', () => {
+  if (journeyInterval) {
+    clearInterval(journeyInterval);
   }
 });
 </script>
