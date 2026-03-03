@@ -60,7 +60,7 @@ layout: default
         <div class="path-node" onclick="activateNode(2, true)">
           <div class="node-dot"><i class="fas fa-shield-alt"></i></div>
           <div class="node-info">
-            <div class="node-label">Senior Security</div>
+            <div class="node-label">Senior Security Engineer</div>
             <div class="node-date">2023-2024</div>
           </div>
         </div>
@@ -96,7 +96,7 @@ layout: default
 
       <!-- Terminal Display -->
       <div class="terminal-box mt-4">
-        <div class="terminal-line"><span class="term-prompt">$</span> status --current</div>
+        <div class="terminal-line"><span class="term-prompt">$</span> <span id="term-status-command">status --current</span></div>
         <div id="terminal-description" class="terminal-line"><span class="term-comment"># Path Initialized...</span></div>
         <div class="terminal-line"><span class="term-prompt">Location:</span> <span id="term-location">~/home</span></div>
         <div class="terminal-line"><span class="term-prompt">Role:</span> <span id="term-role">Security Enthusiast</span></div>
@@ -194,6 +194,13 @@ function activateNode(index, manual = false) {
   const data = journeyData[index];
   document.getElementById('term-location').innerText = data.location;
   document.getElementById('term-role').innerText = data.role;
+  
+  // Update terminal status command based on whether the node date includes "Present"
+  const currentNode = nodes[index];
+  const nodeDateEl = currentNode.querySelector('.node-date');
+  const nodeDate = nodeDateEl ? nodeDateEl.innerText : '';
+  const statusCommand = nodeDate.includes('Present') ? 'status --current' : 'status --completed';
+  document.getElementById('term-status-command').innerText = statusCommand;
   
   updateTerminalTyping(data.msg);
 
