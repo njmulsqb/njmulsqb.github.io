@@ -43,7 +43,9 @@ function setScale(){
     }
 
     var viewportmeta = document.querySelector('meta[name="viewport"]');
-    viewportmeta.content = "width=device-width, initial-scale=" + scale;
+    if (viewportmeta) {
+        viewportmeta.content = "width=device-width, initial-scale=" + scale;
+    }
 }
 
 // re-scale when the phone is rotated / resized

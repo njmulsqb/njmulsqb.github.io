@@ -4,4 +4,309 @@ layout: default
 
 {% include page_header.html %}
 
-{% include about.html %}
+<style>
+{% include about.css %}
+</style>
+
+<section class="about-me-container">
+  <div class="container">
+    
+    <!-- Hero: Image + Bio -->
+    <div class="profile-grid">
+      <div class="about-us-img">
+        <img
+          src="{{ site.data.settings.abouts_settings.image | relative_url }}"
+          alt="Najam profile"
+          class="about-img-1"
+        />
+      </div>
+      <div class="bio-content">
+        <span class="lead-text text-orange"><i class="fas fa-hand-sparkles"></i> Hey, I’m Najam</span>
+        <h2>Security Engineer <span class="text-orange">,</span> Entrepreneur <span class="text-orange">&</span> FOSS Enthusiast</h2>
+        <p>
+          I build secure systems, solve difficult problems, and believe deeply in privacy, transparency, and open-source values.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section: Where I Come From -->
+    <div class="education-background-section mt-5 pt-5">
+      <div class="section-header text-center">
+        <h3><i class="fas fa-seedling"></i> Where I <span class="text-orange">Come From</span></h3>
+        <p class="philosophy-summary">
+          I graduated as a <strong>Software Engineer</strong> from <strong>PUCIT, Lahore</strong> in <strong>2021</strong>.
+        </p>
+        <p class="philosophy-summary mt-3">
+          My path started in software development, but the curiosity for how systems break, and how they can be defended, pulled me into security.
+        </p>
+      </div>
+    </div>
+
+    <!-- JOURNEY TO PATH - Interactive Career Timeline -->
+    <div class="journey-path-container">
+      <div class="journey-title section-header">
+        <h3><i class="fas fa-map-signs"></i> My <span class="text-orange">Professional Path</span></h3>
+        <p>The evolution from software engineering to security leadership and founding Exfiltra</p>
+      </div>
+
+      <!-- Interactive Path Nodes -->
+      <div class="path-visual" id="pathVisual">
+        <div class="path-progress" id="pathProgress"></div>
+        
+        <div class="path-node" onclick="activateNode(0, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(0, true); }" tabindex="0" role="button" aria-label="Software Engineer at Tkxel, 2021-2022">
+          <div class="node-dot"><i class="fas fa-code"></i></div>
+          <div class="node-info">
+            <div class="node-label">Software Engineer</div>
+            <div class="node-date">2021-2022</div>
+          </div>
+        </div>
+
+        <div class="path-node" onclick="activateNode(1, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(1, true); }" tabindex="0" role="button" aria-label="Application Security Engineer at Systems Limited, 2022-2023">
+          <div class="node-dot"><i class="fas fa-lock"></i></div>
+          <div class="node-info">
+            <div class="node-label">AppSec Engineer</div>
+            <div class="node-date">2022-2023</div>
+          </div>
+        </div>
+
+        <div class="path-node" onclick="activateNode(2, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(2, true); }" tabindex="0" role="button" aria-label="Senior Security Engineer at Constellation Software, 2023-2024">
+          <div class="node-dot"><i class="fas fa-shield-alt"></i></div>
+          <div class="node-info">
+            <div class="node-label">Senior Security Engineer</div>
+            <div class="node-date">2023-2024</div>
+          </div>
+        </div>
+
+        <div class="path-node" onclick="activateNode(3, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activateNode(3, true); }" tabindex="0" role="button" aria-label="Founder of Exfiltra, 2024-Present">
+          <div class="node-dot"><i class="fas fa-pen-nib"></i></div>
+          <div class="node-info">
+            <div class="node-label">Founder</div>
+            <div class="node-date">2024-Present</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shared Detail Area -->
+      <div class="journey-details-display">
+        <div class="detail-content" id="detail-0">
+          <h4>Building Foundations</h4>
+          <p>Started as a Software Engineer at Tkxel. I learned the core of product development, architecture, and how high-stakes software systems are engineered from the ground up.</p>
+        </div>
+        <div class="detail-content" id="detail-1">
+          <h4>Securing the Flow</h4>
+          <p>Transitioned to Application Security at Systems Limited. This is where the obsession started, understanding not just how to build, but how to protect complex enterprise ecosystems.</p>
+        </div>
+        <div class="detail-content" id="detail-2">
+          <h4>Expertise & Leadership</h4>
+          <p>Joined Constellation Software as a Senior Security Engineer. Led security initiatives, deepened technical expertise, and mentored teams on building "security-first" cultures.</p>
+        </div>
+        <div class="detail-content" id="detail-3">
+          <h4>The Path Forward</h4>
+          <p>Founded Exfiltra in 2024. Now bridging the gap between high-level engineering and practical, iron-clad security for growing teams worldwide.</p>
+        </div>
+      </div>
+
+      <!-- Terminal Display -->
+      <div class="terminal-box mt-4">
+        <div class="terminal-line"><span class="term-prompt">$</span> <span id="term-status-command">status --current</span></div>
+        <div id="terminal-description" class="terminal-line"><span class="term-comment"># Path Initialized...</span></div>
+        <div class="terminal-line"><span class="term-prompt">Location:</span> <span id="term-location">~/home</span></div>
+        <div class="terminal-line"><span class="term-prompt">Role:</span> <span id="term-role">Security Enthusiast</span></div>
+        <div class="terminal-line mt-2"><span class="term-prompt">$</span> echo "Mission: To secure the digital world."</div>
+        <div id="term-typing" class="terminal-line typing-animation">Mission: To secure the digital world.</div>
+      </div>
+    </div>
+
+
+
+    <!-- Section 1: My Open-Source Ethos -->
+    <div class="opensource-ethos-section">
+      <div class="section-header text-center">
+        <h3><i class="fas fa-code-branch"></i> My <span class="text-orange">Open-Source Ethos</span></h3>
+        <p class="philosophy-summary">
+          I'm a strong believer in using, supporting, and advocating for open-source software.
+          I run my entire workflow, both personal and business on Linux and FOSS tools whenever possible.
+        </p>
+        <p class="philosophy-summary mt-3">
+          For me, it's not just a preference. <br>
+          It's a philosophy about <span class="text-orange">freedom</span>, <span class="text-orange">community</span>, 
+          and building technology that serves people, not the other way around.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2: What I Stand For -->
+    <div class="values-philosophy-section mt-5 pt-5">
+      <div class="section-header text-center">
+        <h3><i class="fas fa-lightbulb"></i> What I <span class="text-orange">Stand For</span></h3>
+        <p class="philosophy-summary">
+          <strong>Ethos. Honesty. Excellence.</strong><br>
+          These are values I try to reflect in my work, my business, and my life.
+        </p>
+        <p class="philosophy-summary mt-3">
+          <strong>I believe in:</strong>
+        </p>
+      </div>
+
+      <div class="values-grid mt-5">
+        <div class="value-item">
+          <i class="fas fa-balance-scale"></i>
+          <p>Doing the right thing even when it's hard</p>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-handshake"></i>
+          <p>Building products and services with integrity</p>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-gem"></i>
+          <p>Helping teams grow securely without unnecessary complexity</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Currently Building (Centered) -->
+    <div class="building-section section-header text-center mt-5 pt-5">
+      <h3><i class="fas fa-rocket"></i> Currently <span class="text-orange">Building</span></h3>
+      <div class="building-content-centered">
+        <p class="mb-4">
+          <strong>Exfiltra</strong> is making application and cloud security simpler, more predictable, and accessible for growing teams. 
+          Real-world experience, no buzzwords, and engineering-friendly security services for high-growth products.
+        </p>
+        <a href="https://exfiltra.com/" target="_blank" class="ex-link" rel="noopener noreferrer" aria-label="Visit Exfiltra (opens in a new tab)">
+          Explore Exfiltra <i class="fas fa-external-link-alt ml-2"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- JavaScript for Interactive Path -->
+<script>
+let journeyInterval;
+let currentJourneyIndex = 0;
+const journeyData = [
+  { location: "Tkxel", role: "Software Engineer", msg: "Building foundations at scale." },
+  { location: "Systems Limited", role: "AppSec Engineer", msg: "Defending enterprise assets." },
+  { location: "Constellation", role: "Sr. Security Engineer", msg: "Leading security excellence." },
+  { location: "Exfiltra", role: "Founder", msg: "Empowering secure growth." }
+];
+
+function activateNode(index, manual = false) {
+  currentJourneyIndex = index;
+  const nodes = document.querySelectorAll('.path-node');
+  const progressLine = document.getElementById('pathProgress');
+  const detailContents = document.querySelectorAll('.detail-content');
+  
+  // Safety check
+  if (nodes.length === 0) return;
+  
+  // Update Nodes
+  nodes.forEach((node, i) => {
+    if (i === index) node.classList.add('active');
+    else node.classList.remove('active');
+  });
+
+  // Update Progress Line
+  if (progressLine) {
+    const percent = (index / (nodes.length - 1)) * 100;
+    progressLine.style.width = `calc(${percent}% * (100% - 100px) / 100)`;
+  }
+
+  // Update Details (Cross-fade)
+  detailContents.forEach((content, i) => {
+    if (i === index) content.classList.add('active');
+    else content.classList.remove('active');
+  });
+
+  // Update Terminal Box with Backspacing + Typing Effect
+  const data = journeyData[index];
+  const termLocation = document.getElementById('term-location');
+  const termRole = document.getElementById('term-role');
+  const termStatusCommand = document.getElementById('term-status-command');
+  
+  if (termLocation) termLocation.innerText = data.location;
+  if (termRole) termRole.innerText = data.role;
+  
+  // Update terminal status command based on whether the node date includes "Present"
+  if (termStatusCommand && nodes[index]) {
+    const currentNode = nodes[index];
+    const nodeDateEl = currentNode.querySelector('.node-date');
+    const nodeDate = nodeDateEl ? nodeDateEl.innerText : '';
+    const statusCommand = nodeDate.includes('Present') ? 'status --current' : 'status --completed';
+    termStatusCommand.innerText = statusCommand;
+  }
+  
+  updateTerminalTyping(data.msg);
+
+  if (manual) {
+    clearInterval(journeyInterval);
+    startJourneyAutoRotation();
+  }
+}
+
+let isTyping = false;
+async function updateTerminalTyping(newMsg) {
+  const typingEl = document.getElementById('term-typing');
+  if (!typingEl) return; // Safety check
+  if (isTyping) return; // Prevent overlapping animations
+  isTyping = true;
+
+  try {
+    const currentMsg = typingEl.innerText;
+    
+    // 1. Backspacing
+    for (let i = currentMsg.length; i >= 0; i--) {
+      typingEl.innerText = currentMsg.substring(0, i);
+      await new Promise(r => setTimeout(r, 30));
+    }
+
+    await new Promise(r => setTimeout(r, 300)); // Pause at empty terminal
+
+    // 2. Typing
+    for (let i = 0; i <= newMsg.length; i++) {
+      typingEl.innerText = newMsg.substring(0, i);
+      await new Promise(r => setTimeout(r, 50));
+    }
+  } catch (error) {
+    console.error('Terminal typing animation error:', error);
+  } finally {
+    isTyping = false;
+  }
+}
+
+function startJourneyAutoRotation() {
+  const nodes = document.querySelectorAll('.path-node');
+  if (nodes.length === 0) return;
+  
+  journeyInterval = setInterval(() => {
+    currentJourneyIndex = (currentJourneyIndex + 1) % nodes.length;
+    activateNode(currentJourneyIndex);
+  }, 5000);
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    const nodes = document.querySelectorAll('.path-node');
+    if (nodes.length > 0) {
+      // Use setTimeout to prevent blocking page load
+      setTimeout(() => {
+        activateNode(0);
+        startJourneyAutoRotation();
+      }, 100);
+    }
+  } catch (error) {
+    console.error('Journey path initialization error:', error);
+  }
+});
+
+// Clean up interval on page unload to prevent memory leaks
+window.addEventListener('beforeunload', () => {
+  if (journeyInterval) {
+    clearInterval(journeyInterval);
+  }
+});
+</script>
+<!--======  ABOUT-US PART END ======-->

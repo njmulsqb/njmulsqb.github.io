@@ -7,6 +7,11 @@ $(function () {
     $("#loading").fadeOut(500);
 });
 
+
+   setTimeout(function() {
+    $("#loading").fadeOut(500);
+   }, 3000);
+
 //header-scroll
     let areaHeight = $('[data-scroll-area="true"]').height();
     $('.hero-scrolli').on('click', function(e){
@@ -53,8 +58,8 @@ $(function () {
     }
 
     function hideSidebar() {
-        mobileSidebar.classList.remove('active');
-        sidebarOverlay.classList.remove('active');
+        if (mobileSidebar) mobileSidebar.classList.remove('active');
+        if (sidebarOverlay) sidebarOverlay.classList.remove('active');
         body.style.overflow = '';
     }
 
@@ -86,14 +91,26 @@ if ($('.main-menu ul').length) {
 
 
 
-    //===== Sticky header simple logic
+    var lastScrollTop = 0;
+    var scrollThreshold = 10;
+    
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
-        if (scroll < 10) {
-            $(".bottom-header-area").removeClass("sticky");
+        var header = $(".bottom-header-area");
+        
+        if (scroll < scrollThreshold) {
+            header.removeClass("sticky header-hidden");
         } else {
-            $(".bottom-header-area").addClass("sticky");
+            header.addClass("sticky");
+            
+            if (scroll > lastScrollTop && scroll > 100) {
+                header.addClass("header-hidden");
+            } else {
+                header.removeClass("header-hidden");
+            }
         }
+        
+        lastScrollTop = scroll;
     });
 
 
@@ -249,9 +266,12 @@ if ($('.main-menu ul').length) {
     });
 
 
+    var searchInput = document.getElementById('search-input');
+    var resultsContainer = document.getElementById('results-container');
+    
     var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
+      searchInput: searchInput,
+      resultsContainer: resultsContainer,
       json: '/search.json',
       searchResultTemplate: '<li><a href="{url}">- {title}</a></li>',
       noResultsText: '<li>No results found</li>',
@@ -262,9 +282,7 @@ if ($('.main-menu ul').length) {
 
     // Function to update result count and scroll to top
     function updateResultCount() {
-      const resultsContainer = document.getElementById('results-container');
       const resultsCount = document.getElementById('results-count');
-      const searchInput = document.getElementById('search-input');
       const resultsWrapper = document.querySelector('.search-results-wrapper');
       
       if (resultsContainer && resultsCount) {
@@ -287,7 +305,6 @@ if ($('.main-menu ul').length) {
     }
 
     // Watch for changes in the results container
-    const resultsContainer = document.getElementById('results-container');
     if (resultsContainer) {
       const observer = new MutationObserver(function() {
         updateResultCount();
@@ -300,7 +317,6 @@ if ($('.main-menu ul').length) {
     }
 
     // Update count when search input changes
-    const searchInput = document.getElementById('search-input');
     if (searchInput) {
       searchInput.addEventListener('input', function() {
         setTimeout(updateResultCount, 0);
@@ -328,6 +344,8 @@ if ($('.main-menu ul').length) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const yearSpan = document.getElementById('current-year');
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
+    if (yearSpan) {
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
 });
