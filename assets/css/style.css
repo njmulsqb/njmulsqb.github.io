@@ -706,12 +706,12 @@ header {
     padding: 10px 22px !important;
     border-radius: 50px;
     font-weight: 700 !important;
-    transition: all 0.3s ease !important;
+    transition: all 0.2s ease !important;
    
 }
 .nav-cta-btn:hover {
     background: #e46447 !important;
-    transform: translateY(-2px);
+    transform: scale(0.99);
    
 }
 .nav-cta-btn:after {
