@@ -1,0 +1,471 @@
+/* ============================================
+   TALKS & TRAINING PAGE — SCOPED STYLES
+   Mirrors the design system from about.css
+   ============================================ */
+
+:root {
+  --primary-orange: #f26c4f;
+  --dark-navy: #00203c;
+  --card-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  --border-radius: 20px;
+}
+
+/* ── Page Wrapper ── */
+.talks-page-container {
+  padding: 100px 0;
+  background: #fff;
+  color: var(--dark-navy);
+  overflow: hidden;
+}
+
+/* ── Shared Section Header ── */
+.talks-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.talks-section-header h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.talks-section-header p {
+  font-size: 16px;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-orange {
+  color: var(--primary-orange);
+}
+
+/* ── Lead Text (monospace label above heading) ── */
+.lead-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  margin-bottom: 20px;
+}
+
+/* ── Section Divider ── */
+.talks-section {
+  padding: 80px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.talks-section:last-of-type {
+  border-bottom: none;
+}
+
+/* ============================================
+   1. INTRO / SUB-HERO
+   ============================================ */
+.talks-intro-section {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.talks-intro-section h2 {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.talks-intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto 16px;
+}
+
+.talks-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.talks-anchor-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: 2px solid var(--primary-orange);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-orange);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.talks-anchor-btn:hover {
+  background: var(--primary-orange);
+  color: #fff;
+}
+
+/* ── Invite Me Button (matching Explore Exfiltra style) ── */
+.ex-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary-orange);
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 2px solid var(--primary-orange);
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+
+.ex-link:hover { 
+  background: #000; 
+  color: white !important; 
+  border-color: #000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.ex-link i {
+  font-size: 14px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.ex-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* ============================================
+   2. TOPICS GRID
+   ============================================ */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.topic-card {
+  padding: 32px 26px;
+  background: white;
+  border-radius: 16px;
+  transition: transform 0.2s ease, border-color 0.3s;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.topic-card:hover {
+  transform: scale(0.99);
+  border-color: var(--primary-orange);
+}
+
+.topic-num {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-orange);
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  margin-bottom: 14px;
+  opacity: 0.65;
+}
+
+.topic-icon {
+  font-size: 32px; 
+  color: var(--primary-orange); 
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.topic-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-navy);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ============================================
+   3. WHY INVITE ME
+   ============================================ */
+.why-invite-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.why-marker {
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  background: var(--primary-orange);
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.why-content {
+  flex: 1;
+}
+
+.why-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-navy);
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+.why-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* ============================================
+   4. FORMATS TAGS
+   ============================================ */
+.formats-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.format-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark-navy);
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+  cursor: default;
+}
+
+.format-tag i {
+  font-size: 14px;
+  color: var(--primary-orange);
+  transition: color 0.3s;
+}
+
+.format-tag:hover {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: #fff;
+}
+
+.format-tag:hover i {
+  color: #fff;
+}
+
+/* ============================================
+   5. PREVIOUS APPEARANCES
+   ============================================ */
+.appearances-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.appearance-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px 26px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  border-left: 4px solid var(--primary-orange);
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+
+.appearance-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-color: var(--primary-orange);
+}
+
+.appearance-icon-wrap {
+  font-size: 22px;
+  color: var(--primary-orange);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.appearance-body {
+  flex: 1;
+}
+
+.appearance-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--dark-navy);
+  margin: 0 0 5px;
+  line-height: 1.4;
+}
+
+.appearance-meta {
+  font-size: 13px;
+  color: #888;
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   6. FINAL CTA
+   ============================================ */
+.talks-final-cta {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+.talks-final-cta h3 {
+  font-size: 46px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.talks-final-cta .talks-cta-sub {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 36px;
+}
+
+.talks-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary-orange);
+  color: #fff !important;
+  padding: 18px 44px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.talks-email-link:hover {
+  background: var(--dark-navy);
+  color: #fff !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.talks-email-link i {
+  font-size: 14px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.talks-final-cta .ex-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 991px) {
+  .talks-intro-section h2 {
+    font-size: 38px;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-invite-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .talks-page-container {
+    padding: 60px 0;
+  }
+
+  .talks-intro-section {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+
+  .talks-intro-section h2 {
+    font-size: 30px;
+  }
+
+  .talks-intro-text {
+    font-size: 16px;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-invite-list {
+    gap: 20px;
+  }
+
+  .why-content h4 {
+    font-size: 15px;
+  }
+
+  .why-content p {
+    font-size: 14px;
+  }
+
+  .talks-section {
+    padding: 60px 0;
+  }
+
+  .talks-final-cta {
+    padding: 60px 0 0;
+  }
+
+  .talks-final-cta h3 {
+    font-size: 32px;
+  }
+
+  .talks-final-cta .talks-cta-sub {
+    font-size: 17px;
+  }
+
+  .talks-email-link {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .talks-cta-buttons {
+    gap: 12px;
+  }
+
+  .appearance-item {
+    padding: 18px 16px;
+  }
+}
