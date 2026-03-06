@@ -156,7 +156,9 @@ html, body {
  
 /* Tablet desktop :768px. md */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .single-blog-area {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -408,6 +410,9 @@ html, body {
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    .single-blog-area {
+        margin-bottom: 30px;
+    }
     .pagination li {
         margin: 0 5px;
     }

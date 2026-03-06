@@ -7,7 +7,7 @@ blogs_settings:
   description: My latest thoughts and discoveries
   button:
     name: "view all blogs"
-    link: "/blog/"
+    link: "/blogs/"
 
 videos_settings:
   title: Watch Our Latest Videos
