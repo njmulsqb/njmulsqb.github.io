@@ -1,0 +1,499 @@
+/* ============================================
+   WINS PAGE — SCOPED STYLES
+   Distinct section styling from talks/about pages.
+   Typography scale is identical; layout language differs.
+   ============================================ */
+
+:root {
+  --primary-orange: #f26c4f;
+  --dark-navy: #00203c;
+  --card-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  --border-radius: 20px;
+}
+
+/* ── Page Wrapper ── */
+.wins-page-container {
+  padding: 100px 0;
+  background: #fff;
+  color: var(--dark-navy);
+  overflow: hidden;
+}
+
+/* ── Section bands: alternating background ── */
+.wins-section {
+  padding: 80px 0;
+}
+
+.wins-section--alt {
+  background: #f8f9fa;
+  margin: 0 -9999px;
+  padding: 80px 9999px;
+}
+
+/* ── Section Header: centered with orange underline accent ── */
+.wins-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.wins-section-header h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  display: inline-block;
+  position: relative;
+}
+
+.wins-section-header h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-orange);
+  border-radius: 2px;
+  margin: 10px auto 0;
+}
+
+.wins-section-header p {
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}
+
+/* Exfiltra dark panel: keep header left-aligned inside the panel */
+.exfiltra-panel .wins-section-header {
+  text-align: left;
+  padding-left: 22px;
+  border-left: 4px solid var(--primary-orange);
+}
+
+.exfiltra-panel .wins-section-header h3::after {
+  display: none;
+}
+
+.text-orange {
+  color: var(--primary-orange);
+}
+
+/* ── Lead Label (monospace tag above heading) ── */
+.lead-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  margin-bottom: 20px;
+}
+
+/* ── Button: filled orange pill ── */
+.ex-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary-orange);
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 2px solid var(--primary-orange);
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+
+.ex-link:hover {
+  background: #000;
+  color: white !important;
+  border-color: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ex-link i {
+  font-size: 14px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.ex-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* ============================================
+   1. INTRO / SUB-HERO
+   ============================================ */
+.wins-intro-section {
+  padding-bottom: 0;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.wins-intro-section h2 {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.wins-intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto 16px;
+}
+
+/* ============================================
+   2. PROFESSIONAL MILESTONES
+   Two-column numbered grid with faded CSS counter
+   ============================================ */
+.milestones-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  counter-reset: milestone-counter;
+}
+
+.milestone-item {
+  counter-increment: milestone-counter;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 24px 24px 24px 76px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #ebebeb;
+  transition: box-shadow 0.25s, border-color 0.25s;
+  overflow: hidden;
+}
+
+.milestone-item::before {
+  content: counter(milestone-counter, decimal-leading-zero);
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--primary-orange);
+  opacity: 0.55;
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.milestone-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  border-color: var(--primary-orange);
+}
+
+/* icon hidden — counter replaces it */
+.milestone-icon-wrap {
+  display: none;
+}
+
+.milestone-body {
+  flex: 1;
+}
+
+.milestone-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--dark-navy);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ============================================
+   3. MAJOR WINS
+   Horizontal impact blocks: icon square + text row
+   ============================================ */
+.major-wins-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.win-result-item {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+
+.win-result-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  border-color: var(--primary-orange);
+}
+
+.win-result-icon {
+  flex-shrink: 0;
+  width: 70px;
+  min-height: 70px;
+  background: var(--dark-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--primary-orange);
+  align-self: stretch;
+}
+
+.win-result-body {
+  flex: 1;
+  padding: 20px 28px;
+}
+
+.win-result-body p {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--dark-navy);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ============================================
+   4. EXFILTRA HIGHLIGHTS
+   Inverted dark navy panel
+   ============================================ */
+.exfiltra-panel {
+  background: var(--dark-navy);
+  border-radius: 20px;
+  padding: 56px 60px;
+  color: #fff;
+}
+
+.exfiltra-panel .wins-section-header {
+  border-left-color: var(--primary-orange);
+}
+
+.exfiltra-panel .wins-section-header h3 {
+  color: #fff;
+}
+
+.exfiltra-panel .wins-section-header p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.exfiltra-panel .milestones-list {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.exfiltra-panel .milestone-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.exfiltra-panel .milestone-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--primary-orange);
+  box-shadow: none;
+}
+
+.exfiltra-panel .milestone-title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.wins-cta-block {
+  margin-top: 48px;
+}
+
+/* ── Outline button variant for dark panel ── */
+.ex-link--outline {
+  background: transparent;
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.ex-link--outline:hover {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: #fff !important;
+  box-shadow: none;
+}
+
+/* ============================================
+   5. SKILLS & TOOLS
+   Grouped pills with monospace category label
+   ============================================ */
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.skills-group-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  margin-bottom: 14px;
+}
+
+.skills-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark-navy);
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+  cursor: default;
+}
+
+.skill-tag i {
+  font-size: 14px;
+  color: var(--primary-orange);
+  transition: color 0.3s;
+}
+
+.skill-tag:hover {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: #fff;
+}
+
+.skill-tag:hover i {
+  color: #fff;
+}
+
+/* ============================================
+   6. IN PROGRESS
+   Single-column, open spacing, terminal-style rows
+   ============================================ */
+.inprogress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 700px;
+}
+
+.win-progress-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.win-progress-item:last-child {
+  border-bottom: none;
+}
+
+.win-progress-prompt {
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-orange);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.win-progress-item p {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--dark-navy);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 991px) {
+  .wins-intro-section h2 {
+    font-size: 38px;
+  }
+
+  .milestones-list {
+    grid-template-columns: 1fr;
+  }
+
+  .exfiltra-panel .milestones-list {
+    grid-template-columns: 1fr;
+  }
+
+  .exfiltra-panel {
+    padding: 40px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wins-page-container {
+    padding: 60px 0;
+  }
+
+  .wins-intro-section {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+
+  .wins-intro-section h2 {
+    font-size: 30px;
+  }
+
+  .wins-intro-text {
+    font-size: 16px;
+  }
+
+  .wins-section {
+    padding: 60px 0;
+  }
+
+  .wins-section--alt {
+    padding: 60px 9999px;
+  }
+
+  .wins-section-header h3 {
+    font-size: 26px;
+  }
+
+  .milestone-item {
+    padding: 22px 18px 22px 62px;
+  }
+
+  .win-result-icon {
+    width: 56px;
+    font-size: 18px;
+  }
+
+  .win-result-body {
+    padding: 16px 20px;
+  }
+
+  .exfiltra-panel {
+    padding: 36px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-tag-group {
+    gap: 8px;
+  }
+
+  .skill-tag {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+
+  .milestone-item::before {
+    font-size: 28px;
+  }
+}
