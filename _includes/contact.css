@@ -1,62 +1,201 @@
- .contact-area {
-    background: #f8f9fa;
+/* ============================================
+   CONTACT PAGE — SCOPED STYLES
+   Mirrors the design system from talks.css / wins.css
+   ============================================ */
+
+:root {
+  --primary-orange: #f26c4f;
+  --dark-navy: #00203c;
+  --card-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  --border-radius: 20px;
+}
+
+/* ── Page Wrapper ── */
+.contact-page-container {
+  padding: 100px 0;
+  background: #fff;
+  color: var(--dark-navy);
+  overflow: hidden;
+}
+
+/* ── Lead Label ── */
+.lead-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  font-family: 'Overpass Mono', 'Fira Code', monospace;
+  margin-bottom: 20px;
+}
+
+.text-orange {
+  color: var(--primary-orange);
+}
+
+/* ── Intro Section ── */
+.contact-intro-section {
+  text-align: center;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 80px;
+}
+
+.contact-intro-section h2 {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.contact-intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Body Grid: form left, info right ── */
+.contact-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── Form Inputs ── */
+.contact-form-wrap .form-control {
+  border: 1px solid #e0e0e0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-wrap .form-control:focus {
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 3px rgba(242, 108, 79, 0.15);
+  background: #fff;
+  outline: none;
+}
+
+/* ── Submit Button (matches ex-link on talks/wins pages) ── */
+.contact-form-wrap .ex-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary-orange);
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 2px solid var(--primary-orange);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact-form-wrap .ex-link:hover {
+  background: #000;
+  color: #fff !important;
+  border-color: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-wrap .ex-link i {
+  font-size: 14px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.contact-form-wrap .ex-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* ── Info Cards (matches wins page milestone-item style) ── */
+.contact-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #ebebeb;
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+
+.contact-info-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  border-color: var(--primary-orange);
+}
+
+.contact-info-card .info-icon {
+  width: 46px;
+  height: 46px;
+  background: rgba(242, 108, 79, 0.1);
+  color: var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-right: 16px;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+
+.contact-info-card .info-content h5 {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-info-card .info-content p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--dark-navy);
+  font-weight: 500;
+}
+
+.contact-info-card .info-content a {
+  color: var(--dark-navy);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info-card .info-content a:hover {
+  color: var(--primary-orange);
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .contact-body-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .contact-form .form-control {
-    border: 1px solid #e0e0e0;
-    padding: 15px 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
+  .contact-intro-section h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-intro-section h2 {
+    font-size: 28px;
   }
 
-  .contact-form .form-control:focus {
-    border-color: var(--primary-color, #007bff);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    outline: none;
+  .contact-page-container {
+    padding: 60px 0;
   }
-
-  .contact-info .single-info {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  }
-
-  .contact-info .info-icon {
-    width: 50px;
-    height: 50px;
-    background: var(--primary-color, #007bff);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-right: 15px;
-    flex-shrink: 0;
-  }
-
-  .contact-info .info-icon i {
-    font-size: 20px;
-  }
-
-  .contact-info .info-content h5 {
-    margin-bottom: 5px;
-    font-weight: 600;
-  }
-
-  .contact-info .info-content p {
-    margin: 0;
-    color: #666;
-  }
-
-  .contact-info .info-content a {
-    color: var(--primary-color, #007bff);
-    text-decoration: none;
-  }
-
-  .contact-info .info-content a:hover {
-    text-decoration: underline;
-  }
+}

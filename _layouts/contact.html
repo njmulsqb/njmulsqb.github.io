@@ -4,132 +4,95 @@ layout: default
 
 {% include page_header.html %}
 
-<!--====== CONTACT PART START ======-->
-<section class="contact-area section-padding">
+<style>
+{% include contact.css %}
+</style>
+
+<!--====== CONTACT PAGE START ======-->
+<section class="contact-page-container">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 mt-5">
-        <div class="section-title text-center">
-          <h2>Get In Touch</h2>
-          <p>
-            Have a question or want to work together? We'd love to hear from you.
-            Fill out the form below and we'll get back to you as soon as possible.
-          </p>
+
+    <!-- ── 1. INTRO / SUB-HERO ── -->
+    <div class="contact-intro-section">
+      <span class="lead-label"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+      <h2>Let's <span class="text-orange">Work Together</span></h2>
+      <p class="contact-intro-text">
+        Have a project, a question, or just want to talk security? I respond to every message personally.
+      </p>
+    </div>
+
+    <!-- ── 2. FORM + INFO ── -->
+    <div class="contact-body-grid">
+
+      <div class="contact-form-wrap">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required />
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="ex-link">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-info-wrap">
+
+        <div class="contact-info-card">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="info-content">
+            <h5>Email</h5>
+            <p><a href="mailto:{{ site.email }}" rel="noopener noreferrer">{{ site.email }}</a></p>
+          </div>
         </div>
+
+        <div class="contact-info-card">
+          <div class="info-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="info-content">
+            <h5>LinkedIn</h5>
+            <p><a href="https://www.linkedin.com/in/njmulsqb/" target="_blank" rel="noopener noreferrer">linkedin.com/in/njmulsqb</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="info-icon"><i class="fab fa-mastodon"></i></div>
+          <div class="info-content">
+            <h5>Mastodon</h5>
+            <p><a href="https://infosec.exchange/@cybersoldier" target="_blank" rel="noopener noreferrer">infosec.exchange/@cybersoldier</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="info-icon"><i class="fas fa-clock"></i></div>
+          <div class="info-content">
+            <h5>Response Time</h5>
+            <p>Usually within 24 hours</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="row mt-5">
-      <div class="col-lg-8">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    rows="6"
-                    placeholder="Your Message"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <button type="submit" class="btn hero-btn">
-                  Send Message <i class="fa fa-paper-plane"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="contact-info">
-          <div class="single-info mb-4">
-            <div class="info-icon">
-              <i class="fa fa-envelope"></i>
-            </div>
-            <div class="info-content">
-              <h5>Email</h5>
-              <p>
-                <a href="mailto:{{ site.email }}" rel="noopener noreferrer">{{ site.email }}</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="single-info mb-4">
-            <div class="info-icon">
-              <i class="fa fa-map-marker-alt"></i>
-            </div>
-            <div class="info-content">
-              <h5>Address</h5>
-              <p>{{ site.address }}</p>
-            </div>
-          </div>
-
-          <div class="single-info mb-4">
-            <div class="info-icon">
-              <i class="fa fa-phone"></i>
-            </div>
-            <div class="info-content">
-              <h5>Phone</h5>
-              <p>
-                <a href="tel:{{ site.phone_number }}" rel="noopener noreferrer">{{ site.phone_number }}</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="single-info">
-            <div class="info-icon">
-              <i class="fa fa-clock"></i>
-            </div>
-            <div class="info-content">
-              <h5>Office Hours</h5>
-              <p>{{ site.office_time }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
-<!--====== CONTACT PART END ======-->
-
-<style>
- {% include contact.css %}
-</style>
+<!--====== CONTACT PAGE END ======-->
