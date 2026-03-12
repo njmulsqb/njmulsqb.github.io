@@ -6,7 +6,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   making application and cloud security headache-free for engineering teams.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://njmulsqb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-title: "Najam Ul Saqib"
 #General Settings
 socials:
   - name: "Email"
@@ -28,8 +27,6 @@ socials:
 logo_url: "/assets/images/logo.png"
 
 # Build settings
-theme: minima
-
 environment: "development"
 
 permalink: "/:title"
@@ -45,8 +42,8 @@ cover_image: "/assets/img/bg/page-title.jpg"
 collections:
   features:
     output: true
-  services:
-    output: true
+  # services:  # Disabled - moved to _temp_placeholders (Lorem Ipsum content)
+  #   output: true
   portfolios:
     output: true
   teams:
