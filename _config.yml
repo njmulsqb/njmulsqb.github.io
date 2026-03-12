@@ -7,6 +7,29 @@ description: >-
 baseurl: ""
 url: "https://njmulsqb.github.io"
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/about-us/najam.png
+
+author:
+  name: "Najam Ul Saqib"
+  twitter: njmulsqb
+
+twitter:
+  username: njmulsqb
+  card: summary_large_image
+
+social:
+  name: Najam Ul Saqib
+  links:
+    - https://www.linkedin.com/in/njmulsqb/
+    - https://twitter.com/njmulsqb
+    - https://github.com/njmulsqb
+    - https://www.youtube.com/@cybersoldiernjm
+    - https://infosec.exchange/@cybersoldier
+
 socials:
   - name: "Email"
     url: "mailto:najam@exfiltra.com"
@@ -24,13 +47,12 @@ socials:
     url: "https://pixelfed.social/shiningstar"
     icon: "fas fa-images"
 
-logo_url: "/assets/images/logo.png"
-
 environment: "development"
 permalink: "/:title"
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-archives
 
