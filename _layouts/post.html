@@ -306,6 +306,26 @@ layout: default
               <li>share</li>
               <li>
                 <a
+                  href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on LinkedIn"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                  title="Share on X"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
                   onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
                   title="Share on Facebook"
@@ -316,17 +336,7 @@ layout: default
               </li>
               <li>
                 <a
-                  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                  title="Share on Twitter"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{page.post_image }}&description="
+                  href="https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{page.post_image }}&description="
                   onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
                   title="Share on Pinterest"
                   rel="noopener noreferrer"
