@@ -69,7 +69,7 @@
     <title>
       {% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}
     </title>
-    {% if site.environment == 'production' %} {% include analytics.html %} {%
+    {% if jekyll.environment == 'production' %} {% include analytics.html %} {%
     endif %}
   </head>
   <body>
