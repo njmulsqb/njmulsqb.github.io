@@ -6,15 +6,15 @@
             <div class="col-lg-4">
                 <div class="single-service-area">
                     <span class="service-num">{% if forloop.index < 10 %} 0 {{forloop.index}} {% else %} {{forloop.index}} {% endif %}</span>
-                </div>
-                {% if feature.icon %}
-                    <div class="service-icon">
-                        <img src="{{feature.icon | relative_url}}" alt="{{feature.title}}"/>
+                    {% if feature.icon %}
+                        <div class="service-icon">
+                            <img src="{{feature.icon | relative_url}}" alt="{{feature.title }}"/>
+                        </div>
+                    {% endif %}
+                    <div class="service-content">
+                        <h4>{{feature.title}}</h4>
+                        <p>{{feature.content}}</p>
                     </div>
-                {% endif %}
-                <div class="service-content">
-                    <h4>{{feature.title}}</h4>
-                    <p>{{feature.content}}</p>
                 </div>
             </div>
             {% endfor %}
