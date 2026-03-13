@@ -54,11 +54,13 @@ environment: "development"
 ga4_measurement_id:
 permalink: "/:title"
 
+# Blog pagination post count per page
+blog_per_page: 6
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate-v2
   - jekyll-archives
 
 cover_image: "/assets/img/bg/page-title.jpg"
@@ -66,25 +68,6 @@ cover_image: "/assets/img/bg/page-title.jpg"
 collections:
   features:
     output: true
-
-pagination:
-  enabled: true
-  debug: false
-  collection: "posts"
-  per_page: 6
-  permalink: "/pages/:num/"
-  title: ":title - page :num"
-  limit: 0
-  sort_field: "date"
-  sort_reverse: true
-  category: "posts"
-  tag: ""
-  locale: ""
-  trail:
-    before: 2
-    after: 2
-  extension: "html"
-  indexpage: "index"
 
 tag_page_layout: tag-page
 tag_page_dir: tag

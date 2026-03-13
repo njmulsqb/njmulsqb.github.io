@@ -40,8 +40,6 @@ GEM
       jekyll (>= 3.6, < 5.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-paginate-v2 (3.0.0)
-      jekyll (>= 3.0, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -100,7 +98,6 @@ DEPENDENCIES
   jekyll (~> 4.3.4)
   jekyll-archives
   jekyll-feed (~> 0.12)
-  jekyll-paginate-v2 (~> 3.0)
   jekyll-seo-tag (~> 2.8)
   jekyll-sitemap
   jekyll-tagging
