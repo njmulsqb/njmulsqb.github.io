@@ -48,6 +48,10 @@ socials:
     icon: "fas fa-images"
 
 environment: "development"
+
+# Google Analytics 4 (GA4) Measurement ID (example: G-XXXXXXXXXX)
+# Set this to enable analytics.
+ga4_measurement_id:
 permalink: "/:title"
 
 plugins:
