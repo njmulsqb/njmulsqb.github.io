@@ -1118,6 +1118,9 @@ header {
 /*----------------------------------------
    05. ABOUT-US css
 ----------------------------------------*/
+.about-us-area {
+  overflow: hidden;
+}
 .about-us-area .row {
   position: relative;
   z-index: 1;
@@ -1127,11 +1130,17 @@ header {
   position: absolute;
   bottom: 0;
 }
+.about-img-1 {
+  position: relative;
+  z-index: 2;
+}
 .about-img-2 {
   position: absolute;
-  left: 0;
-  margin-top: -600px;
-  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  z-index: 1;
+  pointer-events: none;
 }
 .section-para {
   font-size: clamp(14px, 1.2vw + 10px, 18px);
