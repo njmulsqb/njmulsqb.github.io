@@ -1,21 +1,9 @@
-teams_settings:
-  title: Collaborators & Experts
-  description: Meet the brilliant minds I collaborate with
-
 blogs_settings:
   title: Blog & Insights
   description: My latest thoughts and discoveries
   button:
     name: "view all blogs"
     link: "/blogs/"
-
-videos_settings:
-  title: Watch Our Latest Videos
-  description: Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
-  youtube_link: "https://www.youtube.com/watch?v=iogabydg2y0"
-  button:
-    name: "Learn More "
-    link: "#"
 
 services_settings:
   title: What I Do
@@ -62,16 +50,6 @@ projects_settings:
     - icon: '<i class="fas fa-trophy"></i>'
       name: "Awards Won"
       count: 6
-
-portfolios_settings:
-  title: My Portfolio
-  description: A showcase of my creative work
-  button:
-    name: "View more"
-    link: "#"
-  button2:
-    name: "Let’s Talk"
-    link: "#"
 
 cta_settings:
   title: Have Any Creative Project
@@ -129,46 +107,6 @@ abouts_settings:
     name: "Contact Us"
     link: "#contact"
 
-pricings_settings:
-  title: our pricing
-  description: Popular Pricing Plan For Creative Project
-  button:
-    name: make plan
-    link: "#"
-  list:
-    - name: "01 <span>basic</span>"
-      image: "/assets/images/price-icon.png"
-      text: "<span>$45.99/month</span>"
-      listitem:
-        - item: Web Design (UX/UI)
-        - item: Software Development
-        - item: Fashion Design (Arts)
-        - item: Web Development (php)
-      lowerlistitem:
-        - item: Game Design & DV
-        - item: Computer Hardware
-    - name: "02 <span>smart</span>"
-      image: "/assets/images/price-icon.png"
-      text: "<span>$65.99/month</span>"
-      listitem:
-        - item: Web Design (UX/UI)
-        - item: Software Development
-        - item: Fashion Design (Arts)
-        - item: Web Development (php)
-      lowerlistitem:
-        - item: Game Design & DV
-        - item: Computer Hardware
-    - name: "03 <span>Premium</span>"
-      image: "/assets/images/price-icon.png"
-      text: "<span>$103.99/month</span>"
-      listitem:
-        - item: Web Design (UX/UI)
-        - item: Software Development
-        - item: Fashion Design (Arts)
-        - item: Web Development (php)
-      lowerlistitem:
-        - item: Game Design & DV
-        - item: Computer Hardware
 404_settings:
   title: 404
   description: The page you are lookng for cannot be found

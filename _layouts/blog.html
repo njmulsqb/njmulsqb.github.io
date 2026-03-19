@@ -7,7 +7,25 @@ layout: default
 <section class="blog-area latest-blogs pb-140 pt-140">
     <div class="container">
         <div class="row">
-            {% for post in paginator.posts %}
+                        {% assign per_page = site.blog_per_page | default: 6 | plus: 0 %}
+                        {% if per_page < 1 %}
+                            {% assign per_page = 6 %}
+                        {% endif %}
+
+                        {% if paginator and paginator.posts %}
+                            {% assign posts_to_render = paginator.posts %}
+                        {% elsif page.manual_pagination %}
+                            {% assign current_page = page.page_num | default: 1 | plus: 0 %}
+                            {% if current_page < 1 %}
+                                {% assign current_page = 1 %}
+                            {% endif %}
+                            {% assign offset = current_page | minus: 1 | times: per_page %}
+                            {% assign posts_to_render = site.posts | slice: offset, per_page %}
+                        {% else %}
+                            {% assign posts_to_render = site.posts %}
+                        {% endif %}
+
+            {% for post in posts_to_render %}
             <div class="col-lg-4">
                 <div class="single-blog-item pb-60">
                     {% if post.post_image %}

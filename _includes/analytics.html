@@ -1,8 +1,12 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173445824-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-173445824-1');
-</script>
+{% assign ga4_id = site.ga4_measurement_id | default: site.google_analytics %}
+
+{% if ga4_id and ga4_id != '' %}
+  <!-- Global site tag (gtag.js) - Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga4_id | escape }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ ga4_id | escape }}');
+  </script>
+{% endif %}
