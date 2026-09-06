@@ -1,26 +1,37 @@
-# Najam Ul Saqib — Personal Jekyll Site
+# Najam Ul Saqib — Technical Personal Site
 
-This repository is a Jekyll-based personal website for Najam Ul Saqib.
+This repository is a lightweight Jekyll site for Najam Ul Saqib, focused on security engineering, application security, cloud security, research, writing, and practical technical notes.
 
-## Quick overview
+## Current structure
 
-- Static site generated with Jekyll (see `_config.yml`).
-- Content: posts in `_posts/`, layouts in `_layouts/`, includes in `_includes/`, data in `_data/`, assets in `assets/`.
-- Built site output: `_site/` (generated files).
+The site is intentionally minimal and markdown-first, with a monochrome aesthetic and very little front-end overhead.
 
-## Prerequisites
+- Home page serves as a technical landing page and index of recent writing.
+- About page provides the professional and personal context for the work.
+- Writing section hosts technical notes, investigations, and security-focused posts.
+- Talks and training page lists public appearances, podcast interviews, and workshops.
+- The site is optimized for simple browsing, low overhead, and mobile-friendly reading.
 
-- Ruby (2.7+ recommended)
-- Bundler
+## Key files
 
-## Install dependencies
+- Site config: [_config.yml](_config.yml)
+- Dependency setup: [Gemfile](Gemfile)
+- Homepage: [index.md](index.md)
+- About page: [about.md](about.md)
+- Writing page: [writing.md](writing.md)
+- Talks page: [talks-and-training.md](talks-and-training.md)
+- Main layout: [_layouts/default.html](_layouts/default.html)
+- Minimal styling: [assets/css/mono.css](assets/css/mono.css)
+- Blog posts: [_posts/](_posts/)
+
+## Local development
+
+Install dependencies:
 
 ```bash
 gem install bundler
 bundle install
 ```
-
-## Build and serve
 
 Build the site:
 
@@ -28,25 +39,25 @@ Build the site:
 bundle exec jekyll build
 ```
 
-Serve locally (dev server):
+Run the local preview server:
 
 ```bash
 bundle exec jekyll serve
-# or to include drafts:
+```
+
+Optional: preview drafts:
+
+```bash
 bundle exec jekyll serve --drafts
 ```
 
 ## Notes
 
-- The site uses `jekyll ~> 4.3.4` and `minima ~> 2.5` (see `Gemfile`).
-- Plugins used: `jekyll-feed`, `jekyll-seo-tag`, `jekyll-sitemap`, `jekyll-archives`, `jekyll-tagging`.
-- If you plan to host on GitHub Pages, consider switching to the `github-pages` gem or building locally and pushing the `_site/` contents to the `gh-pages` branch.
+- The site uses Jekyll 4.4.1 in the project Gemfile.
+- The permalink structure is configured around the writing route.
+- The visual design avoids heavy marketing patterns and stays intentionally minimal.
+- This is a technical personal site, not a generic portfolio or startup landing page.
 
-## Useful files
+## Publishing
 
-- Configuration: `_config.yml`
-- Posts: `_posts/`
-- Layouts: `_layouts/`
-- Includes/partials: `_includes/`
-
-If you want, I can add a short CONTRIBUTING or DEVELOPMENT section next.
+This repo is designed to be published as a standard static Jekyll site. Build locally and deploy the generated output to any static hosting provider or Jekyll-compatible platform.
