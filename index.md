@@ -4,10 +4,10 @@ title: Najam Ul Saqib
 ---
 
 <section class="intro">
-  <h1>Security engineer. Builder. Writer.</h1>
+  <h1>Security engineer. Entrepreneur. FOSS enthusiast.</h1>
   <p>
-    I work on secure systems, cloud security, and practical engineering. I write
-    about software, security, privacy, and how teams can build with less noise.
+    I work on secure systems, cloud security, and practical engineering while building
+    tools and ideas that make security easier to understand, adopt, and use.
   </p>
 </section>
 

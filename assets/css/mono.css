@@ -35,6 +35,49 @@ a:hover {
   text-decoration: underline;
 }
 
+.page-section a,
+.post-content a,
+.page-header a {
+  color: #111111;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: rgba(17, 17, 17, 0.8);
+  background: rgba(17, 17, 17, 0.04);
+  padding: 0.04em 0.18em;
+  border-radius: 0.2em;
+}
+
+.page-section a:hover,
+.post-content a:hover,
+.page-header a:hover {
+  background: rgba(17, 17, 17, 0.08);
+  text-decoration-thickness: 4px;
+}
+
+.intro a,
+.home-section a,
+.minimal-list a,
+.site-header a,
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.intro a:hover,
+.home-section a:hover,
+.minimal-list a:hover,
+.site-header a:hover,
+.site-footer a:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
 .page-shell {
   max-width: 760px;
   margin: 0 auto;
@@ -171,15 +214,23 @@ p {
   margin-bottom: 1.2rem;
 }
 
-.post-content a {
-  color: var(--text);
+.post-content a,
+.page-section a,
+.page-header a,
+.intro a {
+  color: #0f0f0f;
   text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 0.15em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(17, 17, 17, 0.8);
 }
 
-.post-content a:hover {
-  text-decoration-thickness: 2px;
+.post-content a:hover,
+.page-section a:hover,
+.page-header a:hover,
+.intro a:hover {
+  color: #000000;
+  text-decoration-thickness: 3px;
 }
 
 .post-content ul,
