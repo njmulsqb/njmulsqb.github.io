@@ -61,23 +61,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
 
 cover_image: "/assets/img/bg/page-title.jpg"
 
 collections:
   features:
     output: true
-
-tag_page_layout: tag-page
-tag_page_dir: tag
-tag_permalink_style: pretty
-
-jekyll-archives:
-  enabled: all
-  layout: category
-  permalinks:
-    category: "/category/:name/"
 
 feed:
   collections:

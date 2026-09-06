@@ -54,7 +54,7 @@ export class BadXSS extends React.Component {
             You searched for:{" "}
             <b>
               <span
-                dangerouslySetInnerHTML={{ __html: this.state.submittedSearch }}
+                dangerouslySetInnerHTML={% raw %}{{ __html: this.state.submittedSearch }}{% endraw %}
               />
             </b>
           </p>

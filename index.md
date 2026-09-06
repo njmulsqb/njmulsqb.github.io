@@ -23,10 +23,3 @@ title: Najam Ul Saqib
   </ul>
 </section>
 
-<section class="home-section">
-  <h2>More</h2>
-  <ul class="minimal-list">
-    <li><a href="{{ '/talks-and-training/' | relative_url }}">Talks &amp; training</a></li>
-    <li><a href="{{ '/assets/Research-Paper.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Research paper</a></li>
-  </ul>
-</section>
