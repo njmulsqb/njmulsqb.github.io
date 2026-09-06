@@ -21,6 +21,7 @@ I keep this page as the canonical directory for where I publish, speak, write, a
 - Pixelfed: [pixelfed.social/shiningstar](https://pixelfed.social/shiningstar)
 - My business: [exfiltra.com](https://exfiltra.com)
 - X / Twitter: [x.com/njmulsqb](https://x.com/njmulsqb)
+- Discord: njmulsqb
 
 ## Note
 
