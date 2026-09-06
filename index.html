@@ -1,7 +1,37 @@
 ---
-layout: home
+layout: default
+title: Najam Ul Saqib
 ---
 
-{% include hero-area.html %} {% include features.html %} {% include about.html
-%} {% include services.html %}{% include projects.html %}{% include
-testimonials.html %}{% include blog.html %}{% include call-to-action.html %}
+<section class="intro">
+  <h1>Security engineer. Builder. Writer.</h1>
+  <p>
+    I work on secure systems, cloud security, and practical engineering. I write
+    about software, security, privacy, and how teams can build with less noise.
+  </p>
+  <div class="action-links">
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/blogs/' | relative_url }}">Writing</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2>Recent notes</h2>
+  <ul class="minimal-list">
+    {% for post in site.posts limit: 5 %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="home-section">
+  <h2>More</h2>
+  <ul class="minimal-list">
+    <li><a href="{{ '/talks-and-training/' | relative_url }}">Talks &amp; training</a></li>
+    <li><a href="{{ '/assets/Research-Paper.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Research paper</a></li>
+  </ul>
+</section>

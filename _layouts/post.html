@@ -2,109 +2,15 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
-{% include page_header.html %}
+<article class="post-article">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%b %d, %Y' }}</time>
+    </p>
+    <h1>{{ page.title }}</h1>
+  </header>
 
-<!--======  blog-details PART START ======-->
-<section class="blog-details pt-140 pb-140">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="single-blog-details-box">
-          {% if page.post_image %}
-          <div class="blog-boxed-img">
-            <img src="{{ page.post_image | relative_url }}" class="w-100" alt="{{page.title}}" />
-          </div>
-          {% endif %}
-          <div class="single-blog-details-box-time">
-            {% if page.author %}
-            <span><i class="fas fa-user-alt"></i>{{page.author}}</span>
-            {% endif %} {% if page.date %}
-            <span
-              ><i class="far fa-calendar-alt"></i>{{page.date |
-              date_to_long_string}}</span
-            >
-            {% endif %}
-            <ul>
-              <li>share</li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                  title="Share on LinkedIn"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                  title="Share on X"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-x-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-                  title="Share on Facebook"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{page.post_image }}&description="
-                  onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
-                  title="Share on Pinterest"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-pinterest"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <h2>{{page.title}}</h2>
-          <div class="post-content">{{page.content}}</div>
-        </div>
-
-        <div class="populer-tags">
-          {% if page.tags.size > 0%}
-          <ul class="tags">
-            <li class="tag-heading">Popular Tag :</li>
-          </ul>
-          <div class="tags">{{page | tags | capitalize}}</div>
-          {% endif %} {% include social-share.html %}
-        </div>
-        <!-- <div class="colered-box-text">
-          {% if page.previous.url %}
-          <span
-            ><a href="{{page.previous.url}}"
-              >{{page.previous.title | truncate: 65}}</a
-            ></span
-          >
-          {% endif %} {% if page.next.url %}
-          <span
-            ><a href="{{page.next.url}}"
-              >{{page.next.title | truncate: 65}}</a
-            ></span
-          >
-          {% endif %}
-        </div> -->
-        <div class="comments-section">
-          <h2 class="blog-details-heading">Client’s Comments</h2>
-          {% include disqus-comments.html %}
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="sidebar">{% include sidebar.html %}</div>
-      </div>
-    </div>
+  <div class="post-content">
+    {{ content }}
   </div>
-</section>
-<!--======  blog-details PART end ======-->
+</article>
