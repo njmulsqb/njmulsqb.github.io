@@ -12,7 +12,8 @@ I keep this page as the canonical directory for where I publish, speak, write, a
 
 ## My links
 
-- Email: [najam@exfiltra.com](mailto:najam@exfiltra.com)
+- Email: [najamulsaqib@tutamail.com](mailto:najamulsaqib@tutamail.com)
+- Work email: [najam@exfiltra.com](mailto:najam@exfiltra.com)
 - GitHub: [github.com/njmulsqb](https://github.com/njmulsqb)
 - LinkedIn: [linkedin.com/in/njmulsqb](https://www.linkedin.com/in/njmulsqb/)
 - YouTube: [youtube.com/@cybersoldiernjm](https://www.youtube.com/@cybersoldiernjm)
