@@ -273,3 +273,22 @@ a:hover {
 .single-blog-details-box {
   margin-bottom: 2rem;
 }
+
+/* Centered images in posts (kramdown attribute lists) */
+.center-image {
+  display: block;
+  margin: 1.25rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure large headings inside post content don't overpower the page title */
+.post-content h1 {
+  font-size: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
